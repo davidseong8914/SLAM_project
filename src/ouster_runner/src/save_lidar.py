@@ -7,7 +7,7 @@ def start_rosbag_recording(topics, rosbag_file_path):
     """ Start recording a rosbag """
     command = ["rosbag", "record", "-O", rosbag_file_path] + topics
     rospy.loginfo(f"Starting rosbag recording: {command}") ## what will this print
-    return subprocess.Popen(command) ## what is this
+    return subprocess.Popen(command) # this will run the 'command' - recording rosbag
 
 
 def main():
@@ -23,7 +23,7 @@ def main():
 
     try:
         rospy.loginfo("LiDAR node and rosbag recording started.")
-        rospy.spin() ## what does this do?
+        rospy.spin() # keeps node alive and running
 
     except rospy.ROSInterruptException:
         rospy.loginfo("Shutting down.")
