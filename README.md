@@ -18,7 +18,7 @@ pip list | grep ouster # to check ouster installation
 *** On Windows - Network Settings > Automatic (DHCP)<br>
 *** On Ubuntu - Network Settings > eth0: Link-Local 
 2. Power LiDAR <br>
-- 29.6V (>1000mAh) - Converter (Low Voltage Buzzer) - LiDAR
+- Battery (29.6V) - Converter (24V, >1000mAh + Low Voltage Buzzer) - LiDAR
 
 #### 3. Software Setup
 ``` linux
