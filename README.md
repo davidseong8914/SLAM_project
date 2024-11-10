@@ -25,13 +25,12 @@ pip list | grep ouster # to check ouster installation
 # virtual environment
 python3 -m venv slam_project
 source slam_project/bin/activate
-
+```
+## THIS IS THE MOST IMPORTANT PART
+```
 # checking ethernet connection
 nmcli connection show
 # expected response
-```
-## THIS IS THE MOST IMPORTANT STEP
-```
 Wired connection 1 ethernet enp2s0 # HAS TO BE IN GREEN
 ```
 
