@@ -11,7 +11,6 @@ pip install --upgrade pip setuptools wheel
 pip install cmake
 pip install ouster-sdk
 pip list | grep ouster # to check ouster installation
-
 ```
 
 #### 2. Hardware Setup
