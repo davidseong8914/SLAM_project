@@ -1,2 +1,2 @@
-ouster_runner
+ouster-ros:ouster_runner
 -DCATKIN_DEVEL_PREFIX=/home/david/Desktop/SLAM_project/devel -DCMAKE_INSTALL_PREFIX=/home/david/Desktop/SLAM_project/install -G Unix Makefiles
