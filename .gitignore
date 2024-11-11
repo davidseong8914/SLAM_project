@@ -1,3 +1,4 @@
 /src/placeholder/bom.md
-slam_project/ # virtual environment
+# virtual environment
+slam_project/
 src/ouster-ros
