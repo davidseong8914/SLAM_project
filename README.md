@@ -48,3 +48,8 @@ ping <LiDAR IP> # this should work
 ouster-cli source <LiDAR IP> viz
 ```
 
+#### 5. Using the ouster-ros driver
+Clone SLAM_project repository
+```
+git clone https://github.com/davidseong8914/SLAM_project.git
+```
