@@ -100,7 +100,7 @@ ouster-ros has 3 modes
 - replay recorded ros bag
 - record a new bag using the corresponding launch files
 
-<b>1. Sensor Mode <b>
+<b>1. Sensor Mode </b>
 - sensor.launch
     - node 1: connect to sensor and publish raw packets
     - node 2 & 3: converts raw packets to IMU image and PointCloud2 messages
@@ -115,7 +115,7 @@ roslaunch ouster_ros driver.launch      \
     sensor_hostname:=<sensor host name or ip> 
 ```
 
-<b>2. Recording Mode<b>
+<b>2. Recording Mode</b>
 ```
 roslaunch ouster_ros record.launch      \
     sensor_hostname:=<sensor host name> \
@@ -126,7 +126,7 @@ roslaunch ouster_ros record.launch      \
 roslaunch ouster_ros record.launch sensor_hostname:=<sensor ip> bag_file:=test.bag
 ```
 
-<b>3. Replay Mode <b>
+<b>3. Replay Mode </b>
 ```
 roslaunch ouster_ros replay.launch      \
     bag_file:=<path to rosbag file>     \
@@ -137,6 +137,4 @@ roslaunch ouster_ros replay.launch bag_file:=/home/david/Desktop/SLAM_project/te
 
 # play in loop for shorter videos | for situations where replay ends before rviz loads and preview can't be viewed
 roslaunch ouster_ros replay.launch bag_file:=/home/david/Desktop/SLAM_project/test.bag loop:=true
-
-
 ```
