@@ -37,14 +37,25 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+# Set path to fallback-tool for dependency-resolution.
+if(NOT DEFINED CMAKE_OBJDUMP)
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/david/Desktop/SLAM_project/devel/lib/libouster_client.a")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES
     "/home/david/Desktop/SLAM_project/src/ouster-ros/ouster-sdk/ouster_client/include/ouster"
     "/home/david/Desktop/SLAM_project/src/ouster-ros/ouster-sdk/ouster_client/include/optional-lite"
     )
 endif()
 
+string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
+       "${CMAKE_INSTALL_MANIFEST_FILES}")
+if(CMAKE_INSTALL_LOCAL_ONLY)
+  file(WRITE "/home/david/Desktop/SLAM_project/build/ouster-ros/ouster_example/ouster_client/install_local_manifest.txt"
+     "${CMAKE_INSTALL_MANIFEST_CONTENT}")
+endif()
