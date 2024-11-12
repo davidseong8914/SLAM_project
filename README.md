@@ -101,22 +101,22 @@ ouster-ros has 3 modes
 - record a new bag using the corresponding launch files
 
 <b>1. Sensor Mode </b>
-- sensor.launch
-    - node 1: connect to sensor and publish raw packets
-    - node 2 & 3: converts raw packets to IMU image and PointCloud2 messages
-- driver.launch
-    - node 1: handles all of the tasks 
-
-*** driver.launch offers better performance
-
 Following code should visualize live LiDAR through rviz
 ```
+### first tab
+roscore
+
+### second tab
 roslaunch ouster_ros driver.launch      \
     sensor_hostname:=<sensor host name or ip> 
 ```
 
 <b>2. Recording Mode</b>
 ```
+### first tab
+roscore
+
+### second tab
 roslaunch ouster_ros record.launch      \
     sensor_hostname:=<sensor host name> \
     bag_file:=<optional bag file name>  \
@@ -128,6 +128,10 @@ roslaunch ouster_ros record.launch sensor_hostname:=<sensor ip> bag_file:=test.b
 
 <b>3. Replay Mode </b>
 ```
+### first tab
+roscore
+
+### second tab
 roslaunch ouster_ros replay.launch      \
     bag_file:=<path to rosbag file>     \
 
@@ -138,3 +142,8 @@ roslaunch ouster_ros replay.launch bag_file:=/home/david/Desktop/SLAM_project/te
 # play in loop for shorter videos | for situations where replay ends before rviz loads and preview can't be viewed
 roslaunch ouster_ros replay.launch bag_file:=/home/david/Desktop/SLAM_project/test.bag loop:=true
 ```
+
+### 6. What's Next?
+Dylan: KITTI data with KISS-ICP output, ROS1 bags to ROS2 bags -> KISS ICP <br>
+Andres: Simulation <br>
+David: Figure out map comparison for accuracy - origin, window method. Figure out GPS navigation for autonomous driving
