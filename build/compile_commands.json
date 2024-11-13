@@ -1,0 +1,50 @@
+[
+{
+  "directory": "/home/david/Desktop/SLAM_project/build/kiss-icp/ros",
+  "command": "/usr/bin/c++ -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"kiss_icp\\\" -DSOPHUS_USE_BASIC_LOGGING=1 -I/home/david/Desktop/SLAM_project/src/kiss-icp/ros/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/david/Desktop/SLAM_project/src/kiss-icp/cpp -isystem /usr/include/eigen3 -isystem /home/david/Desktop/SLAM_project/build/_deps/tessil-src/include -isystem /home/david/Desktop/SLAM_project/build/_deps/sophus-src -O3 -DNDEBUG -std=gnu++2a -fPIE -o CMakeFiles/odometry_node.dir/ros1/OdometryServer.cpp.o -c /home/david/Desktop/SLAM_project/src/kiss-icp/ros/ros1/OdometryServer.cpp",
+  "file": "/home/david/Desktop/SLAM_project/src/kiss-icp/ros/ros1/OdometryServer.cpp",
+  "output": "kiss-icp/ros/CMakeFiles/odometry_node.dir/ros1/OdometryServer.cpp.o"
+},
+{
+  "directory": "/home/david/Desktop/SLAM_project/build/kiss-icp/ros/kiss_icp/core",
+  "command": "/usr/bin/c++ -DROS_BUILD_SHARED_LIBS=1 -DSOPHUS_USE_BASIC_LOGGING=1 -I/home/david/Desktop/SLAM_project/src/kiss-icp/cpp/kiss_icp/core -I/home/david/Desktop/SLAM_project/src/kiss-icp/cpp -isystem /usr/include/eigen3 -isystem /home/david/Desktop/SLAM_project/build/_deps/tessil-src/include -isystem /home/david/Desktop/SLAM_project/build/_deps/sophus-src -O3 -DNDEBUG -std=gnu++17 -fPIC -fdiagnostics-color=always -Werror -Wall -Wextra -pedantic -Wcast-align -Wcast-qual -Wconversion -Wdisabled-optimization -Woverloaded-virtual -o CMakeFiles/core.dir/Registration.cpp.o -c /home/david/Desktop/SLAM_project/src/kiss-icp/cpp/kiss_icp/core/Registration.cpp",
+  "file": "/home/david/Desktop/SLAM_project/src/kiss-icp/cpp/kiss_icp/core/Registration.cpp",
+  "output": "kiss-icp/ros/kiss_icp/core/CMakeFiles/core.dir/Registration.cpp.o"
+},
+{
+  "directory": "/home/david/Desktop/SLAM_project/build/kiss-icp/ros/kiss_icp/core",
+  "command": "/usr/bin/c++ -DROS_BUILD_SHARED_LIBS=1 -DSOPHUS_USE_BASIC_LOGGING=1 -I/home/david/Desktop/SLAM_project/src/kiss-icp/cpp/kiss_icp/core -I/home/david/Desktop/SLAM_project/src/kiss-icp/cpp -isystem /usr/include/eigen3 -isystem /home/david/Desktop/SLAM_project/build/_deps/tessil-src/include -isystem /home/david/Desktop/SLAM_project/build/_deps/sophus-src -O3 -DNDEBUG -std=gnu++17 -fPIC -fdiagnostics-color=always -Werror -Wall -Wextra -pedantic -Wcast-align -Wcast-qual -Wconversion -Wdisabled-optimization -Woverloaded-virtual -o CMakeFiles/core.dir/Deskew.cpp.o -c /home/david/Desktop/SLAM_project/src/kiss-icp/cpp/kiss_icp/core/Deskew.cpp",
+  "file": "/home/david/Desktop/SLAM_project/src/kiss-icp/cpp/kiss_icp/core/Deskew.cpp",
+  "output": "kiss-icp/ros/kiss_icp/core/CMakeFiles/core.dir/Deskew.cpp.o"
+},
+{
+  "directory": "/home/david/Desktop/SLAM_project/build/kiss-icp/ros/kiss_icp/core",
+  "command": "/usr/bin/c++ -DROS_BUILD_SHARED_LIBS=1 -DSOPHUS_USE_BASIC_LOGGING=1 -I/home/david/Desktop/SLAM_project/src/kiss-icp/cpp/kiss_icp/core -I/home/david/Desktop/SLAM_project/src/kiss-icp/cpp -isystem /usr/include/eigen3 -isystem /home/david/Desktop/SLAM_project/build/_deps/tessil-src/include -isystem /home/david/Desktop/SLAM_project/build/_deps/sophus-src -O3 -DNDEBUG -std=gnu++17 -fPIC -fdiagnostics-color=always -Werror -Wall -Wextra -pedantic -Wcast-align -Wcast-qual -Wconversion -Wdisabled-optimization -Woverloaded-virtual -o CMakeFiles/core.dir/VoxelHashMap.cpp.o -c /home/david/Desktop/SLAM_project/src/kiss-icp/cpp/kiss_icp/core/VoxelHashMap.cpp",
+  "file": "/home/david/Desktop/SLAM_project/src/kiss-icp/cpp/kiss_icp/core/VoxelHashMap.cpp",
+  "output": "kiss-icp/ros/kiss_icp/core/CMakeFiles/core.dir/VoxelHashMap.cpp.o"
+},
+{
+  "directory": "/home/david/Desktop/SLAM_project/build/kiss-icp/ros/kiss_icp/core",
+  "command": "/usr/bin/c++ -DROS_BUILD_SHARED_LIBS=1 -DSOPHUS_USE_BASIC_LOGGING=1 -I/home/david/Desktop/SLAM_project/src/kiss-icp/cpp/kiss_icp/core -I/home/david/Desktop/SLAM_project/src/kiss-icp/cpp -isystem /usr/include/eigen3 -isystem /home/david/Desktop/SLAM_project/build/_deps/tessil-src/include -isystem /home/david/Desktop/SLAM_project/build/_deps/sophus-src -O3 -DNDEBUG -std=gnu++17 -fPIC -fdiagnostics-color=always -Werror -Wall -Wextra -pedantic -Wcast-align -Wcast-qual -Wconversion -Wdisabled-optimization -Woverloaded-virtual -o CMakeFiles/core.dir/Preprocessing.cpp.o -c /home/david/Desktop/SLAM_project/src/kiss-icp/cpp/kiss_icp/core/Preprocessing.cpp",
+  "file": "/home/david/Desktop/SLAM_project/src/kiss-icp/cpp/kiss_icp/core/Preprocessing.cpp",
+  "output": "kiss-icp/ros/kiss_icp/core/CMakeFiles/core.dir/Preprocessing.cpp.o"
+},
+{
+  "directory": "/home/david/Desktop/SLAM_project/build/kiss-icp/ros/kiss_icp/core",
+  "command": "/usr/bin/c++ -DROS_BUILD_SHARED_LIBS=1 -DSOPHUS_USE_BASIC_LOGGING=1 -I/home/david/Desktop/SLAM_project/src/kiss-icp/cpp/kiss_icp/core -I/home/david/Desktop/SLAM_project/src/kiss-icp/cpp -isystem /usr/include/eigen3 -isystem /home/david/Desktop/SLAM_project/build/_deps/tessil-src/include -isystem /home/david/Desktop/SLAM_project/build/_deps/sophus-src -O3 -DNDEBUG -std=gnu++17 -fPIC -fdiagnostics-color=always -Werror -Wall -Wextra -pedantic -Wcast-align -Wcast-qual -Wconversion -Wdisabled-optimization -Woverloaded-virtual -o CMakeFiles/core.dir/Threshold.cpp.o -c /home/david/Desktop/SLAM_project/src/kiss-icp/cpp/kiss_icp/core/Threshold.cpp",
+  "file": "/home/david/Desktop/SLAM_project/src/kiss-icp/cpp/kiss_icp/core/Threshold.cpp",
+  "output": "kiss-icp/ros/kiss_icp/core/CMakeFiles/core.dir/Threshold.cpp.o"
+},
+{
+  "directory": "/home/david/Desktop/SLAM_project/build/kiss-icp/ros/kiss_icp/metrics",
+  "command": "/usr/bin/c++ -DROS_BUILD_SHARED_LIBS=1 -I/home/david/Desktop/SLAM_project/src/kiss-icp/cpp/kiss_icp/metrics -I/home/david/Desktop/SLAM_project/src/kiss-icp/cpp -isystem /usr/include/eigen3 -O3 -DNDEBUG -std=gnu++17 -fPIC -fdiagnostics-color=always -Werror -Wall -Wextra -pedantic -Wcast-align -Wcast-qual -Wconversion -Wdisabled-optimization -Woverloaded-virtual -o CMakeFiles/metrics.dir/Metrics.cpp.o -c /home/david/Desktop/SLAM_project/src/kiss-icp/cpp/kiss_icp/metrics/Metrics.cpp",
+  "file": "/home/david/Desktop/SLAM_project/src/kiss-icp/cpp/kiss_icp/metrics/Metrics.cpp",
+  "output": "kiss-icp/ros/kiss_icp/metrics/CMakeFiles/metrics.dir/Metrics.cpp.o"
+},
+{
+  "directory": "/home/david/Desktop/SLAM_project/build/kiss-icp/ros/kiss_icp/pipeline",
+  "command": "/usr/bin/c++ -DROS_BUILD_SHARED_LIBS=1 -DSOPHUS_USE_BASIC_LOGGING=1 -I/home/david/Desktop/SLAM_project/src/kiss-icp/cpp/kiss_icp/pipeline -I/home/david/Desktop/SLAM_project/src/kiss-icp/cpp -isystem /usr/include/eigen3 -isystem /home/david/Desktop/SLAM_project/build/_deps/tessil-src/include -isystem /home/david/Desktop/SLAM_project/build/_deps/sophus-src -O3 -DNDEBUG -std=gnu++17 -fPIC -fdiagnostics-color=always -Werror -Wall -Wextra -pedantic -Wcast-align -Wcast-qual -Wconversion -Wdisabled-optimization -Woverloaded-virtual -o CMakeFiles/pipeline.dir/KissICP.cpp.o -c /home/david/Desktop/SLAM_project/src/kiss-icp/cpp/kiss_icp/pipeline/KissICP.cpp",
+  "file": "/home/david/Desktop/SLAM_project/src/kiss-icp/cpp/kiss_icp/pipeline/KissICP.cpp",
+  "output": "kiss-icp/ros/kiss_icp/pipeline/CMakeFiles/pipeline.dir/KissICP.cpp.o"
+}
+]

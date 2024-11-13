@@ -6,4 +6,5 @@
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
 subdirs("ouster_runner")
+subdirs("kiss-icp/ros")
 subdirs("ouster-ros")
