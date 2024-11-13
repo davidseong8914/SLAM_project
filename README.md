@@ -38,7 +38,7 @@ nmcli connection show
 # expected response
 Wired connection 1 ethernet enp2s0 # HAS TO BE IN GREEN
 ```
-
+##
 ```
 # check LiDAR connection
 ping <LiDAR IP> # this should work
@@ -99,13 +99,9 @@ ouster-ros has 3 modes
 - replay recorded rosbag
 - record a new rosbag
 
-<b>1. Sensor Mode </b>
+<b>1. Sensor Mode </b><br>
 Following code should visualize live LiDAR through rviz
 ```
-### first tab
-roscore
-
-### second tab
 roslaunch ouster_ros driver.launch      \
     sensor_hostname:=<sensor host name or ip> 
 ```
@@ -113,10 +109,6 @@ roslaunch ouster_ros driver.launch      \
 <b>2. Recording Mode</b><br>
 Following code should record pointcloud data and save to SLAM_project/ as "bag file name"
 ```
-### first tab
-roscore
-
-### second tab
 roslaunch ouster_ros record.launch      \
     sensor_hostname:=<sensor host name> \
     bag_file:=<optional bag file name>  # has to be in "name.bag" format
@@ -127,10 +119,6 @@ roslaunch ouster_ros record.launch sensor_hostname:=<sensor ip> bag_file:=test.b
 
 <b>3. Replay Mode </b>
 ```
-### first tab
-roscore
-
-### second tab
 roslaunch ouster_ros replay.launch      \
     bag_file:=<path to rosbag file>     \
 
@@ -141,9 +129,10 @@ roslaunch ouster_ros replay.launch bag_file:=/home/david/Desktop/SLAM_project/te
 roslaunch ouster_ros replay.launch bag_file:=/home/david/Desktop/SLAM_project/test.bag loop:=true
 ```
 
-### 6. 
+11/12
+David: figure out map comparison method
+Andres: Simulation
+Dylan: Kiss ICP: Bag -> point 2 -> Kiss ICP
+11/13
+Adaptive speed based on point cloud density. then do comparison afterwards
 
-### X. What's Next?
-Dylan: KITTI data with KISS-ICP output, ROS1 bags to ROS2 bags -> KISS ICP <br>
-Andres: Simulation <br>
-David: Figure out map comparison for accuracy - origin, window method. Figure out GPS navigation for autonomous driving - Also don't think LiDAR is reaching 100m (max range) what is wrong?
