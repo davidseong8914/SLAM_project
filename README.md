@@ -101,7 +101,8 @@ ouster-ros has 3 modes
 
 <b>1. Sensor Mode </b>
 Following code should visualize live LiDAR through rviz
-```
+
+```linux
 ### first tab
 roscore
 
@@ -112,6 +113,7 @@ roslaunch ouster_ros driver.launch      \
 
 <b>2. Recording Mode</b><br>
 Following code should record pointcloud data and save to SLAM_project/ as "bag file name"
+
 ```
 ### first tab
 roscore
@@ -126,7 +128,8 @@ roslaunch ouster_ros record.launch sensor_hostname:=<sensor ip> bag_file:=test.b
 ```
 
 <b>3. Replay Mode </b>
-```
+
+```linux
 ### first tab
 roscore
 
@@ -141,15 +144,18 @@ roslaunch ouster_ros replay.launch bag_file:=/home/david/Desktop/SLAM_project/te
 roslaunch ouster_ros replay.launch bag_file:=/home/david/Desktop/SLAM_project/test.bag loop:=true
 ```
 
+
+### 6. MISC
 ```
 # visualize node graphs
 rqt_graph 
 ```
 
-
-### 6. 
-
 ### X. What's Next?
 Dylan: KITTI data with KISS-ICP output, ROS1 bags to ROS2 bags -> KISS ICP <br>
 Andres: Simulation <br>
 David: Figure out map comparison for accuracy - origin, window method. Figure out GPS navigation for autonomous driving - Also don't think LiDAR is reaching 100m (max range) what is wrong? 
+
+
+### 7. Clone KISS-ICP
+git clone --branch v0.3.0 --single-branch <LINK>
