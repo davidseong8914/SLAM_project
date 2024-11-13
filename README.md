@@ -158,4 +158,16 @@ David: Figure out map comparison for accuracy - origin, window method. Figure ou
 
 
 ### 7. Clone KISS-ICP
+
+```
 git clone --branch v0.3.0 --single-branch <LINK>
+git clone --branch v0.3.0 --single-branch https://github.com/PRBonn/kiss-icp.git
+pip install kiss-icp
+
+cd ~/Desktop/SLAM_project
+catkin_make
+source devel/setup.bash  # or source install/setup.bash for ROS2
+
+# code that runs kiss-icp
+roslaunch kiss_icp odometry.launch bagfile:=/home/david/Desktop/SLAM_project/bags/scaife_gazebo.bag topic:=/point2
+```
