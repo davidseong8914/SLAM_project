@@ -170,4 +170,5 @@ source devel/setup.bash  # or source install/setup.bash for ROS2
 
 # code that runs kiss-icp
 roslaunch kiss_icp odometry.launch bagfile:=/home/david/Desktop/SLAM_project/bags/scaife_gazebo.bag topic:=/point2
+roslaunch kiss_icp odometry.launch bagfile:=/home/david/Desktop/SLAM_project/bags/scaife_gazebo.bag topic:=/point
 ```
