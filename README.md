@@ -141,9 +141,15 @@ roslaunch ouster_ros replay.launch bag_file:=/home/david/Desktop/SLAM_project/te
 roslaunch ouster_ros replay.launch bag_file:=/home/david/Desktop/SLAM_project/test.bag loop:=true
 ```
 
+```
+# visualize node graphs
+rqt_graph 
+```
+
+
 ### 6. 
 
 ### X. What's Next?
 Dylan: KITTI data with KISS-ICP output, ROS1 bags to ROS2 bags -> KISS ICP <br>
 Andres: Simulation <br>
-David: Figure out map comparison for accuracy - origin, window method. Figure out GPS navigation for autonomous driving - Also don't think LiDAR is reaching 100m (max range) what is wrong?
+David: Figure out map comparison for accuracy - origin, window method. Figure out GPS navigation for autonomous driving - Also don't think LiDAR is reaching 100m (max range) what is wrong? 
