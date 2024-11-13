@@ -38,7 +38,7 @@ nmcli connection show
 # expected response
 Wired connection 1 ethernet enp2s0 # HAS TO BE IN GREEN
 ```
-##
+
 ```
 # check LiDAR connection
 ping <LiDAR IP> # this should work
@@ -141,7 +141,9 @@ roslaunch ouster_ros replay.launch bag_file:=/home/david/Desktop/SLAM_project/te
 roslaunch ouster_ros replay.launch bag_file:=/home/david/Desktop/SLAM_project/test.bag loop:=true
 ```
 
-### 6. What's Next?
+### 6. 
+
+### X. What's Next?
 Dylan: KITTI data with KISS-ICP output, ROS1 bags to ROS2 bags -> KISS ICP <br>
 Andres: Simulation <br>
-David: Figure out map comparison for accuracy - origin, window method. Figure out GPS navigation for autonomous driving
+David: Figure out map comparison for accuracy - origin, window method. Figure out GPS navigation for autonomous driving - Also don't think LiDAR is reaching 100m (max range) what is wrong?
