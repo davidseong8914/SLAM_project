@@ -152,18 +152,6 @@ roslaunch ouster_ros replay.launch bag_file:=/home/david/Desktop/SLAM_project/te
 rqt_graph 
 ```
 
-### X. What's Next?
-Dylan: KITTI data with KISS-ICP output, ROS1 bags to ROS2 bags -> KISS ICP <br>
-Andres: Simulation <br>
-David: Figure out map comparison for accuracy - origin, window method. Figure out GPS navigation for autonomous driving - Also don't think LiDAR is reaching 100m (max range) what is wrong? 
-
-11/12
-David: figure out map comparison method
-Andres: Simulation
-Dylan: Kiss ICP: Bag -> point 2 -> Kiss ICP
-11/13
-Adaptive speed based on point cloud density. then do comparison afterwards
-
 ### 7. Clone KISS-ICP
 
 ```
@@ -179,3 +167,20 @@ source devel/setup.bash  # or source install/setup.bash for ROS2
 roslaunch kiss_icp odometry.launch bagfile:=/home/david/Desktop/SLAM_project/bags/scaife_gazebo.bag topic:=/point2
 roslaunch kiss_icp odometry.launch bagfile:=/home/david/Desktop/SLAM_project/bags/scaife_gazebo.bag topic:=/point
 ```
+
+### X. What's Next?
+Dylan: KITTI data with KISS-ICP output, ROS1 bags to ROS2 bags -> KISS ICP <br>
+Andres: Simulation <br>
+David: Figure out map comparison for accuracy - origin, window method. Figure out GPS navigation for autonomous driving - Also don't think LiDAR is reaching 100m (max range) what is wrong? 
+
+11/12
+David: figure out map comparison method
+Andres: Simulation
+Dylan: Kiss ICP: Bag -> point 2 -> Kiss ICP
+11/13
+Adaptive speed based on point cloud density. then do comparison afterwards
+
+
+### XX. Trying use nodelet_mgr to convert lidar_packets to ouster/points2
+
+
