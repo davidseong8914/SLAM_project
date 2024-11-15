@@ -5,7 +5,12 @@ Adaptive Speed Optimization for SLAM Using KISS-ICP on a Rover Robot.
 ### 1. Basic Setup
 #### 1.1 Clone SLAM_project repository
 ```
+git clone --recurse-submodules https://github.com/davidseong8914/SLAM_project.git
+
+or
+
 git clone https://github.com/davidseong8914/SLAM_project.git
+git submodule update --init --recursive
 ```
 #### 1.2 Downloading necessary packages
 ``` linux
@@ -152,6 +157,12 @@ Dylan: KITTI data with KISS-ICP output, ROS1 bags to ROS2 bags -> KISS ICP <br>
 Andres: Simulation <br>
 David: Figure out map comparison for accuracy - origin, window method. Figure out GPS navigation for autonomous driving - Also don't think LiDAR is reaching 100m (max range) what is wrong? 
 
+11/12
+David: figure out map comparison method
+Andres: Simulation
+Dylan: Kiss ICP: Bag -> point 2 -> Kiss ICP
+11/13
+Adaptive speed based on point cloud density. then do comparison afterwards
 
 ### 7. Clone KISS-ICP
 
