@@ -1,3 +1,7 @@
 [submodule "src/ouster-ros"]
 	path = src/ouster-ros
 	url = https://github.com/ouster-lidar/ouster-ros.git
+
+[submodule "src/kiss-icp"]
+	path = src/kiss-icp
+	url = https://github.com/PRBonn/kiss-icp.git
