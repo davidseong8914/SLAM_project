@@ -149,7 +149,8 @@ roslaunch ouster_ros replay.launch bag_file:=/home/david/Desktop/SLAM_project/te
 ### 6. MISC
 ```
 # visualize node graphs
-rqt_graph 
+roslaunch ouster_ros replay.launch bag_file:=/home/david/Desktop/SLAM_project/bags/test.bag
+rqt_graph # creates a map of what's going on
 ```
 
 ### 7. Clone KISS-ICP
@@ -183,4 +184,18 @@ Adaptive speed based on point cloud density. then do comparison afterwards
 
 ### XX. Trying use nodelet_mgr to convert lidar_packets to ouster/points2
 
+```
+roscore
+
+# os_cloud_nodelet is responsible for subscribing to lidar_packets and imu_packets topics and convert them to PointCloud2 and IMU messages 
+
+# 
+rosbag record /ouster/points2
+
+roslaunch ouster_ros replay.launch bag_file:=/home/david/Desktop/SLAM_project/bags/gazebo_scaife.bag
+
+rosbag play --clock /home/david/Desktop/SLAM_project/bags/gazebo_scaife.bag
+
+rosbag info <name of bag createad> # to check
+```
 
