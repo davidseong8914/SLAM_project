@@ -101,13 +101,19 @@ ouster-ros has 3 modes
 
 <b>1. Sensor Mode </b><br>
 Following code should visualize live LiDAR through rviz
-```
+
+```linux
+### first tab
+roscore
+
+### second tab
 roslaunch ouster_ros driver.launch      \
     sensor_hostname:=<sensor host name or ip> 
 ```
 
 <b>2. Recording Mode</b><br>
 Following code should record pointcloud data and save to SLAM_project/ as "bag file name"
+
 ```
 roslaunch ouster_ros record.launch      \
     sensor_hostname:=<sensor host name> \
@@ -118,7 +124,12 @@ roslaunch ouster_ros record.launch sensor_hostname:=<sensor ip> bag_file:=test.b
 ```
 
 <b>3. Replay Mode </b>
-```
+
+```linux
+### first tab
+roscore
+
+### second tab
 roslaunch ouster_ros replay.launch      \
     bag_file:=<path to rosbag file>     \
 
@@ -129,10 +140,31 @@ roslaunch ouster_ros replay.launch bag_file:=/home/david/Desktop/SLAM_project/te
 roslaunch ouster_ros replay.launch bag_file:=/home/david/Desktop/SLAM_project/test.bag loop:=true
 ```
 
-11/12
-David: figure out map comparison method
-Andres: Simulation
-Dylan: Kiss ICP: Bag -> point 2 -> Kiss ICP
-11/13
-Adaptive speed based on point cloud density. then do comparison afterwards
 
+### 6. MISC
+```
+# visualize node graphs
+rqt_graph 
+```
+
+### X. What's Next?
+Dylan: KITTI data with KISS-ICP output, ROS1 bags to ROS2 bags -> KISS ICP <br>
+Andres: Simulation <br>
+David: Figure out map comparison for accuracy - origin, window method. Figure out GPS navigation for autonomous driving - Also don't think LiDAR is reaching 100m (max range) what is wrong? 
+
+
+### 7. Clone KISS-ICP
+
+```
+git clone --branch v0.3.0 --single-branch <LINK>
+git clone --branch v0.3.0 --single-branch https://github.com/PRBonn/kiss-icp.git
+pip install kiss-icp
+
+cd ~/Desktop/SLAM_project
+catkin_make
+source devel/setup.bash  # or source install/setup.bash for ROS2
+
+# code that runs kiss-icp
+roslaunch kiss_icp odometry.launch bagfile:=/home/david/Desktop/SLAM_project/bags/scaife_gazebo.bag topic:=/point2
+roslaunch kiss_icp odometry.launch bagfile:=/home/david/Desktop/SLAM_project/bags/scaife_gazebo.bag topic:=/point
+```

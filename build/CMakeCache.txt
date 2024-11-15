@@ -29,6 +29,12 @@ BUILD_PCAP:BOOL=OFF
 //Build dynamically-linked binaries
 BUILD_SHARED_LIBS:BOOL=ON
 
+//Build examples.
+BUILD_SOPHUS_EXAMPLES:BOOL=OFF
+
+//Build tests.
+BUILD_SOPHUS_TESTS:BOOL=OFF
+
 //Build tests
 BUILD_TESTING:BOOL=OFF
 
@@ -92,6 +98,9 @@ CATKIN_SYMLINK_INSTALL:BOOL=OFF
 
 //List of ';' separated packages to build
 CATKIN_WHITELIST_PACKAGES:STRING=
+
+//Path to a program.
+CCACHE_PATH:FILEPATH=CCACHE_PATH-NOTFOUND
 
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
@@ -393,6 +402,33 @@ EMPY_SCRIPT:STRING=/usr/lib/python3/dist-packages/em.py
 //The directory containing a CMake configuration file for Eigen3.
 Eigen3_DIR:PATH=/usr/lib/cmake/eigen3
 
+//Directory under which to collect all populated content
+FETCHCONTENT_BASE_DIR:PATH=/home/david/Desktop/SLAM_project/build/_deps
+
+//Disables all attempts to download or update content and assumes
+// source dirs already exist
+FETCHCONTENT_FULLY_DISCONNECTED:BOOL=OFF
+
+//Enables QUIET option for all content population
+FETCHCONTENT_QUIET:BOOL=ON
+
+//When not empty, overrides where to find pre-populated content
+// for sophus
+FETCHCONTENT_SOURCE_DIR_SOPHUS:PATH=
+
+//When not empty, overrides where to find pre-populated content
+// for tessil
+FETCHCONTENT_SOURCE_DIR_TESSIL:PATH=
+
+//Enables UPDATE_DISCONNECTED behavior for all content population
+FETCHCONTENT_UPDATES_DISCONNECTED:BOOL=OFF
+
+//Enables UPDATE_DISCONNECTED behavior just for population of sophus
+FETCHCONTENT_UPDATES_DISCONNECTED_SOPHUS:BOOL=OFF
+
+//Enables UPDATE_DISCONNECTED behavior just for population of tessil
+FETCHCONTENT_UPDATES_DISCONNECTED_TESSIL:BOOL=OFF
+
 //Path to a library.
 GMOCK_LIBRARY:FILEPATH=GMOCK_LIBRARY-NOTFOUND
 
@@ -487,11 +523,47 @@ SETUPTOOLS_DEB_LAYOUT:BOOL=ON
 //Name of the computer/site where compile is being run
 SITE:STRING=david-Inspiron-15-7000-Gaming
 
+//Generate the install target.
+SOPHUS_INSTALL:BOOL=OFF
+
+//Use basic logging (in ensure and test macros)
+SOPHUS_USE_BASIC_LOGGING:BOOL=ON
+
+//Value Computed by CMake
+Sophus_BINARY_DIR:STATIC=/home/david/Desktop/SLAM_project/build/_deps/sophus-build
+
+//The directory containing a CMake configuration file for Sophus.
+Sophus_DIR:PATH=Sophus_DIR-NOTFOUND
+
+//Value Computed by CMake
+Sophus_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+Sophus_SOURCE_DIR:STATIC=/home/david/Desktop/SLAM_project/build/_deps/sophus-src
+
+//The directory containing a CMake configuration file for TBB.
+TBB_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/TBB
+
 //LSB Distrib tag
 UBUNTU:BOOL=TRUE
 
 //LSB Distrib - codename tag
 UBUNTU_FOCAL:BOOL=TRUE
+
+//Build using Ccache if found on the path
+USE_CCACHE:BOOL=ON
+
+//Use system pre-installed Eigen
+USE_SYSTEM_EIGEN3:BOOL=ON
+
+//Use system pre-installed Sophus
+USE_SYSTEM_SOPHUS:BOOL=ON
+
+//Use system pre-installed oneAPI/tbb
+USE_SYSTEM_TBB:BOOL=ON
+
+//Use system pre-installed tsl_robin
+USE_SYSTEM_TSL-ROBIN-MAP:BOOL=ON
 
 //Path to a file.
 _gmock_INCLUDES:FILEPATH=/usr/src/googletest/googlemock/include/gmock/gmock.h
@@ -605,6 +677,24 @@ gtest_main_LIB_DEPENDS:STATIC=general;gtest;
 //The directory containing a CMake configuration file for jsoncpp.
 jsoncpp_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/jsoncpp
 
+//Value Computed by CMake
+kiss_icp_BINARY_DIR:STATIC=/home/david/Desktop/SLAM_project/build/kiss-icp/ros
+
+//Value Computed by CMake
+kiss_icp_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+kiss_icp_SOURCE_DIR:STATIC=/home/david/Desktop/SLAM_project/src/kiss-icp/ros
+
+//Value Computed by CMake
+kiss_icp_cpp_BINARY_DIR:STATIC=/home/david/Desktop/SLAM_project/build/kiss-icp/ros/kiss_icp
+
+//Value Computed by CMake
+kiss_icp_cpp_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+kiss_icp_cpp_SOURCE_DIR:STATIC=/home/david/Desktop/SLAM_project/src/kiss-icp/cpp/kiss_icp
+
 //Path to a library.
 lib:FILEPATH=/opt/ros/noetic/lib/librospack.so
 
@@ -616,6 +706,9 @@ message_generation_DIR:PATH=/opt/ros/noetic/share/message_generation/cmake
 
 //The directory containing a CMake configuration file for message_runtime.
 message_runtime_DIR:PATH=/opt/ros/noetic/share/message_runtime/cmake
+
+//The directory containing a CMake configuration file for nav_msgs.
+nav_msgs_DIR:PATH=/opt/ros/noetic/share/nav_msgs/cmake
 
 //The directory containing a CMake configuration file for nodelet.
 nodelet_DIR:PATH=/opt/ros/noetic/share/nodelet/cmake
@@ -668,6 +761,12 @@ pkgcfg_lib_pkg_curl_curl:FILEPATH=/usr/lib/x86_64-linux-gnu/libcurl.so
 //The directory containing a CMake configuration file for pluginlib.
 pluginlib_DIR:PATH=/opt/ros/noetic/share/pluginlib/cmake
 
+//The directory containing a CMake configuration file for rosbag.
+rosbag_DIR:PATH=/opt/ros/noetic/share/rosbag/cmake
+
+//The directory containing a CMake configuration file for rosbag_storage.
+rosbag_storage_DIR:PATH=/opt/ros/noetic/share/rosbag_storage/cmake
+
 //The directory containing a CMake configuration file for rosconsole.
 rosconsole_DIR:PATH=/opt/ros/noetic/share/rosconsole/cmake
 
@@ -688,6 +787,9 @@ rosgraph_msgs_DIR:PATH=/opt/ros/noetic/share/rosgraph_msgs/cmake
 
 //The directory containing a CMake configuration file for roslib.
 roslib_DIR:PATH=/opt/ros/noetic/share/roslib/cmake
+
+//The directory containing a CMake configuration file for roslz4.
+roslz4_DIR:PATH=/opt/ros/noetic/share/roslz4/cmake
 
 //The directory containing a CMake configuration file for rospack.
 rospack_DIR:PATH=/opt/ros/noetic/share/rospack/cmake
@@ -710,6 +812,9 @@ spdlog_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/spdlog
 //The directory containing a CMake configuration file for std_msgs.
 std_msgs_DIR:PATH=/opt/ros/noetic/share/std_msgs/cmake
 
+//The directory containing a CMake configuration file for std_srvs.
+std_srvs_DIR:PATH=/opt/ros/noetic/share/std_srvs/cmake
+
 //The directory containing a CMake configuration file for tf2.
 tf2_DIR:PATH=/opt/ros/noetic/share/tf2/cmake
 
@@ -724,6 +829,21 @@ tf2_py_DIR:PATH=/opt/ros/noetic/share/tf2_py/cmake
 
 //The directory containing a CMake configuration file for tf2_ros.
 tf2_ros_DIR:PATH=/opt/ros/noetic/share/tf2_ros/cmake
+
+//The directory containing a CMake configuration file for topic_tools.
+topic_tools_DIR:PATH=/opt/ros/noetic/share/topic_tools/cmake
+
+//Value Computed by CMake
+tsl-robin-map_BINARY_DIR:STATIC=/home/david/Desktop/SLAM_project/build/_deps/tessil-build
+
+//The directory containing a CMake configuration file for tsl-robin-map.
+tsl-robin-map_DIR:PATH=tsl-robin-map_DIR-NOTFOUND
+
+//Value Computed by CMake
+tsl-robin-map_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+tsl-robin-map_SOURCE_DIR:STATIC=/home/david/Desktop/SLAM_project/build/_deps/tessil-src
 
 //The directory containing a CMake configuration file for xmlrpcpp.
 xmlrpcpp_DIR:PATH=/opt/ros/noetic/share/xmlrpcpp/cmake
@@ -904,7 +1024,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=8
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=15
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

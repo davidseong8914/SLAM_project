@@ -7,10 +7,5 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/david/Desktop/SLAM_project/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/home/david/Desktop/SLAM_project/devel/lib:$LD_LIBRARY_PATH"
-export PKG_CONFIG_PATH="/home/david/Desktop/SLAM_project/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
+export PATH='/opt/ros/noetic/bin:/home/david/Desktop/SLAM_project/slam_project/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
 export PWD='/home/david/Desktop/SLAM_project/build'
-export PYTHONPATH="/home/david/Desktop/SLAM_project/devel/lib/python3/dist-packages:$PYTHONPATH"
-export ROSLISP_PACKAGE_DIRECTORIES='/home/david/Desktop/SLAM_project/devel/share/common-lisp'
-export ROS_PACKAGE_PATH="/home/david/Desktop/SLAM_project/src:$ROS_PACKAGE_PATH"
