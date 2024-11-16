@@ -194,8 +194,32 @@ rosbag record /ouster/points2
 
 roslaunch ouster_ros replay.launch bag_file:=/home/david/Desktop/SLAM_project/bags/gazebo_scaife.bag
 
-rosbag play --clock /home/david/Desktop/SLAM_project/bags/gazebo_scaife.bag
+rosbag play --clock -r 0.5 /home/david/Desktop/SLAM_project/bags/gazebo_scaife.bag
+
+<!-- rosbag play --clock /home/david/Desktop/SLAM_project/bags/gazebo_scaife.bag -->
 
 rosbag info <name of bag createad> # to check
+
+./script/bag_point2.sh
 ```
 
+
+```
+############
+/ouster/points2 is not being published - recorded bags are empty
+
+rosnodelist # to check what nodes are running
+rostopic echo /ouster/lidar_packets # check if lidar packets are publishing
+rostopic info /ouster/points2 # check points 2 info
+# publishers: /ouster/os_nodelet_mgr
+# subscribers: /record, /rviz
+```
+
+I think I will need metadata files - interpret raw packets from PCAP files to point clouds
+
+Think there might also be a KISS-ICP library within ouster-sdk 
+
+#### XX.X KISS-ICP library from ouster-sdk
+```
+
+```
