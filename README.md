@@ -221,5 +221,51 @@ Think there might also be a KISS-ICP library within ouster-sdk
 
 #### XX.X KISS-ICP library from ouster-sdk
 ```
+# sample code used in the video
+# video : https://www.youtube.com/watch?v=ynQElUsVnbM
+ouster-cli source my_data.pcap slam viz -r0 --acum-map --accum-map-ratio 0.05
+
+
+# live
+roslaunch ouster_ros driver.launch sensor_hostname:=<sensor_ip>
+# <A> replay ex
+roslaunch ouster_ros replay.launch bag_file:=/home/david/Desktop/SLAM_project/bags/scaife_people.bag
+
+# <B> kiss_icp
+roslaunch kiss_icp odometry.launch input_cloud_topic:=/ouster/points2
+
+# <C> rqt_graph
+
+<A> + <C> gives
+```
+![replay](images/replay_rqt_graph.jpg)
 
 ```
+<A> + <B> + <C> gives
+```
+![RQTgraph](images/kissrqtgraph.png)
+
+#### XX.X
+1. will try recording pcap
+    - you can't record as pcap
+    - instead I've implemented recording bags, metadata
+2. run KISS-ICP live
+    - this runs .pcap as source so there's got to be a way to convert what we have now to .pcap or source rosbags or something
+
+
+```
+# 1. this saves both metadata and bag to bags/
+roslaunch ouster_ros record.launch sensor_hostname:=<sensor_ip> bag_file:=meta_bag.bag metadata:=/home/david/Desktop/SLAM_project/bags/test_meta.json
+
+# 2. 
+ouster-cli source 169.254.99.87 slam viz -r0 --acum-map --accum-map-ratio 0.05
+
+# output 
+Error: No such option: --acum-map (Possible options: --accum-every-m, --accum-num, --map)
+
+~/Desktop/SLAM_project$ ouster-cli source <sensor_ip> slam viz -r1 --map
+```
+![slam](images/slam4.png)
+![slam2](images/slam3.png)
+
+this just accumulates all the points. trajectory is also mapped
