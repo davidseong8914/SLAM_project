@@ -1,9 +1,11 @@
-# SLAM_project
+# ADD-SLAM (Adaptive Density Drive)
+### Operating Ouster LiDAR (OS0 - 64) on Ubuntu 20.04.12
 Adaptive Speed Optimization for SLAM Using KISS-ICP on a Rover Robot.
 
-## Operating Ouster LiDAR (OS0 - 64) on Ubuntu 20.04.12
-### 1. Basic Setup
-#### 1.1 Clone SLAM_project repository
+
+## 1. Ouster-SDK
+### 1.1 Basic Setup
+#### 1.1.1 Clone SLAM_project repository
 ```
 git clone --recurse-submodules https://github.com/davidseong8914/SLAM_project.git
 
@@ -12,7 +14,7 @@ or
 git clone https://github.com/davidseong8914/SLAM_project.git
 git submodule update --init --recursive
 ```
-#### 1.2 Downloading necessary packages
+#### 1.1.2 Install necessary packages
 ``` linux
 sudo apt update
 sudo apt install python3.8-venv 
@@ -23,27 +25,27 @@ pip install ouster-sdk
 pip list | grep ouster # to check ouster installation
 ```
 
-### 2. Hardware Setup
-#### 2.1 Ethernet Connection (1Gb) <br>
+### 1.2 Hardware Setup
+#### 1.2.1 Ethernet Connection (1Gb)
 *** On Windows - Network Settings > Automatic (DHCP)<br>
 *** On Ubuntu - Network Settings > eth0: Link-Local <br>
-#### 2.2 Power LiDAR <br>
+#### 1.2.2 Power LiDAR 
 - Battery (29.6V) - Converter (24V, >1000mAh + Low Voltage Buzzer) - LiDAR
 
-### 3. Software Setup
+### 1.3 Software Setup
 ``` linux
 # virtual environment
 python3 -m venv slam_project
 source slam_project/bin/activate
 ```
-## THIS IS THE MOST IMPORTANT PART
 ```
 # checking ethernet connection
 nmcli connection show
 # expected response
 Wired connection 1 ethernet enp2s0 # HAS TO BE IN GREEN
 ```
-##
+
+#### When configuring for the first time
 ```
 # check LiDAR connection
 ping <LiDAR IP> # this should work
@@ -53,14 +55,117 @@ ping <LiDAR IP> # this should work
 ## Navigate to "Configurations" tab > "UDP Destination Address" > "Set Local" > "Apply Config"
 ```
 
-### 4. Run LiDAR
+### 1.4 Using LiDAR
+
+#### 1.4.1 Realtime point cloud visualization
 ```
 # shows realtime point cloud data
 ouster-cli source <LiDAR IP> viz 
 ```
+![realtime](images/viz.png)
 
-### 5. Using the ouster-ros driver
-#### 5.1 Setup
+#### 1.4.2 ouster-sdk slam
+```
+# Ouster-sdk -> slam
+ouster-cli source <sensor_ip> slam viz -r0 --acum-map --accum-map-ratio 0.05
+
+# THIS DOES KISS-ICP SLAM
+~/Desktop/SLAM_project$ ouster-cli source <sensor_ip> slam viz -r1 --map
+
+# this runs and saves as .osf (can also save as .las, .ply)
+ouster-cli source <sensor_ip> slam viz save test.osf
+```
+![slam (A)](images/slam4.png)
+![slam2 (A)](images/slam3.png)
+
+#### 1.4.3 SLAM --help 
+<b>[Ouster-slam documentation](https://static.ouster.dev/sdk-docs/cli/mapping-sessions.html#ouster-cli-mapping_)</b>
+
+default arguments: Max range, min range, voxel settings
+```
+ouster-cli source <sensor_ip> slam --help
+
+  Example values for voxel_size:
+      Outdoor: 0.8 - 1.5
+      Large indoor: 0.4 - 0.8
+      Small indoor: 0.1 - 0.5
+
+*** Small voxel size could give more accurate results but take more memory and longer processing. *** 
+
+Options:
+  --max-range FLOAT       Max valid range
+  --min-range FLOAT       Min valid range
+  -v, --voxel-size FLOAT  Voxel map size
+  --help                  Show this message and exit.
+```
+
+save arguments:
+```
+ouster-cli source <sensor_ip> slam save --help
+
+Save to an OSF, PCAP, CSV, BAG, PCD, LAS, or PLY with the given filename. If only an extension is provided, the file is named automatically.
+```
+visualization arguments:
+```
+ouster-cli source <sensor_ip> slam viz --help
+
+-r, --rate [0.25|0.5|0.75|1|1.5|2|3|max] Playback rate.
+--accum-num INTEGER             Accumulate up to this number of past scans
+                                  for visualization. Use <= 0 for unlimited.
+                                  Defaults to 100 if --accum-every or --accum-
+                                  every-m is set.
+  --accum-every INTEGER           Add a new scan to the accumulator every this
+                                  number of scans.
+  --accum-every-m FLOAT           Add a new scan to the accumulator after this
+                                  many meters of travel.
+  --map                           If set, add random points from every scan
+                                  into an overall map for visualization.
+                                  Enabled if either --map-ratio or --map-size
+                                  are set.
+  --map-ratio FLOAT               Fraction of random points in every scan to
+                                  add to overall map (0, 1]. [default: 0.01]
+  --map-size INTEGER              Maximum number of points in overall map
+                                  before discarding. [default: 1500000]
+```
+#### 1.4.4 Testing 
+
+```
+# .ply map to use as input for cloud compare
+ouster-cli source <sensor_ip> slam viz --map save test_1.ply 
+# viz - visualize
+# save compare.ply - save file
+# --map - samples points and maps
+```
+
+Sample run (Nov 17 2024)
+```
+ouster-cli source <sensor_ip> slam viz --map --map-ratio 0.1 save test_2.ply # experiment with smaller map-ratio
+
+# output
+INFO:mapping:Point Cloud status info
+12910592 points accumulated during this period,
+9225581 down sampling points are removed [71.46 %],
+3582933 out range points are removed [27.75 %],
+102078 points are saved [0.79 %].
+INFO:mapping:Finished point cloud saving.
+```
+
+### 1.5 CloudCompare
+#### 1.5.1 Install Cloud Compare
+Install CloudCompare from [Link](https://www.danielgm.net/cc/) or Ubuntu Software
+
+#### 1.5.2 Obtain 2 Diffrerent Maps(.ply) of the environment
+sample code:
+```
+ouster-cli source <sensor_ip> slam viz --map save test_1.ply 
+```
+
+#### 1.5.3 Compare
+follow [Link](https://www.youtube.com/watch?v=MQiD4HjhpAU) to compare the maps
+![Sample_map](images/cloud_compare.png)
+
+## 2. Ouster-ROS
+### 2.1 Setup
 Follow instructions at: https://github.com/ouster-lidar/ouster-ros 
 <br><br>
 or
@@ -98,7 +203,7 @@ source /opt/ros/<ros-distro>/setup.bash # replace ros-distro with 'melodic' or '
 catkin_make --cmake-args -DCMAKE_BUILD_TYPE=Release
 ```
 
-#### 5.2 Usage
+### 2.2 Usage
 ouster-ros has 3 modes
 - live sensor display
 - replay recorded rosbag
@@ -146,14 +251,16 @@ roslaunch ouster_ros replay.launch bag_file:=/home/david/Desktop/SLAM_project/te
 ```
 
 
-### 6. MISC
+### 2.3. MISC
+#### 2.3.1 Visualize node graphs
+
 ```
-# visualize node graphs
 roslaunch ouster_ros replay.launch bag_file:=/home/david/Desktop/SLAM_project/bags/test.bag
 rqt_graph # creates a map of what's going on
 ```
+![replay](images/replay_rqt_graph.jpg)
 
-### 7. Clone KISS-ICP
+### 2.3.2 Clone KISS-ICP
 
 ```
 git clone --branch v0.3.0 --single-branch <LINK>
@@ -166,106 +273,18 @@ source devel/setup.bash  # or source install/setup.bash for ROS2
 
 # code that runs kiss-icp
 roslaunch kiss_icp odometry.launch bagfile:=/home/david/Desktop/SLAM_project/bags/scaife_gazebo.bag topic:=/point2
-roslaunch kiss_icp odometry.launch bagfile:=/home/david/Desktop/SLAM_project/bags/scaife_gazebo.bag topic:=/point
 ```
 
-### X. What's Next?
-Dylan: KITTI data with KISS-ICP output, ROS1 bags to ROS2 bags -> KISS ICP <br>
-Andres: Simulation <br>
-David: Figure out map comparison for accuracy - origin, window method. Figure out GPS navigation for autonomous driving - Also don't think LiDAR is reaching 100m (max range) what is wrong? 
-
-11/12
-David: figure out map comparison method
-Andres: Simulation
-Dylan: Kiss ICP: Bag -> point 2 -> Kiss ICP
-11/13
-Adaptive speed based on point cloud density. then do comparison afterwards
+## 3. What's Next?
+11/17
+- master Cloud compare: similar software
+    - explore real time comparison
+    - other map accuracy comparison methods?
+- LiDAR - Patrick hardware interface
+- GPS navigation
+- Lidar Max range, # point sampling - optimize
+- Adaptive speed based on point cloud density
 
 
-### XX. Trying use nodelet_mgr to convert lidar_packets to ouster/points2
-
-```
-roscore
-
-# os_cloud_nodelet is responsible for subscribing to lidar_packets and imu_packets topics and convert them to PointCloud2 and IMU messages 
-
-# 
-rosbag record /ouster/points2
-
-roslaunch ouster_ros replay.launch bag_file:=/home/david/Desktop/SLAM_project/bags/gazebo_scaife.bag
-
-rosbag play --clock -r 0.5 /home/david/Desktop/SLAM_project/bags/gazebo_scaife.bag
-
-<!-- rosbag play --clock /home/david/Desktop/SLAM_project/bags/gazebo_scaife.bag -->
-
-rosbag info <name of bag createad> # to check
-
-./script/bag_point2.sh
-```
 
 
-```
-############
-/ouster/points2 is not being published - recorded bags are empty
-
-rosnodelist # to check what nodes are running
-rostopic echo /ouster/lidar_packets # check if lidar packets are publishing
-rostopic info /ouster/points2 # check points 2 info
-# publishers: /ouster/os_nodelet_mgr
-# subscribers: /record, /rviz
-```
-
-I think I will need metadata files - interpret raw packets from PCAP files to point clouds
-
-Think there might also be a KISS-ICP library within ouster-sdk 
-
-#### XX.X KISS-ICP library from ouster-sdk
-```
-# sample code used in the video
-# video : https://www.youtube.com/watch?v=ynQElUsVnbM
-ouster-cli source my_data.pcap slam viz -r0 --acum-map --accum-map-ratio 0.05
-
-
-# live
-roslaunch ouster_ros driver.launch sensor_hostname:=<sensor_ip>
-# <A> replay ex
-roslaunch ouster_ros replay.launch bag_file:=/home/david/Desktop/SLAM_project/bags/scaife_people.bag
-
-# <B> kiss_icp
-roslaunch kiss_icp odometry.launch input_cloud_topic:=/ouster/points2
-
-# <C> rqt_graph
-
-<A> + <C> gives
-```
-![replay](images/replay_rqt_graph.jpg)
-
-```
-<A> + <B> + <C> gives
-```
-![RQTgraph](images/kissrqtgraph.png)
-
-#### XX.X
-1. will try recording pcap
-    - you can't record as pcap
-    - instead I've implemented recording bags, metadata
-2. run KISS-ICP live
-    - this runs .pcap as source so there's got to be a way to convert what we have now to .pcap or source rosbags or something
-
-
-```
-# 1. this saves both metadata and bag to bags/
-roslaunch ouster_ros record.launch sensor_hostname:=<sensor_ip> bag_file:=meta_bag.bag metadata:=/home/david/Desktop/SLAM_project/bags/test_meta.json
-
-# 2. 
-ouster-cli source 169.254.99.87 slam viz -r0 --acum-map --accum-map-ratio 0.05
-
-# output 
-Error: No such option: --acum-map (Possible options: --accum-every-m, --accum-num, --map)
-
-~/Desktop/SLAM_project$ ouster-cli source <sensor_ip> slam viz -r1 --map
-```
-![slam](images/slam4.png)
-![slam2](images/slam3.png)
-
-this just accumulates all the points. trajectory is also mapped
