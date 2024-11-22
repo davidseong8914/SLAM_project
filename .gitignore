@@ -4,3 +4,4 @@ slam_project/
 src/ouster-ros
 bags/
 images/screenshots/
+ohio_bags/*.bag
