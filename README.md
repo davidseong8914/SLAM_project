@@ -64,7 +64,7 @@ ouster-cli source <LiDAR IP> viz
 ```
 ![realtime](images/viz.png)
 
-#### 1.4.2 ouster-sdk slam
+#### 1.4.2 ouster-sdk live SLAM
 ```
 # Ouster-sdk -> slam
 ouster-cli source <sensor_ip> slam viz -r0 --acum-map --accum-map-ratio 0.05
@@ -78,7 +78,16 @@ ouster-cli source <sensor_ip> slam viz save test.osf
 ![slam (A)](images/slam4.png)
 ![slam2 (A)](images/slam3.png)
 
-#### 1.4.3 SLAM --help 
+#### 1.4.5 ouster-sdk recorded SLAM
+```
+ouster-cli source bags/scaife_gazebo.bag slam viz -r2 --map
+# r2 = point cloud playback rate
+```
+![scaife to gazebo SLAM](images/scaife_gazebo_2.png)
+
+
+
+#### 1.4.4 SLAM --help 
 <b>[Ouster-slam documentation](https://static.ouster.dev/sdk-docs/cli/mapping-sessions.html#ouster-cli-mapping_)</b>
 
 default arguments: Max range, min range, voxel settings
@@ -127,7 +136,7 @@ ouster-cli source <sensor_ip> slam viz --help
   --map-size INTEGER              Maximum number of points in overall map
                                   before discarding. [default: 1500000]
 ```
-#### 1.4.4 Testing 
+#### 1.4.5 Testing 
 
 ```
 # .ply map to use as input for cloud compare
