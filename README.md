@@ -82,6 +82,15 @@ ouster-cli source <sensor_ip> slam viz save test.osf
 ```
 ouster-cli source bags/scaife_gazebo.bag slam viz -r2 --map
 # r2 = point cloud playback rate
+
+# adding voxels dramatically improve visualization
+ouster-cli source bags/scaife_gazebo.bag slam -v 2.0 viz -r2 --map
+
+# BEST PERFORMANCE FOR NOW | 2024 NOV 23
+ouster-cli source bags/scaife_gazebo.bag slam -v 2.0 viz -r2 --map-ratio 0.01
+
+# try this for cool visuals
+# ouster-cli source bags/scaife_gazebo.bag slam -v 5.0 --min-range 50.0 viz -r2 --map
 ```
 ![scaife to gazebo SLAM](images/scaife_gazebo_2.png)
 

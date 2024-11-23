@@ -41,7 +41,7 @@ Chevron > 2022 Trip Files
 - KISS-ICP maps are not as good as I thought they were going to be(?)
 
 ![ohio vegetation SLAM](../images/ohio_2.png)
-
+![ohio SLAM param set](../images/ohio_param.png)
 
 #### B. KISS-ICP on packets (ouster bags)
 ouster-cli source bags/gazebo_scaife.bag slam viz -r2 --map
