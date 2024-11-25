@@ -18,8 +18,25 @@ Chevron > 2022 Trip Files
         - /os_cloud_node/imu : sensor_msgs/Imu
     - /os_cloud_node/points : sensor_msgs/PointCloud2
 
+
+<!-- NOV 22 18:44 | Working on bag visualization-->
+### Part 1
+#### A.Visualization
+
+```
+1. roscore
+2. rviz (bottom-left > add > PointCloud2 > set topic to /os_cloud_node/points)
+3. rosrun tf2_ros static_transform_publisher 0 0 0 0 0 0 map os_sensor
+4. rosbag play 2022-11-10-14-19-57.bag
+```
+
+2022-11-10-14-19-57.bag : is in a room<br>
+2022-11-11-14-40-33.bag : traversing vegetation<br>
+2022-11-14-10-57-26.bag : static in vegetation
+
+
 <!-- NOV 23 | SLAM on Ohio Bags, ouster-ros bags saved in point clouds, scans, IMU-->
-### PoA 2
+### Part 2
 - A. KISS-ICP on Ohio Bags
 - B. KISS-ICP on packets
     - Interface from packets - point clouds, etc
@@ -48,5 +65,4 @@ ouster-cli source bags/gazebo_scaife.bag slam viz -r2 --map
 
 ##### B. Results
 - max range is way less than 100m
-
 ![scaife to gazebo walk](../images/scaife_gazebo_2.png)
