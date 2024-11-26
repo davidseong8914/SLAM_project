@@ -1,7 +1,7 @@
 # Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
 # file Copyright.txt or https://cmake.org/licensing for details.
 
-cmake_minimum_required(VERSION ${CMAKE_VERSION}) # this file comes with cmake
+cmake_minimum_required(VERSION 3.5)
 
 function(check_file_hash has_hash hash_is_good)
   if("${has_hash}" STREQUAL "")
@@ -21,14 +21,14 @@ function(check_file_hash has_hash hash_is_good)
 
   set("${has_hash}" TRUE PARENT_SCOPE)
 
-  message(VERBOSE "verifying file...
+  message(STATUS "verifying file...
        file='/home/david/Desktop/SLAM_project/build/_deps/tessil-subbuild/tessil-populate-prefix/src/v1.2.1.tar.gz'")
 
   file("" "/home/david/Desktop/SLAM_project/build/_deps/tessil-subbuild/tessil-populate-prefix/src/v1.2.1.tar.gz" actual_value)
 
   if(NOT "${actual_value}" STREQUAL "")
     set("${hash_is_good}" FALSE PARENT_SCOPE)
-    message(VERBOSE " hash of
+    message(STATUS " hash of
     /home/david/Desktop/SLAM_project/build/_deps/tessil-subbuild/tessil-populate-prefix/src/v1.2.1.tar.gz
   does not match expected value
     expected: ''
@@ -44,7 +44,7 @@ function(sleep_before_download attempt)
   endif()
 
   if(attempt EQUAL 1)
-    message(VERBOSE "Retrying...")
+    message(STATUS "Retrying...")
     return()
   endif()
 
@@ -66,26 +66,34 @@ function(sleep_before_download attempt)
     set(sleep_seconds 1200)
   endif()
 
-  message(VERBOSE "Retry after ${sleep_seconds} seconds (attempt #${attempt}) ...")
+  message(STATUS "Retry after ${sleep_seconds} seconds (attempt #${attempt}) ...")
 
   execute_process(COMMAND "${CMAKE_COMMAND}" -E sleep "${sleep_seconds}")
 endfunction()
+
+if("/home/david/Desktop/SLAM_project/build/_deps/tessil-subbuild/tessil-populate-prefix/src/v1.2.1.tar.gz" STREQUAL "")
+  message(FATAL_ERROR "LOCAL can't be empty")
+endif()
+
+if("https://github.com/Tessil/robin-map/archive/refs/tags/v1.2.1.tar.gz" STREQUAL "")
+  message(FATAL_ERROR "REMOTE can't be empty")
+endif()
 
 if(EXISTS "/home/david/Desktop/SLAM_project/build/_deps/tessil-subbuild/tessil-populate-prefix/src/v1.2.1.tar.gz")
   check_file_hash(has_hash hash_is_good)
   if(has_hash)
     if(hash_is_good)
-      message(VERBOSE "File already exists and hash match (skip download):
+      message(STATUS "File already exists and hash match (skip download):
   file='/home/david/Desktop/SLAM_project/build/_deps/tessil-subbuild/tessil-populate-prefix/src/v1.2.1.tar.gz'
   =''"
       )
       return()
     else()
-      message(VERBOSE "File already exists but hash mismatch. Removing...")
+      message(STATUS "File already exists but hash mismatch. Removing...")
       file(REMOVE "/home/david/Desktop/SLAM_project/build/_deps/tessil-subbuild/tessil-populate-prefix/src/v1.2.1.tar.gz")
     endif()
   else()
-    message(VERBOSE "File already exists but no hash specified (use URL_HASH):
+    message(STATUS "File already exists but no hash specified (use URL_HASH):
   file='/home/david/Desktop/SLAM_project/build/_deps/tessil-subbuild/tessil-populate-prefix/src/v1.2.1.tar.gz'
 Old file will be removed and new file downloaded from URL."
     )
@@ -95,68 +103,56 @@ endif()
 
 set(retry_number 5)
 
-message(VERBOSE "Downloading...
+message(STATUS "Downloading...
    dst='/home/david/Desktop/SLAM_project/build/_deps/tessil-subbuild/tessil-populate-prefix/src/v1.2.1.tar.gz'
-   timeout='none'
-   inactivity timeout='none'"
+   timeout='none'"
 )
-set(download_retry_codes 7 6 8 15 28 35)
-set(skip_url_list)
-set(status_code)
+
 foreach(i RANGE ${retry_number})
-  if(status_code IN_LIST download_retry_codes)
-    sleep_before_download(${i})
-  endif()
-  foreach(url IN ITEMS [====[https://github.com/Tessil/robin-map/archive/refs/tags/v1.2.1.tar.gz]====])
-    if(NOT url IN_LIST skip_url_list)
-      message(VERBOSE "Using src='${url}'")
+  sleep_before_download(${i})
 
-      
-      
-      
-      
-      
+  foreach(url https://github.com/Tessil/robin-map/archive/refs/tags/v1.2.1.tar.gz)
+    message(STATUS "Using src='${url}'")
 
-      file(
+    
+    
+    
+    
+
+    file(
         DOWNLOAD
         "${url}" "/home/david/Desktop/SLAM_project/build/_deps/tessil-subbuild/tessil-populate-prefix/src/v1.2.1.tar.gz"
         SHOW_PROGRESS
         # no TIMEOUT
-        # no INACTIVITY_TIMEOUT
         STATUS status
         LOG log
         
         
-        )
+    )
 
-      list(GET status 0 status_code)
-      list(GET status 1 status_string)
+    list(GET status 0 status_code)
+    list(GET status 1 status_string)
 
-      if(status_code EQUAL 0)
-        check_file_hash(has_hash hash_is_good)
-        if(has_hash AND NOT hash_is_good)
-          message(VERBOSE "Hash mismatch, removing...")
-          file(REMOVE "/home/david/Desktop/SLAM_project/build/_deps/tessil-subbuild/tessil-populate-prefix/src/v1.2.1.tar.gz")
-        else()
-          message(VERBOSE "Downloading... done")
-          return()
-        endif()
+    if(status_code EQUAL 0)
+      check_file_hash(has_hash hash_is_good)
+      if(has_hash AND NOT hash_is_good)
+        message(STATUS "Hash mismatch, removing...")
+        file(REMOVE "/home/david/Desktop/SLAM_project/build/_deps/tessil-subbuild/tessil-populate-prefix/src/v1.2.1.tar.gz")
       else()
-        string(APPEND logFailedURLs "error: downloading '${url}' failed
-        status_code: ${status_code}
-        status_string: ${status_string}
-        log:
-        --- LOG BEGIN ---
-        ${log}
-        --- LOG END ---
-        "
-        )
-      if(NOT status_code IN_LIST download_retry_codes)
-        list(APPEND skip_url_list "${url}")
-        break()
+        message(STATUS "Downloading... done")
+        return()
       endif()
+    else()
+      string(APPEND logFailedURLs "error: downloading '${url}' failed
+       status_code: ${status_code}
+       status_string: ${status_string}
+       log:
+       --- LOG BEGIN ---
+       ${log}
+       --- LOG END ---
+       "
+      )
     endif()
-  endif()
   endforeach()
 endforeach()
 

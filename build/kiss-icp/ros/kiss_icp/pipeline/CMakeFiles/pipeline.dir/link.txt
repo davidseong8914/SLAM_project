@@ -1,2 +1,2 @@
-/usr/bin/ar qc /home/david/Desktop/SLAM_project/devel/lib/libpipeline.a CMakeFiles/pipeline.dir/KissICP.cpp.o
+/usr/bin/ar qc /home/david/Desktop/SLAM_project/devel/lib/libpipeline.a  CMakeFiles/pipeline.dir/KissICP.cpp.o
 /usr/bin/ranlib /home/david/Desktop/SLAM_project/devel/lib/libpipeline.a

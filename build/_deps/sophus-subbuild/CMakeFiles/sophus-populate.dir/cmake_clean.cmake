@@ -7,8 +7,8 @@ file(REMOVE_RECURSE
   "sophus-populate-prefix/src/sophus-populate-stamp/sophus-populate-install"
   "sophus-populate-prefix/src/sophus-populate-stamp/sophus-populate-mkdir"
   "sophus-populate-prefix/src/sophus-populate-stamp/sophus-populate-patch"
+  "sophus-populate-prefix/src/sophus-populate-stamp/sophus-populate-skip-update"
   "sophus-populate-prefix/src/sophus-populate-stamp/sophus-populate-test"
-  "sophus-populate-prefix/src/sophus-populate-stamp/sophus-populate-update"
 )
 
 # Per-language clean rules from dependency scanning.

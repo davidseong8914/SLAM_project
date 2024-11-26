@@ -7,8 +7,8 @@ file(REMOVE_RECURSE
   "tessil-populate-prefix/src/tessil-populate-stamp/tessil-populate-install"
   "tessil-populate-prefix/src/tessil-populate-stamp/tessil-populate-mkdir"
   "tessil-populate-prefix/src/tessil-populate-stamp/tessil-populate-patch"
+  "tessil-populate-prefix/src/tessil-populate-stamp/tessil-populate-skip-update"
   "tessil-populate-prefix/src/tessil-populate-stamp/tessil-populate-test"
-  "tessil-populate-prefix/src/tessil-populate-stamp/tessil-populate-update"
 )
 
 # Per-language clean rules from dependency scanning.

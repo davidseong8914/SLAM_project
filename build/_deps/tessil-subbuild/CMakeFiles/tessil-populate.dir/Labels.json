@@ -11,28 +11,28 @@
 			"file" : "/home/david/Desktop/SLAM_project/build/_deps/tessil-subbuild/CMakeFiles/tessil-populate-complete.rule"
 		},
 		{
-			"file" : "/home/david/Desktop/SLAM_project/build/_deps/tessil-subbuild/tessil-populate-prefix/src/tessil-populate-stamp/tessil-populate-build.rule"
-		},
-		{
-			"file" : "/home/david/Desktop/SLAM_project/build/_deps/tessil-subbuild/tessil-populate-prefix/src/tessil-populate-stamp/tessil-populate-configure.rule"
-		},
-		{
-			"file" : "/home/david/Desktop/SLAM_project/build/_deps/tessil-subbuild/tessil-populate-prefix/src/tessil-populate-stamp/tessil-populate-download.rule"
-		},
-		{
 			"file" : "/home/david/Desktop/SLAM_project/build/_deps/tessil-subbuild/tessil-populate-prefix/src/tessil-populate-stamp/tessil-populate-install.rule"
 		},
 		{
 			"file" : "/home/david/Desktop/SLAM_project/build/_deps/tessil-subbuild/tessil-populate-prefix/src/tessil-populate-stamp/tessil-populate-mkdir.rule"
 		},
 		{
+			"file" : "/home/david/Desktop/SLAM_project/build/_deps/tessil-subbuild/tessil-populate-prefix/src/tessil-populate-stamp/tessil-populate-download.rule"
+		},
+		{
 			"file" : "/home/david/Desktop/SLAM_project/build/_deps/tessil-subbuild/tessil-populate-prefix/src/tessil-populate-stamp/tessil-populate-patch.rule"
+		},
+		{
+			"file" : "/home/david/Desktop/SLAM_project/build/_deps/tessil-subbuild/tessil-populate-prefix/src/tessil-populate-stamp/tessil-populate-configure.rule"
+		},
+		{
+			"file" : "/home/david/Desktop/SLAM_project/build/_deps/tessil-subbuild/tessil-populate-prefix/src/tessil-populate-stamp/tessil-populate-build.rule"
 		},
 		{
 			"file" : "/home/david/Desktop/SLAM_project/build/_deps/tessil-subbuild/tessil-populate-prefix/src/tessil-populate-stamp/tessil-populate-test.rule"
 		},
 		{
-			"file" : "/home/david/Desktop/SLAM_project/build/_deps/tessil-subbuild/tessil-populate-prefix/src/tessil-populate-stamp/tessil-populate-update.rule"
+			"file" : "/home/david/Desktop/SLAM_project/build/_deps/tessil-subbuild/tessil-populate-prefix/src/tessil-populate-stamp/tessil-populate-skip-update.rule"
 		}
 	],
 	"target" : 

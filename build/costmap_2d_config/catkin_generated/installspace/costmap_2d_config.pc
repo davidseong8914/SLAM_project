@@ -1,0 +1,8 @@
+prefix=/home/david/Desktop/SLAM_project/install
+
+Name: costmap_2d_config
+Description: Description of costmap_2d_config
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
