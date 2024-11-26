@@ -1,0 +1,31 @@
+global_frame: "map"
+# robot_base_frame: "os_sensor"
+robot_base_frame: base_link
+
+update_frequency: 5.0
+publish_frequency: 5.0
+resolution: 0.1  # Cell size in meters
+robot_radius: 0.5
+# obstacle_range: 2.5
+# raytrace_range: 3.0
+obstacle_range: 10.0
+raytrace_range: 15.0
+
+inflation_radius: 0.5
+
+width: 10
+height: 10
+
+origin_x: -5.0
+origin_y: -5.0
+
+always_send_full_costmap: true  
+debug_publisher: true
+
+observation_sources: point_cloud_sensor
+point_cloud_sensor: 
+  sensor_frame: os_sensor
+  data_type: PointCloud2
+  topic: /os_cloud_node/points
+  marking: true
+  clearing: true
