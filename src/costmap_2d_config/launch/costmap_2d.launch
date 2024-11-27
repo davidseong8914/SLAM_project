@@ -1,6 +1,0 @@
-<launch>
-  <!-- Run costmap_2d node -->
-  <node pkg="costmap_2d" type="costmap_2d_node" name="costmap_2d" output="screen">
-    <rosparam command="load" file="$(find costmap_2d_config)/config/costmap_params.yaml" />
-  </node>
-</launch>
