@@ -292,8 +292,23 @@ source devel/setup.bash  # or source install/setup.bash for ROS2
 # code that runs kiss-icp
 roslaunch kiss_icp odometry.launch bagfile:=/home/david/Desktop/SLAM_project/bags/scaife_gazebo.bag topic:=/point2
 ```
+## 3. Moving Stuff on to Robot Platform
+### 3.1 NUC
+1. Issue with NUC hdmi signal not being received by monitor
+- restart and press f2
+2. Install depedndencies
+```
+source slam_project/bin/activate
+pip install ouster-cli
+```
+### 3.2 Running ouster-cli commands
+attempted
+```
+ouster-cli bags/scaife_gazebo.bag slam viz -r2 --map
+```
 
-## 3. What's Next?
+
+## 4. What's Next?
 11/17
 - master Cloud compare: similar software
     - explore real time comparison
