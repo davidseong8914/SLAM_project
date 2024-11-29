@@ -305,7 +305,81 @@ pip install ouster-cli
 attempted
 ```
 ouster-cli bags/scaife_gazebo.bag slam viz -r2 --map
+
+# output
+Invalid MIT-MAGIC-COOKIE-1 keyGLFW error 65550: X11: Failed to open display :0
+Failed to initialize GLFW
+INFO:root:Auto voxel size calculated based on tthe first scan which is 0.1301m
 ```
+instead I will try
+```
+roslaunch ouster_ros record.launch sensor_hostname:=<sensor ip> bag_file:=test.bag
+
+sudo apt-get install libspdlog-dev
+find /usr -name spdlogConfig.cmake # copy path
+export spdlog_DIR=<your path to folder with .cmake>
+
+catkin_make
+source ~/slam_ws/SLAM_PROJECT/devel/setup.zsh
+
+#verify
+rospack find ouster_ros
+/home/patrick/slam_ws/SLAM_project/src/ouster-ros
+
+cd ~slam_ws/SLAM_project
+catkin_make clean
+catkin_make
+source ~/slam_ws/SLAM_PROJECT/devel/setup.zsh
+
+# this runs* - let's try with LiDAR power
+roslaunch ~/slam_ws/src/ouster-ros/launch/record.launch sensor_hostname:=<sensor_ip> bag_file:=test.bag
+
+```
+Issue with step 1.3
+```
+nmcli connection show
+#shows newly cconnected wired connection in yellow
+```
+
+shows lidar ethernet in yellow, possible adapter error
+- replaced ethernet wire that was connected previously (think it was for pxrf or Hebi arm) with LiDAR ethernet cable
+- nmcli connectin shows "Hebi Ethernet in green"
+
+
+running :
+```
+roslaunch ~/slam_ws/src/ouster-ros/launch/record.launch sensor_hostname:=<sensor_ip> bag_file:=~/slam_ws/SLAM_project/tester.bag
+```
+gives: Error writing: error opening file: /home/patrick/Desktop/SLAM_project/bags/~/slam_Ws/SLAM_project/tester.bag.active
+
+error because it's trying to open "/home/patrick/Desktop/SLAM_project/bags//home/slam_ws/SLAM_project/tester.bag.active"
+
+change line 2 {value="..."} to {value="arg('bag_file)}
+
+running :
+```
+roslaunch ~/slam_ws/src/ouster-ros/launch/record.launch sensor_hostname:=<sensor_ip> bag_file:=~/slam_ws/SLAM_project/tester.bag
+```
+
+display error
+network connection error
+
+ping <sensor_ip>
+- "destination host unreachable"
+
+settings>network> wired - connected -settings
+ethernet is set for Hebi -> changedIPv4 from manual to Automatic
+ping <sensor_ip>
+- "destination host unreachable"
+
+Maybe it's because the ip is set to something else (since it was being used for Hebi stuff)
+
+
+
+
+
+
+
 
 
 ## 4. What's Next?
