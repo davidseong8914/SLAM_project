@@ -368,7 +368,7 @@ ping <sensor_ip>
 - "destination host unreachable"
 
 settings>network> wired - connected -settings
-ethernet is set for Hebi -> changedIPv4 from manual to Automatic
+ethernet is set for Hebi -> changed IPv4,IPv6 from manual to link-local only
 ping <sensor_ip>
 - "destination host unreachable"
 
@@ -376,8 +376,9 @@ Maybe it's because the ip is set to something else (since it was being used for 
 
 
 
+doesn't work
 
-
+I think I should leave that for Hebi and try to figure out ethernet connection using a different port
 
 
 
