@@ -74,6 +74,9 @@ ouster-cli source <sensor_ip> slam viz -r0 --acum-map --accum-map-ratio 0.05
 
 # this runs and saves as .osf (can also save as .las, .ply)
 ouster-cli source <sensor_ip> slam viz save test.osf
+
+# for SLAM_PROJECT
+ouster-cli source 169.254.99.87 slam -v 0.5 viz save 1_8_2.ply
 ```
 ![slam (A)](images/slam4.png)
 ![slam2 (A)](images/slam3.png)
@@ -374,7 +377,8 @@ ping <sensor_ip>
 
 Maybe it's because the ip is set to something else (since it was being used for Hebi stuff)
 
-
+ipv4 address = 192.168.0.200 # this returns bytes
+default route/dns = 192.168.0.1 # detination host unreachable
 
 doesn't work
 
@@ -392,6 +396,14 @@ I think I should leave that for Hebi and try to figure out ethernet connection u
 - GPS navigation
 - Lidar Max range, # point sampling - optimize
 - Adaptive speed based on point cloud density
+
+## 5. Current Nov 29 2024
+Issue with LiDAR - Patrick connection due to ethernet configuration settings
+
+Need data for presentation on Dec 2.
+
+Laptop - SSH - Patrick (control)
+Laptop - LiDAR - rosbag
 
 
 
