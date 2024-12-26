@@ -6,7 +6,7 @@ Adaptive Speed Optimization for SLAM Using KISS-ICP on a Rover Robot.
 ## 1. Ouster-SDK
 ### 1.1 Basic Setup
 #### 1.1.1 Clone SLAM_project repository
-```
+```shell
 git clone --recurse-submodules https://github.com/davidseong8914/SLAM_project.git
 
 or
@@ -15,7 +15,7 @@ git clone https://github.com/davidseong8914/SLAM_project.git
 git submodule update --init --recursive
 ```
 #### 1.1.2 Install necessary packages
-``` linux
+```shell
 sudo apt update
 sudo apt install python3.8-venv 
 sudo apt install build-essential cmake libssl-dev python3-dev
@@ -33,12 +33,12 @@ pip list | grep ouster # to check ouster installation
 - Battery (29.6V) - Converter (24V, >1000mAh + Low Voltage Buzzer) - LiDAR
 
 ### 1.3 Software Setup
-``` linux
+```shell
 # virtual environment
 python3 -m venv slam_project
 source slam_project/bin/activate
 ```
-```
+```shell
 # checking ethernet connection
 nmcli connection show
 # expected response
@@ -46,7 +46,7 @@ Wired connection 1 ethernet enp2s0 # HAS TO BE IN GREEN
 ```
 
 #### When configuring for the first time
-```
+```shell
 # check LiDAR connection
 ping <LiDAR IP> # this should work
 # type this on the web and it should lead you to sensor information
@@ -58,14 +58,14 @@ ping <LiDAR IP> # this should work
 ### 1.4 Using LiDAR
 
 #### 1.4.1 Realtime point cloud visualization
-```
+```shell
 # shows realtime point cloud data
 ouster-cli source <LiDAR IP> viz 
 ```
 ![realtime](images/viz.png)
 
 #### 1.4.2 ouster-sdk live SLAM
-```
+```shell
 # Ouster-sdk -> slam
 ouster-cli source <sensor_ip> slam viz -r0 --acum-map --accum-map-ratio 0.05
 
@@ -82,7 +82,7 @@ ouster-cli source 169.254.99.87 slam -v 0.5 viz save 1_8_2.ply
 ![slam2 (A)](images/slam3.png)
 
 #### 1.4.5 ouster-sdk recorded SLAM
-```
+```shell
 ouster-cli source bags/scaife_gazebo.bag slam viz -r2 --map
 # r2 = point cloud playback rate
 
@@ -103,7 +103,7 @@ ouster-cli source bags/scaife_gazebo.bag slam -v 2.0 viz -r2 --map-ratio 0.01
 <b>[Ouster-slam documentation](https://static.ouster.dev/sdk-docs/cli/mapping-sessions.html#ouster-cli-mapping_)</b>
 
 default arguments: Max range, min range, voxel settings
-```
+```shell
 ouster-cli source <sensor_ip> slam --help
 
   Example values for voxel_size:
@@ -121,13 +121,13 @@ Options:
 ```
 
 save arguments:
-```
+```shell
 ouster-cli source <sensor_ip> slam save --help
 
 Save to an OSF, PCAP, CSV, BAG, PCD, LAS, or PLY with the given filename. If only an extension is provided, the file is named automatically.
 ```
 visualization arguments:
-```
+```shell
 ouster-cli source <sensor_ip> slam viz --help
 
 -r, --rate [0.25|0.5|0.75|1|1.5|2|3|max] Playback rate.
@@ -150,7 +150,7 @@ ouster-cli source <sensor_ip> slam viz --help
 ```
 #### 1.4.5 Testing 
 
-```
+```shell
 # .ply map to use as input for cloud compare
 ouster-cli source <sensor_ip> slam viz --map save test_1.ply 
 # viz - visualize
@@ -159,7 +159,7 @@ ouster-cli source <sensor_ip> slam viz --map save test_1.ply
 ```
 
 Sample run (Nov 17 2024)
-```
+```shell
 ouster-cli source <sensor_ip> slam viz --map --map-ratio 0.1 save test_2.ply # experiment with smaller map-ratio
 
 # output
@@ -177,7 +177,7 @@ Install CloudCompare from [Link](https://www.danielgm.net/cc/) or Ubuntu Softwar
 
 #### 1.5.2 Obtain 2 Diffrerent Maps(.ply) of the environment
 sample code:
-```
+```shell
 ouster-cli source <sensor_ip> slam viz --map save test_1.ply 
 ```
 
@@ -193,14 +193,14 @@ or
 <br>
 
 Install necessary ROS packages
-```
+```shell
 sudo apt install -y                     \
     ros-$ROS_DISTRO-pcl-ros             \
     ros-$ROS_DISTRO-rviz
 ```
 
 Install dependencies
-```
+```shell
 sudo apt install -y         \
     build-essential         \
     libeigen3-dev           \
@@ -211,13 +211,13 @@ sudo apt install -y         \
 ```
 
 Think I took care of this, but if ouster-ros is not in the src/ folder
-```
+```shell
 mkdir -p catkin_ws/src && cd catkin_ws/src
 git clone --recurse-submodules https://github.com/ouster-lidar/ouster-ros.git
 ```
 
 Final touches
-```
+```shell
 echo $ROS_DISTRO #check your ros distro # check ros-distro
 source /opt/ros/<ros-distro>/setup.bash # replace ros-distro with 'melodic' or 'noetic'
 
@@ -233,7 +233,7 @@ ouster-ros has 3 modes
 <b>1. Sensor Mode </b><br>
 Following code should visualize live LiDAR through rviz
 
-```linux
+```shell
 ### first tab
 roscore
 
@@ -245,7 +245,7 @@ roslaunch ouster_ros driver.launch      \
 <b>2. Recording Mode</b><br>
 Following code should record pointcloud data and save to SLAM_project/ as "bag file name"
 
-```
+```shell
 roslaunch ouster_ros record.launch      \
     sensor_hostname:=<sensor host name> \
     bag_file:=<optional bag file name>  # has to be in "name.bag" format
@@ -256,7 +256,7 @@ roslaunch ouster_ros record.launch sensor_hostname:=<sensor ip> bag_file:=test.b
 
 <b>3. Replay Mode </b>
 
-```linux
+```shell
 ### first tab
 roscore
 
@@ -275,7 +275,7 @@ roslaunch ouster_ros replay.launch bag_file:=/home/david/Desktop/SLAM_project/te
 ### 2.3. MISC
 #### 2.3.1 Visualize node graphs
 
-```
+```shell
 roslaunch ouster_ros replay.launch bag_file:=/home/david/Desktop/SLAM_project/bags/test.bag
 rqt_graph # creates a map of what's going on
 ```
@@ -283,7 +283,7 @@ rqt_graph # creates a map of what's going on
 
 ### 2.3.2 Clone KISS-ICP
 
-```
+```shell
 git clone --branch v0.3.0 --single-branch <LINK>
 git clone --branch v0.3.0 --single-branch https://github.com/PRBonn/kiss-icp.git
 pip install kiss-icp
@@ -300,13 +300,13 @@ roslaunch kiss_icp odometry.launch bagfile:=/home/david/Desktop/SLAM_project/bag
 1. Issue with NUC hdmi signal not being received by monitor
 - restart and press f2
 2. Install depedndencies
-```
+```shell
 source slam_project/bin/activate
 pip install ouster-cli
 ```
 ### 3.2 Running ouster-cli commands
 attempted
-```
+```shell
 ouster-cli bags/scaife_gazebo.bag slam viz -r2 --map
 
 # output
@@ -315,7 +315,7 @@ Failed to initialize GLFW
 INFO:root:Auto voxel size calculated based on tthe first scan which is 0.1301m
 ```
 instead I will try
-```
+```shell
 roslaunch ouster_ros record.launch sensor_hostname:=<sensor ip> bag_file:=test.bag
 
 sudo apt-get install libspdlog-dev
@@ -339,7 +339,7 @@ roslaunch ~/slam_ws/src/ouster-ros/launch/record.launch sensor_hostname:=<sensor
 
 ```
 Issue with step 1.3
-```
+```shell
 nmcli connection show
 #shows newly cconnected wired connection in yellow
 ```
@@ -350,7 +350,7 @@ shows lidar ethernet in yellow, possible adapter error
 
 
 running :
-```
+```shell
 roslaunch ~/slam_ws/src/ouster-ros/launch/record.launch sensor_hostname:=<sensor_ip> bag_file:=~/slam_ws/SLAM_project/tester.bag
 ```
 gives: Error writing: error opening file: /home/patrick/Desktop/SLAM_project/bags/~/slam_Ws/SLAM_project/tester.bag.active
@@ -360,7 +360,7 @@ error because it's trying to open "/home/patrick/Desktop/SLAM_project/bags//home
 change line 2 {value="..."} to {value="arg('bag_file)}
 
 running :
-```
+```shell
 roslaunch ~/slam_ws/src/ouster-ros/launch/record.launch sensor_hostname:=<sensor_ip> bag_file:=~/slam_ws/SLAM_project/tester.bag
 ```
 
@@ -374,38 +374,6 @@ settings>network> wired - connected -settings
 ethernet is set for Hebi -> changed IPv4,IPv6 from manual to link-local only
 ping <sensor_ip>
 - "destination host unreachable"
-
-Maybe it's because the ip is set to something else (since it was being used for Hebi stuff)
-
-ipv4 address = 192.168.0.200 # this returns bytes
-default route/dns = 192.168.0.1 # detination host unreachable
-
-doesn't work
-
-I think I should leave that for Hebi and try to figure out ethernet connection using a different port
-
-
-
-
-## 4. What's Next?
-11/17
-- master Cloud compare: similar software
-    - explore real time comparison
-    - other map accuracy comparison methods?
-- LiDAR - Patrick hardware interface
-- GPS navigation
-- Lidar Max range, # point sampling - optimize
-- Adaptive speed based on point cloud density
-
-## 5. Current Nov 29 2024
-Issue with LiDAR - Patrick connection due to ethernet configuration settings
-
-Need data for presentation on Dec 2.
-
-Laptop - SSH - Patrick (control)
-Laptop - LiDAR - rosbag
-
-
 
 
 
