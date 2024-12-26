@@ -436,12 +436,6 @@ lidar_packet_handler.h
 image_processor.h
 /home/david/Desktop/SLAM_project/src/ouster-ros/src/image_processor.h
 
-/home/david/Desktop/SLAM_project/src/ouster-ros/src/os_replay_nodelet.cpp
-pluginlib/class_list_macros.h
--
-ouster_ros/os_sensor_nodelet_base.h
-/home/david/Desktop/SLAM_project/src/ouster-ros/src/ouster_ros/os_sensor_nodelet_base.h
-
 /home/david/Desktop/SLAM_project/src/ouster-ros/src/os_sensor_nodelet.cpp
 ouster_ros/os_ros.h
 /home/david/Desktop/SLAM_project/src/ouster-ros/src/ouster_ros/os_ros.h

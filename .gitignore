@@ -6,3 +6,5 @@ bags/
 images/screenshots/
 ohio_bags/*.bag
 ohio_bags/2_pcd/
+build/*
+devel/*

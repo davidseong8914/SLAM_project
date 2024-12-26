@@ -131,7 +131,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/david/Desktop/SLAM_project/build/gtest/cmake_install.cmake")
-  include("/home/david/Desktop/SLAM_project/build/costmap_2d_config/cmake_install.cmake")
   include("/home/david/Desktop/SLAM_project/build/ouster_runner/cmake_install.cmake")
   include("/home/david/Desktop/SLAM_project/build/kiss-icp/ros/cmake_install.cmake")
   include("/home/david/Desktop/SLAM_project/build/ouster-ros/cmake_install.cmake")
