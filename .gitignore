@@ -15,3 +15,5 @@ src/message_logger/
 src/kindr/
 src/kindr_ros/
 src/grid_map/
+
+logs/
