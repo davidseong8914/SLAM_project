@@ -1,0 +1,6 @@
+kiss-icp/ros
+/home/david/Desktop/SLAM_project/devel/.private/kiss_icp/cmake.lock /home/david/Desktop/SLAM_project/devel/./cmake.lock
+/home/david/Desktop/SLAM_project/devel/.private/kiss_icp/share/kiss_icp/cmake/kiss_icpConfig.cmake /home/david/Desktop/SLAM_project/devel/share/kiss_icp/cmake/kiss_icpConfig.cmake
+/home/david/Desktop/SLAM_project/devel/.private/kiss_icp/share/kiss_icp/cmake/kiss_icpConfig-version.cmake /home/david/Desktop/SLAM_project/devel/share/kiss_icp/cmake/kiss_icpConfig-version.cmake
+/home/david/Desktop/SLAM_project/devel/.private/kiss_icp/lib/kiss_icp/odometry_node /home/david/Desktop/SLAM_project/devel/lib/kiss_icp/odometry_node
+/home/david/Desktop/SLAM_project/devel/.private/kiss_icp/lib/pkgconfig/kiss_icp.pc /home/david/Desktop/SLAM_project/devel/lib/pkgconfig/kiss_icp.pc

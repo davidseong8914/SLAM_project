@@ -1,0 +1,4 @@
+Symlinking /home/david/Desktop/SLAM_project/devel/share/kiss_icp/cmake/kiss_icpConfig.cmake
+Symlinking /home/david/Desktop/SLAM_project/devel/share/kiss_icp/cmake/kiss_icpConfig-version.cmake
+Symlinking /home/david/Desktop/SLAM_project/devel/lib/kiss_icp/odometry_node
+Symlinking /home/david/Desktop/SLAM_project/devel/lib/pkgconfig/kiss_icp.pc

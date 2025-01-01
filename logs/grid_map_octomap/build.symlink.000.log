@@ -1,0 +1,4 @@
+Symlinking /home/david/Desktop/SLAM_project/devel/share/grid_map_octomap/cmake/grid_map_octomapConfig.cmake
+Symlinking /home/david/Desktop/SLAM_project/devel/share/grid_map_octomap/cmake/grid_map_octomapConfig-version.cmake
+Symlinking /home/david/Desktop/SLAM_project/devel/lib/libgrid_map_octomap.so
+Symlinking /home/david/Desktop/SLAM_project/devel/lib/pkgconfig/grid_map_octomap.pc

@@ -1,0 +1,4 @@
+[ 33%] [32mBuilding CXX object CMakeFiles/grid_map_loader.dir/src/grid_map_loader_node.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/grid_map_loader.dir/src/GridMapLoader.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/david/Desktop/SLAM_project/devel/.private/grid_map_loader/lib/grid_map_loader/grid_map_loader[0m
+[100%] Built target grid_map_loader

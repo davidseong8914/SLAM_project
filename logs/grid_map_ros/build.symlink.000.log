@@ -1,0 +1,4 @@
+Symlinking /home/david/Desktop/SLAM_project/devel/share/grid_map_ros/cmake/grid_map_rosConfig-version.cmake
+Symlinking /home/david/Desktop/SLAM_project/devel/share/grid_map_ros/cmake/grid_map_rosConfig.cmake
+Symlinking /home/david/Desktop/SLAM_project/devel/lib/libgrid_map_ros.so
+Symlinking /home/david/Desktop/SLAM_project/devel/lib/pkgconfig/grid_map_ros.pc

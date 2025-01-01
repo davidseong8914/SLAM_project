@@ -1,2 +1,0 @@
-/usr/bin/ar qc /home/david/Desktop/SLAM_project/devel/lib/libmetrics.a  CMakeFiles/metrics.dir/Metrics.cpp.o
-/usr/bin/ranlib /home/david/Desktop/SLAM_project/devel/lib/libmetrics.a

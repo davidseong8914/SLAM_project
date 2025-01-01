@@ -1,7 +1,1 @@
-
-"use strict";
-
-module.exports = {
-  msg: require('./msg/_index.js'),
-  srv: require('./srv/_index.js')
-};
+/home/david/Desktop/SLAM_project/devel/.private/ouster_ros/share/gennodejs/ros/ouster_ros/_index.js

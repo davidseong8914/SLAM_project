@@ -1,0 +1,78 @@
+[  0%] Built target _ouster_ros_generate_messages_check_deps_GetMetadata
+[  0%] Built target geometry_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target sensor_msgs_generate_messages_py
+[  0%] Built target _ouster_ros_generate_messages_check_deps_PacketMsg
+[  0%] Built target _ouster_ros_generate_messages_check_deps_GetConfig
+[  0%] Built target _ouster_ros_generate_messages_check_deps_SetConfig
+[  0%] Built target geometry_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target sensor_msgs_generate_messages_cpp
+[  0%] Built target geometry_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target sensor_msgs_generate_messages_eus
+[  0%] Built target geometry_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target sensor_msgs_generate_messages_lisp
+[  0%] Built target geometry_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target sensor_msgs_generate_messages_nodejs
+[34m[1mGenerating build info header[0m
+[  0%] Built target ouster_generate_header
+[  2%] [34m[1mGenerating Python from MSG ouster_ros/PacketMsg[0m
+[  4%] [34m[1mGenerating Python code from SRV ouster_ros/GetConfig[0m
+[  6%] [34m[1mGenerating Python code from SRV ouster_ros/SetConfig[0m
+[  8%] [34m[1mGenerating Python code from SRV ouster_ros/GetMetadata[0m
+[ 10%] [34m[1mGenerating Python msg __init__.py for ouster_ros[0m
+[ 12%] [34m[1mGenerating Python srv __init__.py for ouster_ros[0m
+[ 12%] Built target ouster_ros_generate_messages_py
+[ 14%] [34m[1mGenerating C++ code from ouster_ros/PacketMsg.msg[0m
+[ 17%] [34m[1mGenerating C++ code from ouster_ros/GetConfig.srv[0m
+[ 19%] [34m[1mGenerating C++ code from ouster_ros/SetConfig.srv[0m
+[ 21%] [34m[1mGenerating C++ code from ouster_ros/GetMetadata.srv[0m
+[ 21%] Built target ouster_ros_generate_messages_cpp
+[ 23%] [34m[1mGenerating EusLisp code from ouster_ros/PacketMsg.msg[0m
+[ 25%] [34m[1mGenerating EusLisp code from ouster_ros/GetConfig.srv[0m
+[ 27%] [34m[1mGenerating EusLisp code from ouster_ros/SetConfig.srv[0m
+[ 29%] [34m[1mGenerating EusLisp code from ouster_ros/GetMetadata.srv[0m
+[ 31%] [34m[1mGenerating EusLisp manifest code for ouster_ros[0m
+[ 31%] Built target ouster_ros_generate_messages_eus
+[ 34%] [34m[1mGenerating Lisp code from ouster_ros/PacketMsg.msg[0m
+[ 36%] [34m[1mGenerating Lisp code from ouster_ros/GetConfig.srv[0m
+[ 38%] [34m[1mGenerating Lisp code from ouster_ros/SetConfig.srv[0m
+[ 40%] [34m[1mGenerating Lisp code from ouster_ros/GetMetadata.srv[0m
+[ 40%] Built target ouster_ros_generate_messages_lisp
+[ 42%] [34m[1mGenerating Javascript code from ouster_ros/PacketMsg.msg[0m
+[ 44%] [34m[1mGenerating Javascript code from ouster_ros/GetConfig.srv[0m
+[ 46%] [34m[1mGenerating Javascript code from ouster_ros/SetConfig.srv[0m
+[ 48%] [34m[1mGenerating Javascript code from ouster_ros/GetMetadata.srv[0m
+[ 48%] Built target ouster_ros_generate_messages_nodejs
+[ 51%] [32mBuilding CXX object ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/client.cpp.o[0m
+[ 53%] [32mBuilding CXX object ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/types.cpp.o[0m
+[ 55%] [32mBuilding CXX object ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/sensor_info.cpp.o[0m
+[ 57%] [32mBuilding CXX object ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/netcompat.cpp.o[0m
+[ 59%] [32mBuilding CXX object ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/lidar_scan.cpp.o[0m
+[ 61%] [32mBuilding CXX object ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/image_processing.cpp.o[0m
+[ 63%] [32mBuilding CXX object ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/udp_packet_source.cpp.o[0m
+[ 65%] [32mBuilding CXX object ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/parsing.cpp.o[0m
+[ 68%] [32mBuilding CXX object ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/sensor_http.cpp.o[0m
+[ 70%] [32mBuilding CXX object ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/sensor_http_imp.cpp.o[0m
+[ 72%] [32mBuilding CXX object ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/sensor_tcp_imp.cpp.o[0m
+[ 74%] [32mBuilding CXX object ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/logging.cpp.o[0m
+[ 76%] [32mBuilding CXX object ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/profile_extension.cpp.o[0m
+[ 78%] [32mBuilding CXX object ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/util.cpp.o[0m
+[ 78%] Built target ouster_ros_gencpp
+[ 78%] Built target ouster_ros_generate_messages
+[ 80%] [32m[1mLinking CXX static library /home/david/Desktop/SLAM_project/devel/.private/ouster_ros/lib/libouster_client.a[0m
+[ 80%] Built target ouster_client
+[ 82%] [32mBuilding CXX object CMakeFiles/ouster_ros.dir/src/os_ros.cpp.o[0m
+[ 85%] [32m[1mLinking CXX shared library /home/david/Desktop/SLAM_project/devel/.private/ouster_ros/lib/libouster_ros.so[0m
+[ 85%] Built target ouster_ros
+[ 91%] [32mBuilding CXX object CMakeFiles/ouster_ros_nodelets.dir/src/os_sensor_nodelet.cpp.o[0m
+[ 91%] [32mBuilding CXX object CMakeFiles/ouster_ros_nodelets.dir/src/os_replay_nodelet.cpp.o[0m
+[ 91%] [32mBuilding CXX object CMakeFiles/ouster_ros_nodelets.dir/src/os_sensor_nodelet_base.cpp.o[0m
+[ 93%] [32mBuilding CXX object CMakeFiles/ouster_ros_nodelets.dir/src/os_cloud_nodelet.cpp.o[0m
+[ 95%] [32mBuilding CXX object CMakeFiles/ouster_ros_nodelets.dir/src/os_image_nodelet.cpp.o[0m
+[ 97%] [32mBuilding CXX object CMakeFiles/ouster_ros_nodelets.dir/src/os_driver_nodelet.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library /home/david/Desktop/SLAM_project/devel/.private/ouster_ros/lib/libouster_ros_nodelets.so[0m
+[100%] Built target ouster_ros_nodelets

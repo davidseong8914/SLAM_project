@@ -1,4 +1,1 @@
-(cl:in-package ouster_ros-msg)
-(cl:export '(BUF-VAL
-          BUF
-))
+/home/david/Desktop/SLAM_project/devel/.private/ouster_ros/share/common-lisp/ros/ouster_ros/msg/_package_PacketMsg.lisp

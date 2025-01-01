@@ -1,7 +1,1 @@
-(cl:defpackage ouster_ros-msg
-  (:use )
-  (:export
-   "<PACKETMSG>"
-   "PACKETMSG"
-  ))
-
+/home/david/Desktop/SLAM_project/devel/.private/ouster_ros/share/common-lisp/ros/ouster_ros/msg/_package.lisp

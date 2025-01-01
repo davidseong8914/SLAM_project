@@ -1,12 +1,1 @@
-
-"use strict";
-
-let SetConfig = require('./SetConfig.js')
-let GetConfig = require('./GetConfig.js')
-let GetMetadata = require('./GetMetadata.js')
-
-module.exports = {
-  SetConfig: SetConfig,
-  GetConfig: GetConfig,
-  GetMetadata: GetMetadata,
-};
+/home/david/Desktop/SLAM_project/devel/.private/ouster_ros/share/gennodejs/ros/ouster_ros/srv/_index.js

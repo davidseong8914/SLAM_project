@@ -1,9 +1,1 @@
-
-(cl:in-package :asdf)
-
-(defsystem "ouster_ros-msg"
-  :depends-on (:roslisp-msg-protocol :roslisp-utils )
-  :components ((:file "_package")
-    (:file "PacketMsg" :depends-on ("_package_PacketMsg"))
-    (:file "_package_PacketMsg" :depends-on ("_package"))
-  ))
+/home/david/Desktop/SLAM_project/devel/.private/ouster_ros/share/common-lisp/ros/ouster_ros/msg/ouster_ros-msg.asd

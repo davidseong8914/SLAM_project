@@ -1,3 +1,1 @@
-from ._GetConfig import *
-from ._GetMetadata import *
-from ._SetConfig import *
+/home/david/Desktop/SLAM_project/devel/.private/ouster_ros/lib/python3/dist-packages/ouster_ros/srv/__init__.py

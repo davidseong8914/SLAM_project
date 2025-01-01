@@ -1,0 +1,6 @@
+Symlinking /home/david/Desktop/SLAM_project/devel/share/elevation_mapping/cmake/elevation_mappingConfig-version.cmake
+Symlinking /home/david/Desktop/SLAM_project/devel/share/elevation_mapping/cmake/elevation_mappingConfig.cmake
+Symlinking /home/david/Desktop/SLAM_project/devel/lib/libelevation_mapping_pcl_types.so
+Symlinking /home/david/Desktop/SLAM_project/devel/lib/libelevation_mapping_library.so
+Symlinking /home/david/Desktop/SLAM_project/devel/lib/elevation_mapping/elevation_mapping
+Symlinking /home/david/Desktop/SLAM_project/devel/lib/pkgconfig/elevation_mapping.pc

@@ -1,8 +1,0 @@
-prefix=/home/david/Desktop/SLAM_project/install
-
-Name: ouster_node
-Description: Description of ouster_node
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

@@ -1,0 +1,4 @@
+Symlinking /home/david/Desktop/SLAM_project/devel/share/grid_map_rviz_plugin/cmake/grid_map_rviz_pluginConfig.cmake
+Symlinking /home/david/Desktop/SLAM_project/devel/share/grid_map_rviz_plugin/cmake/grid_map_rviz_pluginConfig-version.cmake
+Symlinking /home/david/Desktop/SLAM_project/devel/lib/libgrid_map_rviz_plugin.so
+Symlinking /home/david/Desktop/SLAM_project/devel/lib/pkgconfig/grid_map_rviz_plugin.pc

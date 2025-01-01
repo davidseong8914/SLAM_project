@@ -1,8 +1,1 @@
-prefix=/home/david/Desktop/SLAM_project/devel
-
-Name: kiss_icp
-Description: Description of kiss_icp
-Version: 0.3.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
+/home/david/Desktop/SLAM_project/devel/.private/kiss_icp/lib/pkgconfig/kiss_icp.pc

@@ -1,0 +1,16 @@
+[  8%] [32mBuilding CXX object kiss_icp/core/CMakeFiles/core.dir/Registration.cpp.o[0m
+[ 16%] [32mBuilding CXX object kiss_icp/core/CMakeFiles/core.dir/Deskew.cpp.o[0m
+[ 25%] [32mBuilding CXX object kiss_icp/core/CMakeFiles/core.dir/VoxelHashMap.cpp.o[0m
+[ 33%] [32mBuilding CXX object kiss_icp/core/CMakeFiles/core.dir/Preprocessing.cpp.o[0m
+[ 41%] [32mBuilding CXX object kiss_icp/core/CMakeFiles/core.dir/Threshold.cpp.o[0m
+[ 50%] [32m[1mLinking CXX static library libcore.a[0m
+[ 50%] Built target core
+[ 58%] [32mBuilding CXX object kiss_icp/metrics/CMakeFiles/metrics.dir/Metrics.cpp.o[0m
+[ 66%] [32m[1mLinking CXX static library libmetrics.a[0m
+[ 66%] Built target metrics
+[ 75%] [32mBuilding CXX object kiss_icp/pipeline/CMakeFiles/pipeline.dir/KissICP.cpp.o[0m
+[ 83%] [32m[1mLinking CXX static library libpipeline.a[0m
+[ 83%] Built target pipeline
+[ 91%] [32mBuilding CXX object CMakeFiles/odometry_node.dir/ros1/OdometryServer.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/david/Desktop/SLAM_project/devel/.private/kiss_icp/lib/kiss_icp/odometry_node[0m
+[100%] Built target odometry_node

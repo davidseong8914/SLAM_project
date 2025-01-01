@@ -1,8 +1,1 @@
-
-"use strict";
-
-let PacketMsg = require('./PacketMsg.js');
-
-module.exports = {
-  PacketMsg: PacketMsg,
-};
+/home/david/Desktop/SLAM_project/devel/.private/ouster_ros/share/gennodejs/ros/ouster_ros/msg/_index.js

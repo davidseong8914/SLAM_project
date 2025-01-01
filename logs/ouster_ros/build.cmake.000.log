@@ -1,0 +1,170 @@
+Not searching for unused variables given on the command line.
+[36m--[0m The C compiler identification is GNU 9.4.0
+[36m--[0m The CXX compiler identification is GNU 9.4.0
+[36m--[0m Detecting C compiler ABI info
+[36m--[0m Detecting C compiler ABI info - done
+[36m--[0m Check for working C compiler: /usr/bin/cc - skipped
+[36m--[0m Detecting C compile features
+[36m--[0m Detecting C compile features - done
+[36m--[0m Detecting CXX compiler ABI info
+[36m--[0m Detecting CXX compiler ABI info - done
+[36m--[0m Check for working CXX compiler: /usr/bin/c++ - skipped
+[36m--[0m Detecting CXX compile features
+[36m--[0m Detecting CXX compile features - done
+[36m--[0m Found Eigen3: /usr/lib/cmake/eigen3/Eigen3Config.cmake (found version "3.3.7")
+[0mCMake Deprecation Warning at /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:40 (cmake_policy):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+[36mCall Stack (most recent call first):[0m
+  CMakeLists.txt:14 (find_package)
+
+[0m
+[33mCMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:152 (find_package):
+  Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+  variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  CMake variable EIGEN_ROOT is set to:
+
+    /usr/include/eigen3
+
+  For compatibility, find_package is ignoring the variable, but code in a
+  .cmake module might still use it.
+[36mCall Stack (most recent call first):[0m
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:316 (find_eigen)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:551 (find_external_library)
+  CMakeLists.txt:14 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[36m--[0m Checking for module 'eigen3'
+[36m--[0m   Found eigen3, version 3.3.7
+[36m--[0m Found Eigen: /usr/include/eigen3 (Required is at least version "3.1")
+[36m--[0m Eigen found (include: /usr/include/eigen3, version: 3.3.7)
+[33mCMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:134 (find_package):
+  Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+  --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+
+[36mCall Stack (most recent call first):[0m
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:314 (find_boost)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:551 (find_external_library)
+  CMakeLists.txt:14 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[36m--[0m Found Boost: /usr/include (found suitable version "1.71.0", minimum required is "1.55.0") found components: system filesystem date_time iostreams regex
+[36m--[0m looking for PCL_COMMON
+[33mCMake Warning (dev) at /home/david/Desktop/SLAM_project/slam_project/lib/python3.8/site-packages/cmake/data/share/cmake-3.31/Modules/FindPackageHandleStandardArgs.cmake:441 (message):
+  The package name passed to `find_package_handle_standard_args` (PCL_COMMON)
+  does not match the name of the calling package (PCL).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+[36mCall Stack (most recent call first):[0m
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:616 (find_package_handle_standard_args)
+  CMakeLists.txt:14 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[36m--[0m Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so
+[36m--[0m Found PCL: pcl_common;/usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_iostreams.so;/usr/lib/x86_64-linux-gnu/libboost_regex.so
+[36m--[0m Using CATKIN_DEVEL_PREFIX: /home/david/Desktop/SLAM_project/devel/.private/ouster_ros
+[36m--[0m Using CMAKE_PREFIX_PATH: /home/david/Desktop/SLAM_project/devel;/opt/ros/noetic
+[36m--[0m This workspace overlays: /home/david/Desktop/SLAM_project/devel;/opt/ros/noetic
+[33mCMake Warning (dev) at /opt/ros/noetic/share/catkin/cmake/python.cmake:4 (find_package):
+  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+  the cmake_policy command to set the policy and suppress this warning.
+
+[36mCall Stack (most recent call first):[0m
+  /opt/ros/noetic/share/catkin/cmake/all.cmake:164 (include)
+  /opt/ros/noetic/share/catkin/cmake/catkinConfig.cmake:20 (include)
+  /opt/ros/noetic/share/genmsg/cmake/genmsg-extras.cmake:9 (find_package)
+  /opt/ros/noetic/share/genmsg/cmake/genmsgConfig.cmake:222 (include)
+  /opt/ros/noetic/share/gencpp/cmake/gencppConfig.cmake:197 (find_package)
+  /opt/ros/noetic/share/message_generation/cmake/message_generationConfig.cmake:197 (find_package)
+  /opt/ros/noetic/share/tf2_msgs/cmake/tf2_msgsConfig.cmake:197 (find_package)
+  /opt/ros/noetic/share/tf2/cmake/tf2Config.cmake:197 (find_package)
+  /opt/ros/noetic/share/tf2_eigen/cmake/tf2_eigenConfig.cmake:197 (find_package)
+  CMakeLists.txt:15 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[36m--[0m Found PythonInterp: /home/david/Desktop/SLAM_project/slam_project/bin/python3 (found suitable version "3.8.10", minimum required is "3")
+[36m--[0m Using PYTHON_EXECUTABLE: /home/david/Desktop/SLAM_project/slam_project/bin/python3
+[36m--[0m Using Debian Python package layout
+[36m--[0m Found PY_em: /home/david/Desktop/SLAM_project/slam_project/lib/python3.8/site-packages/em.py
+[36m--[0m Using empy: /home/david/Desktop/SLAM_project/slam_project/lib/python3.8/site-packages/em.py
+[36m--[0m Using CATKIN_ENABLE_TESTING: ON
+[36m--[0m Call enable_testing()
+[36m--[0m Using CATKIN_TEST_RESULTS_DIR: /home/david/Desktop/SLAM_project/build/ouster_ros/test_results
+[36m--[0m Found gtest sources under '/usr/src/googletest': gtests will be built
+[36m--[0m Found gmock sources under '/usr/src/googletest': gmock will be built
+[0mCMake Deprecation Warning at /usr/src/googletest/CMakeLists.txt:4 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+[0m
+[0mCMake Deprecation Warning at /usr/src/googletest/googlemock/CMakeLists.txt:45 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+[0m
+[0mCMake Deprecation Warning at /usr/src/googletest/googletest/CMakeLists.txt:56 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+[0m
+[33mCMake Warning (dev) at /usr/src/googletest/googletest/cmake/internal_utils.cmake:249 (find_package):
+  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+  the cmake_policy command to set the policy and suppress this warning.
+
+[36mCall Stack (most recent call first):[0m
+  /usr/src/googletest/googletest/CMakeLists.txt:91 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[36m--[0m Found PythonInterp: /home/david/Desktop/SLAM_project/slam_project/bin/python3 (found version "3.8.10")
+[36m--[0m Found Threads: TRUE
+[36m--[0m Using Python nosetests: /usr/bin/nosetests3
+[36m--[0m catkin 0.8.10
+[36m--[0m BUILD_SHARED_LIBS is on
+[36m--[0m Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+[36m--[0m Found CURL: /usr/include/x86_64-linux-gnu (found version "7.68.0")
+[33mCMake Warning (dev) at CMakeLists.txt:17 (find_package):
+  Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+  --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[36m--[0m Found Boost: /usr/include (found version "1.71.0")
+[36m--[0m ouster_ros: 1 messages, 3 services
+[36m--[0m Found jsoncpp: /usr/lib/x86_64-linux-gnu/cmake/jsoncpp/jsoncppConfig.cmake
+[33mCMake Warning (dev) at /opt/ros/noetic/share/catkin/cmake/custom_install.cmake:13 (_install):
+  Policy CMP0177 is not set: install() DESTINATION paths are normalized.  Run
+  "cmake --help-policy CMP0177" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+[36mCall Stack (most recent call first):[0m
+  CMakeLists.txt:138 (install)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[33mCMake Warning (dev) at /opt/ros/noetic/share/catkin/cmake/custom_install.cmake:13 (_install):
+  Policy CMP0177 is not set: install() DESTINATION paths are normalized.  Run
+  "cmake --help-policy CMP0177" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+[36mCall Stack (most recent call first):[0m
+  CMakeLists.txt:143 (install)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[36m--[0m Configuring done (2.7s)
+[36m--[0m Generating done (0.2s)
+[36m--[0m Build files have been written to: /home/david/Desktop/SLAM_project/build/ouster_ros

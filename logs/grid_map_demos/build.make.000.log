@@ -1,0 +1,49 @@
+[  2%] [32mBuilding CXX object CMakeFiles/simple_demo.dir/src/simple_demo_node.cpp.o[0m
+[  5%] [32m[1mLinking CXX executable /home/david/Desktop/SLAM_project/devel/.private/grid_map_demos/lib/grid_map_demos/simple_demo[0m
+[  5%] Built target simple_demo
+[  8%] [32mBuilding CXX object CMakeFiles/tutorial_demo.dir/src/tutorial_demo_node.cpp.o[0m
+[ 11%] [32m[1mLinking CXX executable /home/david/Desktop/SLAM_project/devel/.private/grid_map_demos/lib/grid_map_demos/tutorial_demo[0m
+[ 11%] Built target tutorial_demo
+[ 14%] [32mBuilding CXX object CMakeFiles/iterators_demo.dir/src/iterators_demo_node.cpp.o[0m
+[ 17%] [32mBuilding CXX object CMakeFiles/iterators_demo.dir/src/IteratorsDemo.cpp.o[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/image_to_gridmap_demo.dir/src/image_to_gridmap_demo_node.cpp.o[0m
+[ 22%] [32mBuilding CXX object CMakeFiles/image_to_gridmap_demo.dir/src/ImageToGridmapDemo.cpp.o[0m
+[ 25%] [32m[1mLinking CXX executable /home/david/Desktop/SLAM_project/devel/.private/grid_map_demos/lib/grid_map_demos/iterators_demo[0m
+[ 25%] Built target iterators_demo
+[ 28%] [32mBuilding CXX object CMakeFiles/grid_map_to_image_demo.dir/src/grid_map_to_image_demo_node.cpp.o[0m
+[ 31%] [32mBuilding CXX object CMakeFiles/grid_map_to_image_demo.dir/src/GridmapToImageDemo.cpp.o[0m
+[ 34%] [32m[1mLinking CXX executable /home/david/Desktop/SLAM_project/devel/.private/grid_map_demos/lib/grid_map_demos/image_to_gridmap_demo[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/octomap_to_gridmap_demo.dir/src/octomap_to_gridmap_demo_node.cpp.o[0m
+[ 37%] Built target image_to_gridmap_demo
+[ 40%] [32mBuilding CXX object CMakeFiles/move_demo.dir/src/move_demo_node.cpp.o[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/iterator_benchmark.dir/src/iterator_benchmark.cpp.o[0m
+[ 45%] [32m[1mLinking CXX executable /home/david/Desktop/SLAM_project/devel/.private/grid_map_demos/lib/grid_map_demos/grid_map_to_image_demo[0m
+[ 45%] Built target grid_map_to_image_demo
+[ 48%] [32m[1mLinking CXX executable /home/david/Desktop/SLAM_project/devel/.private/grid_map_demos/lib/grid_map_demos/iterator_benchmark[0m
+[ 51%] [32mBuilding CXX object CMakeFiles/opencv_demo.dir/src/opencv_demo_node.cpp.o[0m
+[ 51%] Built target iterator_benchmark
+[ 54%] [32mBuilding CXX object CMakeFiles/resolution_change_demo.dir/src/resolution_change_demo_node.cpp.o[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/octomap_to_gridmap_demo.dir/src/OctomapToGridmapDemo.cpp.o[0m
+[ 60%] [32m[1mLinking CXX executable /home/david/Desktop/SLAM_project/devel/.private/grid_map_demos/lib/grid_map_demos/move_demo[0m
+[ 60%] Built target move_demo
+[ 62%] [32mBuilding CXX object CMakeFiles/filters_demo.dir/src/filters_demo_node.cpp.o[0m
+[ 65%] [32m[1mLinking CXX executable /home/david/Desktop/SLAM_project/devel/.private/grid_map_demos/lib/grid_map_demos/resolution_change_demo[0m
+[ 68%] [32m[1mLinking CXX executable /home/david/Desktop/SLAM_project/devel/.private/grid_map_demos/lib/grid_map_demos/opencv_demo[0m
+[ 68%] Built target resolution_change_demo
+[ 71%] [32mBuilding CXX object CMakeFiles/normal_filter_comparison_demo.dir/src/normal_filter_comparison_node.cpp.o[0m
+[ 71%] Built target opencv_demo
+[ 74%] [32mBuilding CXX object CMakeFiles/interpolation_demo.dir/src/interpolation_demo_node.cpp.o[0m
+[ 77%] [32m[1mLinking CXX executable /home/david/Desktop/SLAM_project/devel/.private/grid_map_demos/lib/grid_map_demos/octomap_to_gridmap_demo[0m
+[ 77%] Built target octomap_to_gridmap_demo
+[ 80%] [32mBuilding CXX object CMakeFiles/sdf_demo.dir/src/sdf_demo_node.cpp.o[0m
+[ 82%] [32mBuilding CXX object CMakeFiles/filters_demo.dir/src/FiltersDemo.cpp.o[0m
+[ 85%] [32mBuilding CXX object CMakeFiles/interpolation_demo.dir/src/InterpolationDemo.cpp.o[0m
+[ 88%] [32mBuilding CXX object CMakeFiles/sdf_demo.dir/src/SdfDemo.cpp.o[0m
+[ 91%] [32m[1mLinking CXX executable /home/david/Desktop/SLAM_project/devel/.private/grid_map_demos/lib/grid_map_demos/interpolation_demo[0m
+[ 91%] Built target interpolation_demo
+[ 94%] [32m[1mLinking CXX executable /home/david/Desktop/SLAM_project/devel/.private/grid_map_demos/lib/grid_map_demos/normal_filter_comparison_demo[0m
+[ 94%] Built target normal_filter_comparison_demo
+[ 97%] [32m[1mLinking CXX executable /home/david/Desktop/SLAM_project/devel/.private/grid_map_demos/lib/grid_map_demos/sdf_demo[0m
+[ 97%] Built target sdf_demo
+[100%] [32m[1mLinking CXX executable /home/david/Desktop/SLAM_project/devel/.private/grid_map_demos/lib/grid_map_demos/filters_demo[0m
+[100%] Built target filters_demo

@@ -1,4 +1,1 @@
-(cl:in-package ouster_ros-srv)
-(cl:export '(METADATA-VAL
-          METADATA
-))
+/home/david/Desktop/SLAM_project/devel/.private/ouster_ros/share/common-lisp/ros/ouster_ros/srv/_package_GetMetadata.lisp

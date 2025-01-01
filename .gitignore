@@ -8,3 +8,10 @@ ohio_bags/*.bag
 ohio_bags/2_pcd/
 build/*
 devel/*
+
+
+src/elevation_mapping/
+src/message_logger/
+src/kindr/
+src/kindr_ros/
+src/grid_map/
