@@ -1,0 +1,88 @@
+Removing test result files from '/home/david/Desktop/SLAM_project/build/grid_map_cv/test_results/grid_map_cv'
+[  0%] Built target clean_test_results_grid_map_cv
+[ 11%] [32mBuilding CXX object gtest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[ 11%] Built target rosgraph_msgs_generate_messages_py
+[ 11%] Built target sensor_msgs_generate_messages_cpp
+[ 11%] Built target sensor_msgs_generate_messages_eus
+[ 11%] Built target sensor_msgs_generate_messages_lisp
+[ 11%] Built target sensor_msgs_generate_messages_nodejs
+[ 11%] Built target sensor_msgs_generate_messages_py
+[ 11%] Built target geometry_msgs_generate_messages_cpp
+[ 11%] Built target geometry_msgs_generate_messages_eus
+[ 11%] Built target geometry_msgs_generate_messages_lisp
+[ 11%] Built target geometry_msgs_generate_messages_nodejs
+[ 11%] Built target geometry_msgs_generate_messages_py
+[ 11%] Built target std_msgs_generate_messages_cpp
+[ 11%] Built target std_msgs_generate_messages_eus
+[ 11%] Built target std_msgs_generate_messages_lisp
+[ 11%] Built target std_msgs_generate_messages_nodejs
+[ 11%] Built target std_msgs_generate_messages_py
+[ 11%] Built target roscpp_generate_messages_cpp
+[ 11%] Built target roscpp_generate_messages_eus
+[ 11%] Built target roscpp_generate_messages_lisp
+[ 11%] Built target roscpp_generate_messages_nodejs
+[ 11%] Built target roscpp_generate_messages_py
+[ 11%] Built target rosgraph_msgs_generate_messages_cpp
+[ 11%] Built target rosgraph_msgs_generate_messages_eus
+[ 11%] Built target rosgraph_msgs_generate_messages_lisp
+[ 11%] Built target rosgraph_msgs_generate_messages_nodejs
+[ 44%] Built target grid_map_cv
+[ 55%] [32m[1mLinking CXX shared library ../lib/libgtest.so[0m
+[ 55%] Built target gtest
+[ 77%] [32mBuilding CXX object CMakeFiles/grid_map_cv-test.dir/test/GridMapCvTest.cpp.o[0m
+[ 77%] [32mBuilding CXX object CMakeFiles/grid_map_cv-test.dir/test/test_grid_map_cv.cpp.o[0m
+[ 88%] [32mBuilding CXX object CMakeFiles/grid_map_cv-test.dir/test/GridMapCvProcessingTest.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/david/Desktop/SLAM_project/devel/.private/grid_map_cv/lib/grid_map_cv/grid_map_cv-test[0m
+[100%] Built target grid_map_cv-test
+[100%] Built target tests
+-- run_tests.py: execute commands
+  /home/david/Desktop/SLAM_project/devel/.private/grid_map_cv/lib/grid_map_cv/grid_map_cv-test --gtest_output=xml:/home/david/Desktop/SLAM_project/build/grid_map_cv/test_results/grid_map_cv/gtest-grid_map_cv-test.xml
+[0;32m[==========] [mRunning 14 tests from 3 test suites.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m4 tests from ImageConversion
+[0;32m[ RUN      ] [mImageConversion.roundTrip8UC3
+[0;32m[       OK ] [mImageConversion.roundTrip8UC3 (7 ms)
+[0;32m[ RUN      ] [mImageConversion.roundTrip8UC4
+[0;32m[       OK ] [mImageConversion.roundTrip8UC4 (0 ms)
+[0;32m[ RUN      ] [mImageConversion.roundTrip16UC1
+[0;32m[       OK ] [mImageConversion.roundTrip16UC1 (0 ms)
+[0;32m[ RUN      ] [mImageConversion.roundTrip32FC1
+[0;32m[       OK ] [mImageConversion.roundTrip32FC1 (0 ms)
+[0;32m[----------] [m4 tests from ImageConversion (7 ms total)
+
+[0;32m[----------] [m2 tests from GridMapCvProcessing
+[0;32m[ RUN      ] [mGridMapCvProcessing.changeResolution
+[0;32m[       OK ] [mGridMapCvProcessing.changeResolution (3 ms)
+[0;32m[ RUN      ] [mGridMapCvProcessing.changeResolutionForMovedMap
+[0;32m[       OK ] [mGridMapCvProcessing.changeResolutionForMovedMap (1 ms)
+[0;32m[----------] [m2 tests from GridMapCvProcessing (4 ms total)
+
+[0;32m[----------] [m8 tests from GridMap
+[0;32m[ RUN      ] [mGridMap.TransformRotate90
+[0;32m[       OK ] [mGridMap.TransformRotate90 (1 ms)
+[0;32m[ RUN      ] [mGridMap.TransformRotate180
+[0;32m[       OK ] [mGridMap.TransformRotate180 (0 ms)
+[0;32m[ RUN      ] [mGridMap.TransformRotate270
+[0;32m[       OK ] [mGridMap.TransformRotate270 (0 ms)
+[0;32m[ RUN      ] [mGridMap.TransformRotate360
+[0;32m[       OK ] [mGridMap.TransformRotate360 (0 ms)
+[0;32m[ RUN      ] [mGridMap.TransformRotate45
+[0;32m[       OK ] [mGridMap.TransformRotate45 (0 ms)
+[0;32m[ RUN      ] [mGridMap.TransformTranslationXZY
+[0;32m[       OK ] [mGridMap.TransformTranslationXZY (0 ms)
+[0;32m[ RUN      ] [mGridMap.TransformUnaligned
+[0;32m[       OK ] [mGridMap.TransformUnaligned (0 ms)
+[0;32m[ RUN      ] [mGridMap.TransformComputationTime
+Transforming a 2 x 2 m GridMap with a resolution of 2 cm by 45° took: 
+avg: 0.930797ms, 	min: 0.861772ms, 	max 1.27752ms.
+[0;32m[       OK ] [mGridMap.TransformComputationTime (97 ms)
+[0;32m[----------] [m8 tests from GridMap (98 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m14 tests from 3 test suites ran. (109 ms total)
+[0;32m[  PASSED  ] [m14 tests.
+-- run_tests.py: verify result "/home/david/Desktop/SLAM_project/build/grid_map_cv/test_results/grid_map_cv/gtest-grid_map_cv-test.xml"
+[100%] Built target _run_tests_grid_map_cv_gtest_grid_map_cv-test
+[100%] Built target _run_tests_grid_map_cv_gtest
+[100%] Built target _run_tests_grid_map_cv
+[100%] Built target run_tests

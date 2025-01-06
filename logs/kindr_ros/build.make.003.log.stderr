@@ -1,0 +1,16 @@
+[01m[K/home/david/Desktop/SLAM_project/src/kindr_ros/kindr_ros/test/RosTfPoseTest.cpp:[m[K In member function ‘[01m[Kvirtual void RosTfPoseEigen_convertFromRosTf_Test::TestBody()[m[K’:
+[01m[K/home/david/Desktop/SLAM_project/src/kindr_ros/kindr_ros/test/RosTfPoseTest.cpp:78:15:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KtfTestVectorTransformed1[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+   78 |   tf::Vector3 [01;35m[KtfTestVectorTransformed1[m[K = tfTransform(tf::Vector3(testVector1.x(), testVector1.y(), testVector1.z()));
+      |               [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/david/Desktop/SLAM_project/src/kindr_ros/kindr_ros/test/RosTfPoseTest.cpp:[m[K In member function ‘[01m[Kvirtual void RosTfPoseEigen_convertToRosTf_Test::TestBody()[m[K’:
+[01m[K/home/david/Desktop/SLAM_project/src/kindr_ros/kindr_ros/test/RosTfPoseTest.cpp:154:21:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KtestVector1Transformed[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+  154 |   kindr::Position3D [01;35m[KtestVector1Transformed[m[K = pose.transform(testVector1);
+      |                     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/david/Desktop/SLAM_project/src/kindr_ros/kindr_ros/test/TfConventionTest.cpp:[m[K In static member function ‘[01m[Kstatic void kindr::RotationConversion<tf::Quaternion, tf::Vector3, double>::convertToVelocityVector(kindr::RotationConversion<tf::Quaternion, tf::Vector3, double>::Vector&, kindr::RotationConversion<tf::Quaternion, tf::Vector3, double>::Rotation&, const Eigen::Matrix<double, 3, 1>&)[m[K’:
+[01m[K/home/david/Desktop/SLAM_project/src/kindr_ros/kindr_ros/test/TfConventionTest.cpp:34:69:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Krot[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   34 |   inline static void convertToVelocityVector(Vector& out, [01;35m[KRotation& rot[m[K, const Eigen::Matrix<double, 3, 1>& in) {
+      |                                                           [01;35m[K~~~~~~~~~~^~~[m[K
+[01m[K/home/david/Desktop/SLAM_project/src/kindr_ros/kindr_ros/test/TfConventionTest.cpp:[m[K In static member function ‘[01m[Kstatic void kindr::RotationConversion<tf::Matrix3x3, tf::Vector3, double>::convertToOtherVelocityVector(kindr::RotationConversion<tf::Matrix3x3, tf::Vector3, double>::Vector&, kindr::RotationConversion<tf::Matrix3x3, tf::Vector3, double>::Rotation&, const Eigen::Matrix<double, 3, 1>&)[m[K’:
+[01m[K/home/david/Desktop/SLAM_project/src/kindr_ros/kindr_ros/test/TfConventionTest.cpp:75:74:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Krot[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   75 |   inline static void convertToOtherVelocityVector(Vector& out, [01;35m[KRotation& rot[m[K, const Eigen::Matrix<double, 3, 1>& in) {
+      |                                                                [01;35m[K~~~~~~~~~~^~~[m[K

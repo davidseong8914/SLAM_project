@@ -1,4 +1,0 @@
-[ 33%] [32mBuilding CXX object CMakeFiles/grid_map_sdf.dir/src/SignedDistance2d.cpp.o[0m
-[ 66%] [32mBuilding CXX object CMakeFiles/grid_map_sdf.dir/src/SignedDistanceField.cpp.o[0m
-[100%] [32m[1mLinking CXX shared library /home/david/Desktop/SLAM_project/devel/.private/grid_map_sdf/lib/libgrid_map_sdf.so[0m
-[100%] Built target grid_map_sdf

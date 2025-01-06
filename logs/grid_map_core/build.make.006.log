@@ -1,0 +1,316 @@
+Removing test result files from '/home/david/Desktop/SLAM_project/build/grid_map_core/test_results/grid_map_core'
+[  0%] Built target clean_test_results_grid_map_core
+[  3%] [32mBuilding CXX object gtest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[ 48%] Built target grid_map_core
+[ 51%] [32m[1mLinking CXX shared library ../lib/libgtest.so[0m
+[ 51%] Built target gtest
+[ 54%] [32mBuilding CXX object CMakeFiles/grid_map_core-test.dir/test/test_grid_map_core.cpp.o[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/grid_map_core-test.dir/test/test_helpers.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/grid_map_core-test.dir/test/CubicConvolutionInterpolationTest.cpp.o[0m
+[ 63%] [32mBuilding CXX object CMakeFiles/grid_map_core-test.dir/test/CubicInterpolationTest.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/grid_map_core-test.dir/test/GridMapMathTest.cpp.o[0m
+[ 69%] [32mBuilding CXX object CMakeFiles/grid_map_core-test.dir/test/GridMapTest.cpp.o[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/grid_map_core-test.dir/test/GridMapIteratorTest.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/grid_map_core-test.dir/test/LineIteratorTest.cpp.o[0m
+[ 78%] [32mBuilding CXX object CMakeFiles/grid_map_core-test.dir/test/EllipseIteratorTest.cpp.o[0m
+[ 81%] [32mBuilding CXX object CMakeFiles/grid_map_core-test.dir/test/SubmapIteratorTest.cpp.o[0m
+[ 84%] [32mBuilding CXX object CMakeFiles/grid_map_core-test.dir/test/PolygonIteratorTest.cpp.o[0m
+[ 87%] [32mBuilding CXX object CMakeFiles/grid_map_core-test.dir/test/PolygonTest.cpp.o[0m
+[ 90%] [32mBuilding CXX object CMakeFiles/grid_map_core-test.dir/test/EigenPluginsTest.cpp.o[0m
+[ 93%] [32mBuilding CXX object CMakeFiles/grid_map_core-test.dir/test/SpiralIteratorTest.cpp.o[0m
+[ 96%] [32mBuilding CXX object CMakeFiles/grid_map_core-test.dir/test/SlidingWindowIteratorTest.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/david/Desktop/SLAM_project/devel/.private/grid_map_core/lib/grid_map_core/grid_map_core-test[0m
+[100%] Built target grid_map_core-test
+[100%] Built target tests
+-- run_tests.py: execute commands
+  /home/david/Desktop/SLAM_project/devel/.private/grid_map_core/lib/grid_map_core/grid_map_core-test --gtest_output=xml:/home/david/Desktop/SLAM_project/build/grid_map_core/test_results/grid_map_core/gtest-grid_map_core-test.xml
+[0;32m[==========] [mRunning 93 tests from 31 test suites.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m7 tests from CubicConvolutionInterpolation
+[0;32m[ RUN      ] [mCubicConvolutionInterpolation.FlatWorld
+[0;32m[       OK ] [mCubicConvolutionInterpolation.FlatWorld (0 ms)
+[0;32m[ RUN      ] [mCubicConvolutionInterpolation.RationalFunctionWorld
+[0;32m[       OK ] [mCubicConvolutionInterpolation.RationalFunctionWorld (4 ms)
+[0;32m[ RUN      ] [mCubicConvolutionInterpolation.SaddleWorld
+[0;32m[       OK ] [mCubicConvolutionInterpolation.SaddleWorld (1 ms)
+[0;32m[ RUN      ] [mCubicConvolutionInterpolation.SecondOrderPolyWorld
+[0;32m[       OK ] [mCubicConvolutionInterpolation.SecondOrderPolyWorld (0 ms)
+[0;32m[ RUN      ] [mCubicConvolutionInterpolation.SineWorld
+[0;32m[       OK ] [mCubicConvolutionInterpolation.SineWorld (8 ms)
+[0;32m[ RUN      ] [mCubicConvolutionInterpolation.TanhWorld
+[0;32m[       OK ] [mCubicConvolutionInterpolation.TanhWorld (1 ms)
+[0;32m[ RUN      ] [mCubicConvolutionInterpolation.GaussianWorld
+[0;32m[       OK ] [mCubicConvolutionInterpolation.GaussianWorld (2 ms)
+[0;32m[----------] [m7 tests from CubicConvolutionInterpolation (17 ms total)
+
+[0;32m[----------] [m7 tests from CubicInterpolation
+[0;32m[ RUN      ] [mCubicInterpolation.FlatWorld
+[0;32m[       OK ] [mCubicInterpolation.FlatWorld (0 ms)
+[0;32m[ RUN      ] [mCubicInterpolation.RationalFunctionWorld
+[0;32m[       OK ] [mCubicInterpolation.RationalFunctionWorld (4 ms)
+[0;32m[ RUN      ] [mCubicInterpolation.SaddleWorld
+[0;32m[       OK ] [mCubicInterpolation.SaddleWorld (0 ms)
+[0;32m[ RUN      ] [mCubicInterpolation.SecondOrderPolyWorld
+[0;32m[       OK ] [mCubicInterpolation.SecondOrderPolyWorld (0 ms)
+[0;32m[ RUN      ] [mCubicInterpolation.SineWorld
+[0;32m[       OK ] [mCubicInterpolation.SineWorld (8 ms)
+[0;32m[ RUN      ] [mCubicInterpolation.TanhWorld
+[0;32m[       OK ] [mCubicInterpolation.TanhWorld (1 ms)
+[0;32m[ RUN      ] [mCubicInterpolation.GaussianWorld
+[0;32m[       OK ] [mCubicInterpolation.GaussianWorld (2 ms)
+[0;32m[----------] [m7 tests from CubicInterpolation (18 ms total)
+
+[0;32m[----------] [m2 tests from PositionFromIndex
+[0;32m[ RUN      ] [mPositionFromIndex.Simple
+[0;32m[       OK ] [mPositionFromIndex.Simple (0 ms)
+[0;32m[ RUN      ] [mPositionFromIndex.CircularBuffer
+[0;32m[       OK ] [mPositionFromIndex.CircularBuffer (0 ms)
+[0;32m[----------] [m2 tests from PositionFromIndex (0 ms total)
+
+[0;32m[----------] [m3 tests from IndexFromPosition
+[0;32m[ RUN      ] [mIndexFromPosition.Simple
+[0;32m[       OK ] [mIndexFromPosition.Simple (0 ms)
+[0;32m[ RUN      ] [mIndexFromPosition.EdgeCases
+[0;32m[       OK ] [mIndexFromPosition.EdgeCases (0 ms)
+[0;32m[ RUN      ] [mIndexFromPosition.CircularBuffer
+[0;32m[       OK ] [mIndexFromPosition.CircularBuffer (0 ms)
+[0;32m[----------] [m3 tests from IndexFromPosition (0 ms total)
+
+[0;32m[----------] [m3 tests from checkIfPositionWithinMap
+[0;32m[ RUN      ] [mcheckIfPositionWithinMap.Inside
+[0;32m[       OK ] [mcheckIfPositionWithinMap.Inside (0 ms)
+[0;32m[ RUN      ] [mcheckIfPositionWithinMap.Outside
+[0;32m[       OK ] [mcheckIfPositionWithinMap.Outside (0 ms)
+[0;32m[ RUN      ] [mcheckIfPositionWithinMap.EdgeCases
+[0;32m[       OK ] [mcheckIfPositionWithinMap.EdgeCases (0 ms)
+[0;32m[----------] [m3 tests from checkIfPositionWithinMap (0 ms total)
+
+[0;32m[----------] [m1 test from getIndexShiftFromPositionShift
+[0;32m[ RUN      ] [mgetIndexShiftFromPositionShift.All
+[0;32m[       OK ] [mgetIndexShiftFromPositionShift.All (0 ms)
+[0;32m[----------] [m1 test from getIndexShiftFromPositionShift (0 ms total)
+
+[0;32m[----------] [m1 test from getPositionShiftFromIndexShift
+[0;32m[ RUN      ] [mgetPositionShiftFromIndexShift.All
+[0;32m[       OK ] [mgetPositionShiftFromIndexShift.All (0 ms)
+[0;32m[----------] [m1 test from getPositionShiftFromIndexShift (0 ms total)
+
+[0;32m[----------] [m1 test from checkIfIndexInRange
+[0;32m[ RUN      ] [mcheckIfIndexInRange.All
+[0;32m[       OK ] [mcheckIfIndexInRange.All (0 ms)
+[0;32m[----------] [m1 test from checkIfIndexInRange (0 ms total)
+
+[0;32m[----------] [m1 test from boundIndexToRange
+[0;32m[ RUN      ] [mboundIndexToRange.All
+[0;32m[       OK ] [mboundIndexToRange.All (0 ms)
+[0;32m[----------] [m1 test from boundIndexToRange (0 ms total)
+
+[0;32m[----------] [m1 test from wrapIndexToRange
+[0;32m[ RUN      ] [mwrapIndexToRange.All
+[0;32m[       OK ] [mwrapIndexToRange.All (0 ms)
+[0;32m[----------] [m1 test from wrapIndexToRange (0 ms total)
+
+[0;32m[----------] [m2 tests from boundPositionToRange
+[0;32m[ RUN      ] [mboundPositionToRange.Simple
+[0;32m[       OK ] [mboundPositionToRange.Simple (0 ms)
+[0;32m[ RUN      ] [mboundPositionToRange.Position
+[0;32m[       OK ] [mboundPositionToRange.Position (0 ms)
+[0;32m[----------] [m2 tests from boundPositionToRange (0 ms total)
+
+[0;32m[----------] [m6 tests from getSubmapInformation
+[0;32m[ RUN      ] [mgetSubmapInformation.Simple
+[0;32m[       OK ] [mgetSubmapInformation.Simple (0 ms)
+[0;32m[ RUN      ] [mgetSubmapInformation.Zero
+[0;32m[       OK ] [mgetSubmapInformation.Zero (0 ms)
+[0;32m[ RUN      ] [mgetSubmapInformation.ExceedingBoundaries
+[0;32m[       OK ] [mgetSubmapInformation.ExceedingBoundaries (0 ms)
+[0;32m[ RUN      ] [mgetSubmapInformation.CircularBuffer
+[0;32m[       OK ] [mgetSubmapInformation.CircularBuffer (0 ms)
+[0;32m[ RUN      ] [mgetSubmapInformation.Debug1
+[0;32m[       OK ] [mgetSubmapInformation.Debug1 (0 ms)
+[0;32m[ RUN      ] [mgetSubmapInformation.Debug2
+[0;32m[       OK ] [mgetSubmapInformation.Debug2 (0 ms)
+[0;32m[----------] [m6 tests from getSubmapInformation (0 ms total)
+
+[0;32m[----------] [m3 tests from getBufferRegionsForSubmap
+[0;32m[ RUN      ] [mgetBufferRegionsForSubmap.Trivial
+[0;32m[       OK ] [mgetBufferRegionsForSubmap.Trivial (0 ms)
+[0;32m[ RUN      ] [mgetBufferRegionsForSubmap.Simple
+[0;32m[       OK ] [mgetBufferRegionsForSubmap.Simple (0 ms)
+[0;32m[ RUN      ] [mgetBufferRegionsForSubmap.CircularBuffer
+[0;32m[       OK ] [mgetBufferRegionsForSubmap.CircularBuffer (0 ms)
+[0;32m[----------] [m3 tests from getBufferRegionsForSubmap (0 ms total)
+
+[0;32m[----------] [m2 tests from checkIncrementIndex
+[0;32m[ RUN      ] [mcheckIncrementIndex.Simple
+[0;32m[       OK ] [mcheckIncrementIndex.Simple (0 ms)
+[0;32m[ RUN      ] [mcheckIncrementIndex.CircularBuffer
+[0;32m[       OK ] [mcheckIncrementIndex.CircularBuffer (0 ms)
+[0;32m[----------] [m2 tests from checkIncrementIndex (0 ms total)
+
+[0;32m[----------] [m2 tests from checkIncrementIndexForSubmap
+[0;32m[ RUN      ] [mcheckIncrementIndexForSubmap.Simple
+[0;32m[       OK ] [mcheckIncrementIndexForSubmap.Simple (0 ms)
+[0;32m[ RUN      ] [mcheckIncrementIndexForSubmap.CircularBuffer
+[0;32m[       OK ] [mcheckIncrementIndexForSubmap.CircularBuffer (0 ms)
+[0;32m[----------] [m2 tests from checkIncrementIndexForSubmap (0 ms total)
+
+[0;32m[----------] [m1 test from getIndexFromLinearIndex
+[0;32m[ RUN      ] [mgetIndexFromLinearIndex.Simple
+[0;32m[       OK ] [mgetIndexFromLinearIndex.Simple (0 ms)
+[0;32m[----------] [m1 test from getIndexFromLinearIndex (0 ms total)
+
+[0;32m[----------] [m6 tests from GridMap
+[0;32m[ RUN      ] [mGridMap.CopyConstructor
+[0;32m[       OK ] [mGridMap.CopyConstructor (0 ms)
+[0;32m[ RUN      ] [mGridMap.CopyAssign
+[0;32m[       OK ] [mGridMap.CopyAssign (0 ms)
+[0;32m[ RUN      ] [mGridMap.Move
+[0;32m[       OK ] [mGridMap.Move (0 ms)
+[0;32m[ RUN      ] [mGridMap.Transform
+[0;32m[       OK ] [mGridMap.Transform (1 ms)
+[0;32m[ RUN      ] [mGridMap.ClipToMap
+[0;32m[       OK ] [mGridMap.ClipToMap (0 ms)
+[0;32m[ RUN      ] [mGridMap.ClipToMap2
+[0;32m[       OK ] [mGridMap.ClipToMap2 (0 ms)
+[0;32m[----------] [m6 tests from GridMap (1 ms total)
+
+[0;32m[----------] [m3 tests from AddDataFrom
+[0;32m[ RUN      ] [mAddDataFrom.ExtendMapAligned
+[0;32m[       OK ] [mAddDataFrom.ExtendMapAligned (0 ms)
+[0;32m[ RUN      ] [mAddDataFrom.ExtendMapNotAligned
+[0;32m[       OK ] [mAddDataFrom.ExtendMapNotAligned (0 ms)
+[0;32m[ RUN      ] [mAddDataFrom.CopyData
+[0;32m[       OK ] [mAddDataFrom.CopyData (0 ms)
+[0;32m[----------] [m3 tests from AddDataFrom (0 ms total)
+
+[0;32m[----------] [m2 tests from ValueAtPosition
+[0;32m[ RUN      ] [mValueAtPosition.NearestNeighbor
+[0;32m[       OK ] [mValueAtPosition.NearestNeighbor (0 ms)
+[0;32m[ RUN      ] [mValueAtPosition.LinearInterpolated
+[0;32m[       OK ] [mValueAtPosition.LinearInterpolated (0 ms)
+[0;32m[----------] [m2 tests from ValueAtPosition (0 ms total)
+
+[0;32m[----------] [m2 tests from GridMapIterator
+[0;32m[ RUN      ] [mGridMapIterator.Simple
+[0;32m[       OK ] [mGridMapIterator.Simple (0 ms)
+[0;32m[ RUN      ] [mGridMapIterator.LinearIndex
+[0;32m[       OK ] [mGridMapIterator.LinearIndex (0 ms)
+[0;32m[----------] [m2 tests from GridMapIterator (0 ms total)
+
+[0;32m[----------] [m6 tests from LineIterator
+[0;32m[ RUN      ] [mLineIterator.StartOutsideMap
+[0;32m[       OK ] [mLineIterator.StartOutsideMap (0 ms)
+[0;32m[ RUN      ] [mLineIterator.EndOutsideMap
+[0;32m[       OK ] [mLineIterator.EndOutsideMap (0 ms)
+[0;32m[ RUN      ] [mLineIterator.StartAndEndOutsideMap
+[0;32m[       OK ] [mLineIterator.StartAndEndOutsideMap (0 ms)
+[0;32m[ RUN      ] [mLineIterator.StartAndEndOutsideMapWithoutIntersectingMap
+[0;32m[       OK ] [mLineIterator.StartAndEndOutsideMapWithoutIntersectingMap (0 ms)
+[0;32m[ RUN      ] [mLineIterator.MovedMap
+[0;32m[       OK ] [mLineIterator.MovedMap (0 ms)
+[0;32m[ RUN      ] [mLineIterator.StartAndEndOutsideMovedMap
+[0;32m[       OK ] [mLineIterator.StartAndEndOutsideMovedMap (0 ms)
+[0;32m[----------] [m6 tests from LineIterator (0 ms total)
+
+[0;32m[----------] [m1 test from EllipseIterator
+[0;32m[ RUN      ] [mEllipseIterator.OneCellWideEllipse
+[0;32m[       OK ] [mEllipseIterator.OneCellWideEllipse (0 ms)
+[0;32m[----------] [m1 test from EllipseIterator (0 ms total)
+
+[0;32m[----------] [m3 tests from SubmapIterator
+[0;32m[ RUN      ] [mSubmapIterator.Simple
+[0;32m[       OK ] [mSubmapIterator.Simple (0 ms)
+[0;32m[ RUN      ] [mSubmapIterator.CircularBuffer
+[0;32m[       OK ] [mSubmapIterator.CircularBuffer (0 ms)
+[0;32m[ RUN      ] [mSubmapIterator.InterleavedExecutionWithMove
+(4,7) contains 7
+[0;32m[       OK ] [mSubmapIterator.InterleavedExecutionWithMove (0 ms)
+[0;32m[----------] [m3 tests from SubmapIterator (0 ms total)
+
+[0;32m[----------] [m5 tests from PolygonIterator
+[0;32m[ RUN      ] [mPolygonIterator.FullCover
+[0;32m[       OK ] [mPolygonIterator.FullCover (0 ms)
+[0;32m[ RUN      ] [mPolygonIterator.Outside
+[0;32m[       OK ] [mPolygonIterator.Outside (0 ms)
+[0;32m[ RUN      ] [mPolygonIterator.Square
+[0;32m[       OK ] [mPolygonIterator.Square (0 ms)
+[0;32m[ RUN      ] [mPolygonIterator.TopLeftTriangle
+[0;32m[       OK ] [mPolygonIterator.TopLeftTriangle (0 ms)
+[0;32m[ RUN      ] [mPolygonIterator.MoveMap
+[0;32m[       OK ] [mPolygonIterator.MoveMap (0 ms)
+[0;32m[----------] [m5 tests from PolygonIterator (0 ms total)
+
+[0;32m[----------] [m7 tests from Polygon
+[0;32m[ RUN      ] [mPolygon.getCentroidTriangle
+[0;32m[       OK ] [mPolygon.getCentroidTriangle (0 ms)
+[0;32m[ RUN      ] [mPolygon.getCentroidRectangle
+[0;32m[       OK ] [mPolygon.getCentroidRectangle (0 ms)
+[0;32m[ RUN      ] [mPolygon.getBoundingBox
+[0;32m[       OK ] [mPolygon.getBoundingBox (0 ms)
+[0;32m[ RUN      ] [mPolygon.convexHullPoints
+[0;32m[       OK ] [mPolygon.convexHullPoints (0 ms)
+[0;32m[ RUN      ] [mPolygon.convexHullPolygon
+[0;32m[       OK ] [mPolygon.convexHullPolygon (0 ms)
+[0;32m[ RUN      ] [mPolygon.convexHullCircles
+[0;32m[       OK ] [mPolygon.convexHullCircles (0 ms)
+[0;32m[ RUN      ] [mPolygon.convexHullCircle
+[0;32m[       OK ] [mPolygon.convexHullCircle (0 ms)
+[0;32m[----------] [m7 tests from Polygon (0 ms total)
+
+[0;32m[----------] [m2 tests from convertToInequalityConstraints
+[0;32m[ RUN      ] [mconvertToInequalityConstraints.triangle1
+[0;32m[       OK ] [mconvertToInequalityConstraints.triangle1 (0 ms)
+[0;32m[ RUN      ] [mconvertToInequalityConstraints.triangle2
+[0;32m[       OK ] [mconvertToInequalityConstraints.triangle2 (0 ms)
+[0;32m[----------] [m2 tests from convertToInequalityConstraints (0 ms total)
+
+[0;32m[----------] [m1 test from offsetInward
+[0;32m[ RUN      ] [moffsetInward.triangle
+[0;32m[       OK ] [moffsetInward.triangle (0 ms)
+[0;32m[----------] [m1 test from offsetInward (1 ms total)
+
+[0;32m[----------] [m2 tests from triangulation
+[0;32m[ RUN      ] [mtriangulation.triangle
+[0;32m[       OK ] [mtriangulation.triangle (0 ms)
+[0;32m[ RUN      ] [mtriangulation.rectangle
+[0;32m[       OK ] [mtriangulation.rectangle (0 ms)
+[0;32m[----------] [m2 tests from triangulation (0 ms total)
+
+[0;32m[----------] [m6 tests from EigenMatrixBaseAddons
+[0;32m[ RUN      ] [mEigenMatrixBaseAddons.numberOfFinites
+[0;32m[       OK ] [mEigenMatrixBaseAddons.numberOfFinites (0 ms)
+[0;32m[ RUN      ] [mEigenMatrixBaseAddons.sumOfFinites
+[0;32m[       OK ] [mEigenMatrixBaseAddons.sumOfFinites (0 ms)
+[0;32m[ RUN      ] [mEigenMatrixBaseAddons.meanOfFinites
+[0;32m[       OK ] [mEigenMatrixBaseAddons.meanOfFinites (0 ms)
+[0;32m[ RUN      ] [mEigenMatrixBaseAddons.minCoeffOfFinites
+[0;32m[       OK ] [mEigenMatrixBaseAddons.minCoeffOfFinites (0 ms)
+[0;32m[ RUN      ] [mEigenMatrixBaseAddons.maxCoeffOfFinites
+[0;32m[       OK ] [mEigenMatrixBaseAddons.maxCoeffOfFinites (0 ms)
+[0;32m[ RUN      ] [mEigenMatrixBaseAddons.clamp
+[0;32m[       OK ] [mEigenMatrixBaseAddons.clamp (0 ms)
+[0;32m[----------] [m6 tests from EigenMatrixBaseAddons (0 ms total)
+
+[0;32m[----------] [m1 test from SpiralIterator
+[0;32m[ RUN      ] [mSpiralIterator.CenterOutOfMap
+[0;32m[       OK ] [mSpiralIterator.CenterOutOfMap (0 ms)
+[0;32m[----------] [m1 test from SpiralIterator (0 ms total)
+
+[0;32m[----------] [m3 tests from SlidingWindowIterator
+[0;32m[ RUN      ] [mSlidingWindowIterator.WindowSize3Cutoff
+[0;32m[       OK ] [mSlidingWindowIterator.WindowSize3Cutoff (0 ms)
+[0;32m[ RUN      ] [mSlidingWindowIterator.WindowSize5
+[0;32m[       OK ] [mSlidingWindowIterator.WindowSize5 (0 ms)
+[0;32m[ RUN      ] [mSlidingWindowIterator.WindowSize3Inside
+[0;32m[       OK ] [mSlidingWindowIterator.WindowSize3Inside (0 ms)
+[0;32m[----------] [m3 tests from SlidingWindowIterator (0 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m93 tests from 31 test suites ran. (38 ms total)
+[0;32m[  PASSED  ] [m93 tests.
+-- run_tests.py: verify result "/home/david/Desktop/SLAM_project/build/grid_map_core/test_results/grid_map_core/gtest-grid_map_core-test.xml"
+[100%] Built target _run_tests_grid_map_core_gtest_grid_map_core-test
+[100%] Built target _run_tests_grid_map_core_gtest
+[100%] Built target _run_tests_grid_map_core
+[100%] Built target run_tests

@@ -1,0 +1,116 @@
+[  0%] Built target visualization_msgs_generate_messages_py
+[  0%] Built target roscpp_generate_messages_cpp
+[  0%] Built target roscpp_generate_messages_eus
+[  0%] Built target roscpp_generate_messages_lisp
+[  0%] Built target roscpp_generate_messages_nodejs
+[  0%] Built target roscpp_generate_messages_py
+[  0%] Built target rosgraph_msgs_generate_messages_cpp
+[  3%] [32mBuilding CXX object gtest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[  3%] Built target rosgraph_msgs_generate_messages_eus
+Removing test result files from '/home/david/Desktop/SLAM_project/build/grid_map_filters/test_results/grid_map_filters'
+[  3%] Built target rosgraph_msgs_generate_messages_lisp
+[  3%] Built target clean_test_results_grid_map_filters
+[  3%] Built target rosgraph_msgs_generate_messages_nodejs
+[  3%] Built target rosgraph_msgs_generate_messages_py
+[  3%] Built target std_msgs_generate_messages_cpp
+[  3%] Built target std_msgs_generate_messages_eus
+[  3%] Built target std_msgs_generate_messages_lisp
+[  3%] Built target std_msgs_generate_messages_nodejs
+[  3%] Built target std_msgs_generate_messages_py
+[  3%] Built target grid_map_msgs_generate_messages_cpp
+[  3%] Built target grid_map_msgs_generate_messages_eus
+[  3%] Built target grid_map_msgs_generate_messages_lisp
+[  3%] Built target grid_map_msgs_generate_messages_nodejs
+[  3%] Built target grid_map_msgs_generate_messages_py
+[  3%] Built target geometry_msgs_generate_messages_cpp
+[  3%] Built target geometry_msgs_generate_messages_lisp
+[  3%] Built target geometry_msgs_generate_messages_eus
+[  3%] Built target geometry_msgs_generate_messages_nodejs
+[  3%] Built target geometry_msgs_generate_messages_py
+[  3%] Built target sensor_msgs_generate_messages_eus
+[  3%] Built target sensor_msgs_generate_messages_cpp
+[  3%] Built target sensor_msgs_generate_messages_nodejs
+[  3%] Built target sensor_msgs_generate_messages_lisp
+[  3%] Built target sensor_msgs_generate_messages_py
+[  3%] Built target nav_msgs_generate_messages_eus
+[  3%] Built target nav_msgs_generate_messages_cpp
+[  3%] Built target nav_msgs_generate_messages_lisp
+[  3%] Built target nav_msgs_generate_messages_nodejs
+[  3%] Built target nav_msgs_generate_messages_py
+[  3%] Built target actionlib_msgs_generate_messages_cpp
+[  3%] Built target actionlib_msgs_generate_messages_eus
+[  3%] Built target actionlib_msgs_generate_messages_lisp
+[  3%] Built target actionlib_msgs_generate_messages_nodejs
+[  3%] Built target actionlib_msgs_generate_messages_py
+[  3%] Built target _catkin_empty_exported_target
+[  3%] Built target std_srvs_generate_messages_cpp
+[  3%] Built target std_srvs_generate_messages_lisp
+[  3%] Built target std_srvs_generate_messages_eus
+[  3%] Built target std_srvs_generate_messages_nodejs
+[  3%] Built target topic_tools_generate_messages_cpp
+[  3%] Built target std_srvs_generate_messages_py
+[  3%] Built target topic_tools_generate_messages_eus
+[  3%] Built target topic_tools_generate_messages_nodejs
+[  3%] Built target topic_tools_generate_messages_lisp
+[  3%] Built target tf_generate_messages_cpp
+[  3%] Built target topic_tools_generate_messages_py
+[  3%] Built target tf_generate_messages_eus
+[  3%] Built target tf_generate_messages_lisp
+[  3%] Built target tf_generate_messages_nodejs
+[  3%] Built target tf_generate_messages_py
+[  3%] Built target actionlib_generate_messages_cpp
+[  3%] Built target actionlib_generate_messages_eus
+[  3%] Built target actionlib_generate_messages_lisp
+[  3%] Built target actionlib_generate_messages_nodejs
+[  3%] Built target actionlib_generate_messages_py
+[  3%] Built target tf2_msgs_generate_messages_cpp
+[  3%] Built target tf2_msgs_generate_messages_eus
+[  3%] Built target tf2_msgs_generate_messages_lisp
+[  3%] Built target tf2_msgs_generate_messages_nodejs
+[  3%] Built target visualization_msgs_generate_messages_cpp
+[  3%] Built target tf2_msgs_generate_messages_py
+[  3%] Built target visualization_msgs_generate_messages_eus
+[  3%] Built target visualization_msgs_generate_messages_nodejs
+[  3%] Built target visualization_msgs_generate_messages_lisp
+[ 71%] Built target grid_map_filters
+[ 75%] [32m[1mLinking CXX shared library ../lib/libgtest.so[0m
+[ 75%] Built target gtest
+[ 78%] [32mBuilding CXX object gtest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o[0m
+[ 82%] [32m[1mLinking CXX shared library ../lib/libgmock.so[0m
+[ 82%] Built target gmock
+[ 92%] [32mBuilding CXX object CMakeFiles/grid_map_filters-test.dir/test/median_fill_filter_test.cpp.o[0m
+[ 89%] [32mBuilding CXX object CMakeFiles/grid_map_filters-test.dir/test/mock_filter_test.cpp.o[0m
+[ 92%] [32mBuilding CXX object CMakeFiles/grid_map_filters-test.dir/test/test_grid_map_filters.cpp.o[0m
+[ 96%] [32mBuilding CXX object CMakeFiles/grid_map_filters-test.dir/test/threshold_filter_test.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/david/Desktop/SLAM_project/devel/.private/grid_map_filters/lib/grid_map_filters/grid_map_filters-test[0m
+[100%] Built target grid_map_filters-test
+[100%] Built target tests
+-- run_tests.py: execute commands
+  /home/david/Desktop/SLAM_project/devel/.private/grid_map_filters/lib/grid_map_filters/grid_map_filters-test --gtest_output=xml:/home/david/Desktop/SLAM_project/build/grid_map_filters/test_results/grid_map_filters/gtest-grid_map_filters-test.xml
+[0;32m[==========] [mRunning 4 tests from 3 test suites.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m2 tests from MedianFillFilter
+[0;32m[ RUN      ] [mMedianFillFilter.ConstructFilterTest
+[0;32m[       OK ] [mMedianFillFilter.ConstructFilterTest (1 ms)
+[0;32m[ RUN      ] [mMedianFillFilter.LoadParametersAndUpdateTest
+[0;32m[       OK ] [mMedianFillFilter.LoadParametersAndUpdateTest (5 ms)
+[0;32m[----------] [m2 tests from MedianFillFilter (6 ms total)
+
+[0;32m[----------] [m1 test from MockFilter
+[0;32m[ RUN      ] [mMockFilter.ConstructFilterTest
+[0;32m[       OK ] [mMockFilter.ConstructFilterTest (0 ms)
+[0;32m[----------] [m1 test from MockFilter (0 ms total)
+
+[0;32m[----------] [m1 test from ThresholdFilter
+[0;32m[ RUN      ] [mThresholdFilter.LoadParametersAndUpdateTest
+[0;32m[       OK ] [mThresholdFilter.LoadParametersAndUpdateTest (0 ms)
+[0;32m[----------] [m1 test from ThresholdFilter (0 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m4 tests from 3 test suites ran. (6 ms total)
+[0;32m[  PASSED  ] [m4 tests.
+-- run_tests.py: verify result "/home/david/Desktop/SLAM_project/build/grid_map_filters/test_results/grid_map_filters/gtest-grid_map_filters-test.xml"
+[100%] Built target _run_tests_grid_map_filters_gtest_grid_map_filters-test
+[100%] Built target _run_tests_grid_map_filters_gtest
+[100%] Built target _run_tests_grid_map_filters
+[100%] Built target run_tests

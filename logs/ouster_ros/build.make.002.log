@@ -1,0 +1,31 @@
+[  0%] Built target _ouster_ros_generate_messages_check_deps_GetMetadata
+[  0%] Built target geometry_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target sensor_msgs_generate_messages_py
+[  0%] Built target _ouster_ros_generate_messages_check_deps_PacketMsg
+[  0%] Built target _ouster_ros_generate_messages_check_deps_GetConfig
+[  0%] Built target _ouster_ros_generate_messages_check_deps_SetConfig
+[  0%] Built target geometry_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target sensor_msgs_generate_messages_cpp
+[  0%] Built target geometry_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target sensor_msgs_generate_messages_eus
+[  0%] Built target geometry_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target sensor_msgs_generate_messages_lisp
+[  0%] Built target geometry_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target sensor_msgs_generate_messages_nodejs
+[34m[1mGenerating build info header[0m
+[  0%] Built target ouster_generate_header
+[ 12%] Built target ouster_ros_generate_messages_py
+[ 21%] Built target ouster_ros_generate_messages_cpp
+[ 31%] Built target ouster_ros_generate_messages_eus
+[ 40%] Built target ouster_ros_generate_messages_lisp
+[ 48%] Built target ouster_ros_generate_messages_nodejs
+[ 80%] Built target ouster_client
+[ 80%] Built target ouster_ros_gencpp
+[ 80%] Built target ouster_ros_generate_messages
+[ 85%] Built target ouster_ros
+[100%] Built target ouster_ros_nodelets

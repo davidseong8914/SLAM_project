@@ -1,0 +1,99 @@
+[ 11%] [32mBuilding CXX object gtest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+Removing test result files from '/home/david/Desktop/SLAM_project/build/kindr_ros/test_results/kindr_ros'
+[ 11%] Built target clean_test_results_kindr_ros
+[ 22%] [32m[1mLinking CXX shared library ../lib/libgtest.so[0m
+[ 22%] Built target gtest
+[ 33%] [32mBuilding CXX object CMakeFiles/test_kindr_ros.dir/test/test_main.cpp.o[0m
+[ 44%] [32mBuilding CXX object CMakeFiles/test_kindr_ros.dir/test/RosGeometryMsgPhysicalQuantitiesTest.cpp.o[0m
+[ 55%] [32mBuilding CXX object CMakeFiles/test_kindr_ros.dir/test/RosGeometryMsgRotationTest.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/test_kindr_ros.dir/test/RosGeometryMsgPoseTest.cpp.o[0m
+[ 77%] [32mBuilding CXX object CMakeFiles/test_kindr_ros.dir/test/RosTfPoseTest.cpp.o[0m
+[ 88%] [32mBuilding CXX object CMakeFiles/test_kindr_ros.dir/test/TfConventionTest.cpp.o[0m
+[01m[K/home/david/Desktop/SLAM_project/src/kindr_ros/kindr_ros/test/RosTfPoseTest.cpp:[m[K In member function ‘[01m[Kvirtual void RosTfPoseEigen_convertFromRosTf_Test::TestBody()[m[K’:
+[01m[K/home/david/Desktop/SLAM_project/src/kindr_ros/kindr_ros/test/RosTfPoseTest.cpp:78:15:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KtfTestVectorTransformed1[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+   78 |   tf::Vector3 [01;35m[KtfTestVectorTransformed1[m[K = tfTransform(tf::Vector3(testVector1.x(), testVector1.y(), testVector1.z()));
+      |               [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/david/Desktop/SLAM_project/src/kindr_ros/kindr_ros/test/RosTfPoseTest.cpp:[m[K In member function ‘[01m[Kvirtual void RosTfPoseEigen_convertToRosTf_Test::TestBody()[m[K’:
+[01m[K/home/david/Desktop/SLAM_project/src/kindr_ros/kindr_ros/test/RosTfPoseTest.cpp:154:21:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KtestVector1Transformed[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+  154 |   kindr::Position3D [01;35m[KtestVector1Transformed[m[K = pose.transform(testVector1);
+      |                     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/david/Desktop/SLAM_project/src/kindr_ros/kindr_ros/test/TfConventionTest.cpp:[m[K In static member function ‘[01m[Kstatic void kindr::RotationConversion<tf::Quaternion, tf::Vector3, double>::convertToVelocityVector(kindr::RotationConversion<tf::Quaternion, tf::Vector3, double>::Vector&, kindr::RotationConversion<tf::Quaternion, tf::Vector3, double>::Rotation&, const Eigen::Matrix<double, 3, 1>&)[m[K’:
+[01m[K/home/david/Desktop/SLAM_project/src/kindr_ros/kindr_ros/test/TfConventionTest.cpp:34:69:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Krot[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   34 |   inline static void convertToVelocityVector(Vector& out, [01;35m[KRotation& rot[m[K, const Eigen::Matrix<double, 3, 1>& in) {
+      |                                                           [01;35m[K~~~~~~~~~~^~~[m[K
+[01m[K/home/david/Desktop/SLAM_project/src/kindr_ros/kindr_ros/test/TfConventionTest.cpp:[m[K In static member function ‘[01m[Kstatic void kindr::RotationConversion<tf::Matrix3x3, tf::Vector3, double>::convertToOtherVelocityVector(kindr::RotationConversion<tf::Matrix3x3, tf::Vector3, double>::Vector&, kindr::RotationConversion<tf::Matrix3x3, tf::Vector3, double>::Rotation&, const Eigen::Matrix<double, 3, 1>&)[m[K’:
+[01m[K/home/david/Desktop/SLAM_project/src/kindr_ros/kindr_ros/test/TfConventionTest.cpp:75:74:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Krot[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   75 |   inline static void convertToOtherVelocityVector(Vector& out, [01;35m[KRotation& rot[m[K, const Eigen::Matrix<double, 3, 1>& in) {
+      |                                                                [01;35m[K~~~~~~~~~~^~~[m[K
+[100%] [32m[1mLinking CXX executable /home/david/Desktop/SLAM_project/devel/.private/kindr_ros/lib/kindr_ros/test_kindr_ros[0m
+[100%] Built target test_kindr_ros
+[100%] Built target tests
+-- run_tests.py: execute commands with working directory "/home/david/Desktop/SLAM_project/src/kindr_ros/kindr_ros/test"
+  /home/david/Desktop/SLAM_project/devel/.private/kindr_ros/lib/kindr_ros/test_kindr_ros --gtest_output=xml:/home/david/Desktop/SLAM_project/build/kindr_ros/test_results/kindr_ros/gtest-test_kindr_ros.xml
+[0;32m[==========] [mRunning 18 tests from 7 test suites.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m2 tests from RosGeometryMsgVectorEigen
+[0;32m[ RUN      ] [mRosGeometryMsgVectorEigen.convertFromRosGeometryMsg
+[0;32m[       OK ] [mRosGeometryMsgVectorEigen.convertFromRosGeometryMsg (0 ms)
+[0;32m[ RUN      ] [mRosGeometryMsgVectorEigen.convertToRosGeometryMsg
+[0;32m[       OK ] [mRosGeometryMsgVectorEigen.convertToRosGeometryMsg (0 ms)
+[0;32m[----------] [m2 tests from RosGeometryMsgVectorEigen (0 ms total)
+
+[0;32m[----------] [m4 tests from RosGeometryMsgPositionEigen
+[0;32m[ RUN      ] [mRosGeometryMsgPositionEigen.convertFromRosGeometryPoint32Msg
+[0;32m[       OK ] [mRosGeometryMsgPositionEigen.convertFromRosGeometryPoint32Msg (0 ms)
+[0;32m[ RUN      ] [mRosGeometryMsgPositionEigen.convertToRosGeometryPoint32Msg
+[0;32m[       OK ] [mRosGeometryMsgPositionEigen.convertToRosGeometryPoint32Msg (0 ms)
+[0;32m[ RUN      ] [mRosGeometryMsgPositionEigen.convertFromRosGeometryPointMsg
+[0;32m[       OK ] [mRosGeometryMsgPositionEigen.convertFromRosGeometryPointMsg (0 ms)
+[0;32m[ RUN      ] [mRosGeometryMsgPositionEigen.convertToRosGeometryPointMsg
+[0;32m[       OK ] [mRosGeometryMsgPositionEigen.convertToRosGeometryPointMsg (0 ms)
+[0;32m[----------] [m4 tests from RosGeometryMsgPositionEigen (0 ms total)
+
+[0;32m[----------] [m2 tests from RosGeometryMsgRotationQuaternionEigen
+[0;32m[ RUN      ] [mRosGeometryMsgRotationQuaternionEigen.convertFromRosGeometryMsg
+[0;32m[       OK ] [mRosGeometryMsgRotationQuaternionEigen.convertFromRosGeometryMsg (0 ms)
+[0;32m[ RUN      ] [mRosGeometryMsgRotationQuaternionEigen.convertToRosGeometryMsg
+[0;32m[       OK ] [mRosGeometryMsgRotationQuaternionEigen.convertToRosGeometryMsg (0 ms)
+[0;32m[----------] [m2 tests from RosGeometryMsgRotationQuaternionEigen (0 ms total)
+
+[0;32m[----------] [m2 tests from RosGeometryMsgPoseEigen
+[0;32m[ RUN      ] [mRosGeometryMsgPoseEigen.convertFromRosGeometryMsg
+[0;32m[       OK ] [mRosGeometryMsgPoseEigen.convertFromRosGeometryMsg (0 ms)
+[0;32m[ RUN      ] [mRosGeometryMsgPoseEigen.convertToRosGeometryMsg
+[0;32m[       OK ] [mRosGeometryMsgPoseEigen.convertToRosGeometryMsg (0 ms)
+[0;32m[----------] [m2 tests from RosGeometryMsgPoseEigen (0 ms total)
+
+[0;32m[----------] [m2 tests from RosGeometryMsgTransformationEigen
+[0;32m[ RUN      ] [mRosGeometryMsgTransformationEigen.convertFromRosGeometryMsg
+[0;32m[       OK ] [mRosGeometryMsgTransformationEigen.convertFromRosGeometryMsg (0 ms)
+[0;32m[ RUN      ] [mRosGeometryMsgTransformationEigen.convertToRosGeometryMsg
+[0;32m[       OK ] [mRosGeometryMsgTransformationEigen.convertToRosGeometryMsg (0 ms)
+[0;32m[----------] [m2 tests from RosGeometryMsgTransformationEigen (0 ms total)
+
+[0;32m[----------] [m3 tests from RosTfPoseEigen
+[0;32m[ RUN      ] [mRosTfPoseEigen.convertFromRosTf
+[0;32m[       OK ] [mRosTfPoseEigen.convertFromRosTf (0 ms)
+[0;32m[ RUN      ] [mRosTfPoseEigen.convertToRosTf
+[0;32m[       OK ] [mRosTfPoseEigen.convertToRosTf (0 ms)
+[0;32m[ RUN      ] [mRosTfPoseEigen.convertTwoWays
+[0;32m[       OK ] [mRosTfPoseEigen.convertTwoWays (0 ms)
+[0;32m[----------] [m3 tests from RosTfPoseEigen (0 ms total)
+
+[0;32m[----------] [m3 tests from TfConventionTest
+[0;32m[ RUN      ] [mTfConventionTest.Concatenation
+[0;32m[       OK ] [mTfConventionTest.Concatenation (0 ms)
+[0;32m[ RUN      ] [mTfConventionTest.Rotation
+[0;32m[       OK ] [mTfConventionTest.Rotation (0 ms)
+[0;32m[ RUN      ] [mTfConventionTest.GeometricalInterpretation
+[0;32m[       OK ] [mTfConventionTest.GeometricalInterpretation (0 ms)
+[0;32m[----------] [m3 tests from TfConventionTest (0 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m18 tests from 7 test suites ran. (0 ms total)
+[0;32m[  PASSED  ] [m18 tests.
+-- run_tests.py: verify result "/home/david/Desktop/SLAM_project/build/kindr_ros/test_results/kindr_ros/gtest-test_kindr_ros.xml"
+[100%] Built target _run_tests_kindr_ros_gtest_test_kindr_ros
+[100%] Built target _run_tests_kindr_ros_gtest
+[100%] Built target _run_tests_kindr_ros
+[100%] Built target run_tests

@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "/opt/ros/noetic/share/rostest/cmake/../../../bin/rostest", line 34, in <module>
+    from rostest import rostestmain
+  File "/opt/ros/noetic/lib/python3/dist-packages/rostest/__init__.py", line 44, in <module>
+    import rosunit
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosunit/__init__.py", line 42, in <module>
+    from . import junitxml  # noqa: F401
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosunit/junitxml.py", line 56, in <module>
+    import rospkg
+ModuleNotFoundError: No module named 'rospkg'
+Traceback (most recent call last):
+  File "/opt/ros/noetic/share/rostest/cmake/../../../bin/rostest", line 34, in <module>
+    from rostest import rostestmain
+  File "/opt/ros/noetic/lib/python3/dist-packages/rostest/__init__.py", line 44, in <module>
+    import rosunit
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosunit/__init__.py", line 42, in <module>
+    from . import junitxml  # noqa: F401
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosunit/junitxml.py", line 56, in <module>
+    import rospkg
+ModuleNotFoundError: No module named 'rospkg'
+Cannot find results, writing failure results to '/home/david/Desktop/SLAM_project/build/elevation_mapping/test_results/elevation_mapping/MISSING-rostest-test_input_sources_input_sources.xml'
+Cannot find results, writing failure results to '/home/david/Desktop/SLAM_project/build/elevation_mapping/test_results/elevation_mapping/MISSING-rostest-test_postprocessing_postprocessor.xml'

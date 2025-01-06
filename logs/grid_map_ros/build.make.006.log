@@ -1,0 +1,124 @@
+[ 11%] [32mBuilding CXX object gtest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[ 11%] Built target visualization_msgs_generate_messages_py
+Removing test result files from '/home/david/Desktop/SLAM_project/build/grid_map_ros/test_results/grid_map_ros'
+[ 11%] Built target clean_test_results_grid_map_ros
+[ 11%] Built target roscpp_generate_messages_cpp
+[ 11%] Built target roscpp_generate_messages_eus
+[ 11%] Built target roscpp_generate_messages_lisp
+[ 11%] Built target roscpp_generate_messages_nodejs
+[ 11%] Built target roscpp_generate_messages_py
+[ 11%] Built target rosgraph_msgs_generate_messages_cpp
+[ 11%] Built target rosgraph_msgs_generate_messages_eus
+[ 11%] Built target rosgraph_msgs_generate_messages_lisp
+[ 11%] Built target rosgraph_msgs_generate_messages_nodejs
+[ 11%] Built target rosgraph_msgs_generate_messages_py
+[ 11%] Built target std_msgs_generate_messages_cpp
+[ 11%] Built target std_msgs_generate_messages_eus
+[ 11%] Built target std_msgs_generate_messages_lisp
+[ 11%] Built target std_msgs_generate_messages_nodejs
+[ 11%] Built target std_msgs_generate_messages_py
+[ 11%] Built target grid_map_msgs_generate_messages_cpp
+[ 11%] Built target grid_map_msgs_generate_messages_eus
+[ 11%] Built target grid_map_msgs_generate_messages_lisp
+[ 11%] Built target grid_map_msgs_generate_messages_nodejs
+[ 11%] Built target grid_map_msgs_generate_messages_py
+[ 11%] Built target geometry_msgs_generate_messages_cpp
+[ 11%] Built target geometry_msgs_generate_messages_eus
+[ 11%] Built target geometry_msgs_generate_messages_nodejs
+[ 11%] Built target geometry_msgs_generate_messages_lisp
+[ 11%] Built target sensor_msgs_generate_messages_cpp
+[ 11%] Built target geometry_msgs_generate_messages_py
+[ 11%] Built target sensor_msgs_generate_messages_eus
+[ 11%] Built target sensor_msgs_generate_messages_lisp
+[ 11%] Built target sensor_msgs_generate_messages_nodejs
+[ 11%] Built target sensor_msgs_generate_messages_py
+[ 11%] Built target nav_msgs_generate_messages_cpp
+[ 11%] Built target nav_msgs_generate_messages_eus
+[ 11%] Built target nav_msgs_generate_messages_lisp
+[ 11%] Built target nav_msgs_generate_messages_nodejs
+[ 11%] Built target nav_msgs_generate_messages_py
+[ 11%] Built target actionlib_msgs_generate_messages_cpp
+[ 11%] Built target actionlib_msgs_generate_messages_eus
+[ 11%] Built target actionlib_msgs_generate_messages_lisp
+[ 11%] Built target actionlib_msgs_generate_messages_nodejs
+[ 11%] Built target actionlib_msgs_generate_messages_py
+[ 11%] Built target std_srvs_generate_messages_cpp
+[ 11%] Built target std_srvs_generate_messages_eus
+[ 11%] Built target std_srvs_generate_messages_lisp
+[ 11%] Built target std_srvs_generate_messages_nodejs
+[ 11%] Built target std_srvs_generate_messages_py
+[ 11%] Built target topic_tools_generate_messages_cpp
+[ 11%] Built target topic_tools_generate_messages_eus
+[ 11%] Built target topic_tools_generate_messages_lisp
+[ 11%] Built target topic_tools_generate_messages_nodejs
+[ 11%] Built target topic_tools_generate_messages_py
+[ 11%] Built target tf_generate_messages_cpp
+[ 11%] Built target tf_generate_messages_eus
+[ 11%] Built target tf_generate_messages_lisp
+[ 11%] Built target tf_generate_messages_nodejs
+[ 11%] Built target tf_generate_messages_py
+[ 11%] Built target actionlib_generate_messages_cpp
+[ 11%] Built target actionlib_generate_messages_eus
+[ 11%] Built target actionlib_generate_messages_lisp
+[ 11%] Built target actionlib_generate_messages_nodejs
+[ 11%] Built target actionlib_generate_messages_py
+[ 11%] Built target tf2_msgs_generate_messages_cpp
+[ 11%] Built target tf2_msgs_generate_messages_eus
+[ 11%] Built target tf2_msgs_generate_messages_lisp
+[ 11%] Built target tf2_msgs_generate_messages_nodejs
+[ 11%] Built target tf2_msgs_generate_messages_py
+[ 11%] Built target visualization_msgs_generate_messages_cpp
+[ 11%] Built target visualization_msgs_generate_messages_eus
+[ 11%] Built target visualization_msgs_generate_messages_lisp
+[ 11%] Built target visualization_msgs_generate_messages_nodejs
+[ 55%] Built target grid_map_ros
+[ 66%] [32m[1mLinking CXX shared library ../lib/libgtest.so[0m
+[ 66%] Built target gtest
+[ 88%] [32mBuilding CXX object CMakeFiles/grid_map_ros-test.dir/test/test_grid_map_ros.cpp.o[0m
+[ 88%] [32mBuilding CXX object CMakeFiles/grid_map_ros-test.dir/test/GridMapRosTest.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/david/Desktop/SLAM_project/devel/.private/grid_map_ros/lib/grid_map_ros/grid_map_ros-test[0m
+[100%] Built target grid_map_ros-test
+[100%] Built target tests
+-- run_tests.py: execute commands
+  /home/david/Desktop/SLAM_project/devel/.private/grid_map_ros/lib/grid_map_ros/grid_map_ros-test --gtest_output=xml:/home/david/Desktop/SLAM_project/build/grid_map_ros/test_results/grid_map_ros/gtest-grid_map_ros-test.xml
+[0;32m[==========] [mRunning 8 tests from 5 test suites.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from RosMessageConversion
+[0;32m[ RUN      ] [mRosMessageConversion.roundTrip
+[0;32m[       OK ] [mRosMessageConversion.roundTrip (0 ms)
+[0;32m[----------] [m1 test from RosMessageConversion (1 ms total)
+
+[0;32m[----------] [m2 tests from RosbagHandling
+[0;32m[ RUN      ] [mRosbagHandling.saveLoad
+[0;32m[       OK ] [mRosbagHandling.saveLoad (51 ms)
+[0;32m[ RUN      ] [mRosbagHandling.saveLoadWithTime
+[0;32m[       OK ] [mRosbagHandling.saveLoadWithTime (3 ms)
+[0;32m[----------] [m2 tests from RosbagHandling (54 ms total)
+
+[0;32m[----------] [m2 tests from OccupancyGridConversion
+[0;32m[ RUN      ] [mOccupancyGridConversion.withMove
+[0;32m[       OK ] [mOccupancyGridConversion.withMove (0 ms)
+[0;32m[ RUN      ] [mOccupancyGridConversion.roundTrip
+[0;32m[       OK ] [mOccupancyGridConversion.roundTrip (0 ms)
+[0;32m[----------] [m2 tests from OccupancyGridConversion (0 ms total)
+
+[0;32m[----------] [m2 tests from ImageConversion
+[0;32m[ RUN      ] [mImageConversion.roundTripBGRA8
+[0;32m[       OK ] [mImageConversion.roundTripBGRA8 (2 ms)
+[0;32m[ RUN      ] [mImageConversion.roundTripMONO16
+[0;32m[       OK ] [mImageConversion.roundTripMONO16 (2 ms)
+[0;32m[----------] [m2 tests from ImageConversion (4 ms total)
+
+[0;32m[----------] [m1 test from SdfConversion
+[0;32m[ RUN      ] [mSdfConversion.toPointcloud
+[0;32m[       OK ] [mSdfConversion.toPointcloud (364 ms)
+[0;32m[----------] [m1 test from SdfConversion (364 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m8 tests from 5 test suites ran. (423 ms total)
+[0;32m[  PASSED  ] [m8 tests.
+-- run_tests.py: verify result "/home/david/Desktop/SLAM_project/build/grid_map_ros/test_results/grid_map_ros/gtest-grid_map_ros-test.xml"
+[100%] Built target _run_tests_grid_map_ros_gtest_grid_map_ros-test
+[100%] Built target _run_tests_grid_map_ros_gtest
+[100%] Built target _run_tests_grid_map_ros
+[100%] Built target run_tests
