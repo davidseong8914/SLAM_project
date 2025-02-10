@@ -76,7 +76,7 @@ ouster-cli source <sensor_ip> slam viz -r0 --acum-map --accum-map-ratio 0.05
 ouster-cli source <sensor_ip> slam viz save test.osf
 
 # for SLAM_PROJECT
-ouster-cli source 169.254.99.87 slam -v 0.5 viz save 1_8_2.ply
+ouster-cli source <sensor_ip> slam -v 0.5 viz save 1_8_2.ply
 ```
 ![slam (A)](images/slam4.png)
 ![slam2 (A)](images/slam3.png)
@@ -271,9 +271,24 @@ roslaunch ouster_ros replay.launch bag_file:=/home/david/Desktop/SLAM_project/te
 roslaunch ouster_ros replay.launch bag_file:=/home/david/Desktop/SLAM_project/test.bag loop:=true
 ```
 
+### 3. Realsense
+realsense SDK:
+https://github.com/IntelRealSense/librealsense/blob/master/doc/distribution_linux.md
+```shell
+realsense-viewer
+```
 
-### 2.3. MISC
-#### 2.3.1 Visualize node graphs
+https://github.com/IntelRealSense/realsense-ros/tree/ros1-legacy
+```shell
+roslaunch realsense2_camera rs_camera.launch
+rviz # add depth camera, image raw -> but can't overlay 
+#roslaunch realsense2_camera rs_camera.launch enable_depth:=true
+
+# this overlays color on depth - subscribe to /camera/depth/color/depth/points
+roslaunch realsense2_camera rs_camera.launch filters:=pointcloud
+```
+### 4. MISC
+#### 4.1 Visualize node graphs
 
 ```shell
 roslaunch ouster_ros replay.launch bag_file:=/home/david/Desktop/SLAM_project/bags/test.bag
@@ -281,7 +296,7 @@ rqt_graph # creates a map of what's going on
 ```
 ![replay](images/replay_rqt_graph.jpg)
 
-### 2.3.2 Clone KISS-ICP
+### 4.2 Clone KISS-ICP
 
 ```shell
 git clone --branch v0.3.0 --single-branch <LINK>
@@ -295,86 +310,3 @@ source devel/setup.bash  # or source install/setup.bash for ROS2
 # code that runs kiss-icp
 roslaunch kiss_icp odometry.launch bagfile:=/home/david/Desktop/SLAM_project/bags/scaife_gazebo.bag topic:=/point2
 ```
-## 3. Moving Stuff on to Robot Platform
-### 3.1 NUC
-1. Issue with NUC hdmi signal not being received by monitor
-- restart and press f2
-2. Install depedndencies
-```shell
-source slam_project/bin/activate
-pip install ouster-cli
-```
-### 3.2 Running ouster-cli commands
-attempted
-```shell
-ouster-cli bags/scaife_gazebo.bag slam viz -r2 --map
-
-# output
-Invalid MIT-MAGIC-COOKIE-1 keyGLFW error 65550: X11: Failed to open display :0
-Failed to initialize GLFW
-INFO:root:Auto voxel size calculated based on tthe first scan which is 0.1301m
-```
-instead I will try
-```shell
-roslaunch ouster_ros record.launch sensor_hostname:=<sensor ip> bag_file:=test.bag
-
-sudo apt-get install libspdlog-dev
-find /usr -name spdlogConfig.cmake # copy path
-export spdlog_DIR=<your path to folder with .cmake>
-
-catkin_make
-source ~/slam_ws/SLAM_PROJECT/devel/setup.zsh
-
-#verify
-rospack find ouster_ros
-/home/patrick/slam_ws/SLAM_project/src/ouster-ros
-
-cd ~slam_ws/SLAM_project
-catkin_make clean
-catkin_make
-source ~/slam_ws/SLAM_PROJECT/devel/setup.zsh
-
-# this runs* - let's try with LiDAR power
-roslaunch ~/slam_ws/src/ouster-ros/launch/record.launch sensor_hostname:=<sensor_ip> bag_file:=test.bag
-
-```
-Issue with step 1.3
-```shell
-nmcli connection show
-#shows newly cconnected wired connection in yellow
-```
-
-shows lidar ethernet in yellow, possible adapter error
-- replaced ethernet wire that was connected previously (think it was for pxrf or Hebi arm) with LiDAR ethernet cable
-- nmcli connectin shows "Hebi Ethernet in green"
-
-
-running :
-```shell
-roslaunch ~/slam_ws/src/ouster-ros/launch/record.launch sensor_hostname:=<sensor_ip> bag_file:=~/slam_ws/SLAM_project/tester.bag
-```
-gives: Error writing: error opening file: /home/patrick/Desktop/SLAM_project/bags/~/slam_Ws/SLAM_project/tester.bag.active
-
-error because it's trying to open "/home/patrick/Desktop/SLAM_project/bags//home/slam_ws/SLAM_project/tester.bag.active"
-
-change line 2 {value="..."} to {value="arg('bag_file)}
-
-running :
-```shell
-roslaunch ~/slam_ws/src/ouster-ros/launch/record.launch sensor_hostname:=<sensor_ip> bag_file:=~/slam_ws/SLAM_project/tester.bag
-```
-
-display error
-network connection error
-
-ping <sensor_ip>
-- "destination host unreachable"
-
-settings>network> wired - connected -settings
-ethernet is set for Hebi -> changed IPv4,IPv6 from manual to link-local only
-ping <sensor_ip>
-- "destination host unreachable"
-
-
-
-
