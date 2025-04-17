@@ -271,7 +271,7 @@ roslaunch ouster_ros replay.launch bag_file:=/home/david/Desktop/SLAM_project/te
 roslaunch ouster_ros replay.launch bag_file:=/home/david/Desktop/SLAM_project/test.bag loop:=true
 ```
 
-### 3. Realsense
+### 3. RealSense D345
 realsense SDK:
 https://github.com/IntelRealSense/librealsense/blob/master/doc/distribution_linux.md
 ```shell
@@ -284,9 +284,21 @@ roslaunch realsense2_camera rs_camera.launch
 rviz # add depth camera, image raw -> but can't overlay 
 #roslaunch realsense2_camera rs_camera.launch enable_depth:=true
 
-# this overlays color on depth - subscribe to /camera/depth/color/depth/points
+# this overlays color on depth - subscribe to /camera/depth/color/points
 roslaunch realsense2_camera rs_camera.launch filters:=pointcloud
+rosbag record /camera/depth/color/points /camera_color_frame /tf /tf_static
+rosbag play room_realsense.bag --loop
 ```
+
+nano ~/Desktop/SLAM_project/src/realsense_d435/CMakeLists.txt
+```
+find_package(OpenCV 3 REQUIRED)
+```
+to
+```
+find_package(OpenCV REQUIRED)
+```
+
 ### 4. MISC
 #### 4.1 Visualize node graphs
 

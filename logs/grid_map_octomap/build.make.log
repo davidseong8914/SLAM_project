@@ -1,2 +1,4 @@
 [  0%] Built target _catkin_empty_exported_target
+[ 50%] [32mBuilding CXX object CMakeFiles/grid_map_octomap.dir/src/GridMapOctomapConverter.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library /home/david/Desktop/SLAM_project/devel/.private/grid_map_octomap/lib/libgrid_map_octomap.so[0m
 [100%] Built target grid_map_octomap

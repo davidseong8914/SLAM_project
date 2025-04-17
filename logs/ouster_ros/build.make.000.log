@@ -68,9 +68,9 @@
 [ 82%] [32mBuilding CXX object CMakeFiles/ouster_ros.dir/src/os_ros.cpp.o[0m
 [ 85%] [32m[1mLinking CXX shared library /home/david/Desktop/SLAM_project/devel/.private/ouster_ros/lib/libouster_ros.so[0m
 [ 85%] Built target ouster_ros
-[ 91%] [32mBuilding CXX object CMakeFiles/ouster_ros_nodelets.dir/src/os_sensor_nodelet.cpp.o[0m
+[ 87%] [32mBuilding CXX object CMakeFiles/ouster_ros_nodelets.dir/src/os_sensor_nodelet_base.cpp.o[0m
+[ 89%] [32mBuilding CXX object CMakeFiles/ouster_ros_nodelets.dir/src/os_sensor_nodelet.cpp.o[0m
 [ 91%] [32mBuilding CXX object CMakeFiles/ouster_ros_nodelets.dir/src/os_replay_nodelet.cpp.o[0m
-[ 91%] [32mBuilding CXX object CMakeFiles/ouster_ros_nodelets.dir/src/os_sensor_nodelet_base.cpp.o[0m
 [ 93%] [32mBuilding CXX object CMakeFiles/ouster_ros_nodelets.dir/src/os_cloud_nodelet.cpp.o[0m
 [ 95%] [32mBuilding CXX object CMakeFiles/ouster_ros_nodelets.dir/src/os_image_nodelet.cpp.o[0m
 [ 97%] [32mBuilding CXX object CMakeFiles/ouster_ros_nodelets.dir/src/os_driver_nodelet.cpp.o[0m

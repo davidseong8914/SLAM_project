@@ -57,21 +57,27 @@
 [  0%] Built target tf_generate_messages_py
 [  0%] Built target map_msgs_generate_messages_cpp
 [  0%] Built target map_msgs_generate_messages_eus
-[  0%] Built target map_msgs_generate_messages_nodejs
 [  0%] Built target map_msgs_generate_messages_lisp
-[  0%] Built target nav_msgs_generate_messages_cpp
+[  0%] Built target map_msgs_generate_messages_nodejs
 [  0%] Built target map_msgs_generate_messages_py
-[  0%] Built target nav_msgs_generate_messages_lisp
+[  0%] Built target nav_msgs_generate_messages_cpp
 [  0%] Built target nav_msgs_generate_messages_eus
+[  0%] Built target nav_msgs_generate_messages_lisp
 [  0%] Built target nav_msgs_generate_messages_nodejs
 [  0%] Built target nav_msgs_generate_messages_py
-[  0%] Built target std_srvs_generate_messages_eus
 [  0%] Built target std_srvs_generate_messages_cpp
+[  0%] Built target std_srvs_generate_messages_eus
+[  0%] Built target std_srvs_generate_messages_lisp
 [  0%] Built target std_srvs_generate_messages_nodejs
 [  0%] Built target std_srvs_generate_messages_py
-[  0%] Built target std_srvs_generate_messages_lisp
 [  0%] Built target trajectory_msgs_generate_messages_cpp
-[  0%] Built target trajectory_msgs_generate_messages_lisp
 [  0%] Built target trajectory_msgs_generate_messages_eus
+[  0%] Built target trajectory_msgs_generate_messages_lisp
 [  0%] Built target trajectory_msgs_generate_messages_nodejs
+[ 16%] [34m[1mGenerating include/multi_dof_joint_trajectory_rviz_plugins/moc_MultiDOFJointTrajectoryDisplay.cpp[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/multi_dof_joint_trajectory_rviz_plugins.dir/src/MultiDOFJointTrajectoryDisplay.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/multi_dof_joint_trajectory_rviz_plugins.dir/src/MultiDOFJointTrajectoryPointConnectionVisual.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/multi_dof_joint_trajectory_rviz_plugins.dir/src/MultiDOFJointTrajectoryPointVisual.cpp.o[0m
+[ 83%] [32mBuilding CXX object CMakeFiles/multi_dof_joint_trajectory_rviz_plugins.dir/include/multi_dof_joint_trajectory_rviz_plugins/moc_MultiDOFJointTrajectoryDisplay.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library /home/david/Desktop/SLAM_project/devel/.private/multi_dof_joint_trajectory_rviz_plugins/lib/libmulti_dof_joint_trajectory_rviz_plugins.so[0m
 [100%] Built target multi_dof_joint_trajectory_rviz_plugins

@@ -1,7 +1,7 @@
 [  0%] Built target pcl_msgs_generate_messages_py
 [  0%] Built target grid_map_msgs_generate_messages_cpp
-[  0%] Built target grid_map_msgs_generate_messages_lisp
 [  0%] Built target grid_map_msgs_generate_messages_eus
+[  0%] Built target grid_map_msgs_generate_messages_lisp
 [  0%] Built target grid_map_msgs_generate_messages_nodejs
 [  0%] Built target grid_map_msgs_generate_messages_py
 [  0%] Built target geometry_msgs_generate_messages_cpp
@@ -30,8 +30,8 @@
 [  0%] Built target sensor_msgs_generate_messages_nodejs
 [  0%] Built target sensor_msgs_generate_messages_py
 [  0%] Built target nav_msgs_generate_messages_cpp
-[  0%] Built target nav_msgs_generate_messages_lisp
 [  0%] Built target nav_msgs_generate_messages_eus
+[  0%] Built target nav_msgs_generate_messages_lisp
 [  0%] Built target nav_msgs_generate_messages_nodejs
 [  0%] Built target nav_msgs_generate_messages_py
 [  0%] Built target actionlib_msgs_generate_messages_cpp
@@ -49,48 +49,58 @@
 [  0%] Built target topic_tools_generate_messages_lisp
 [  0%] Built target topic_tools_generate_messages_nodejs
 [  0%] Built target topic_tools_generate_messages_py
-[  0%] Built target tf_generate_messages_eus
 [  0%] Built target tf_generate_messages_cpp
+[  0%] Built target tf_generate_messages_eus
 [  0%] Built target tf_generate_messages_lisp
-[  0%] Built target tf_generate_messages_py
 [  0%] Built target tf_generate_messages_nodejs
+[  0%] Built target tf_generate_messages_py
 [  0%] Built target actionlib_generate_messages_cpp
-[  0%] Built target actionlib_generate_messages_lisp
 [  0%] Built target actionlib_generate_messages_eus
+[  0%] Built target actionlib_generate_messages_lisp
 [  0%] Built target actionlib_generate_messages_nodejs
+[  0%] Built target actionlib_generate_messages_py
 [  0%] Built target tf2_msgs_generate_messages_cpp
 [  0%] Built target tf2_msgs_generate_messages_eus
-[  0%] Built target actionlib_generate_messages_py
-[  0%] Built target tf2_msgs_generate_messages_py
 [  0%] Built target tf2_msgs_generate_messages_lisp
 [  0%] Built target tf2_msgs_generate_messages_nodejs
+[  0%] Built target tf2_msgs_generate_messages_py
 [  0%] Built target visualization_msgs_generate_messages_cpp
 [  0%] Built target visualization_msgs_generate_messages_eus
 [  0%] Built target visualization_msgs_generate_messages_lisp
 [  0%] Built target visualization_msgs_generate_messages_nodejs
 [  0%] Built target visualization_msgs_generate_messages_py
 [  0%] Built target pcl_ros_gencfg
-[  0%] Built target dynamic_reconfigure_generate_messages_eus
 [  0%] Built target dynamic_reconfigure_generate_messages_cpp
+[  0%] Built target dynamic_reconfigure_generate_messages_eus
 [  0%] Built target dynamic_reconfigure_generate_messages_lisp
 [  0%] Built target dynamic_reconfigure_generate_messages_nodejs
 [  0%] Built target dynamic_reconfigure_generate_messages_py
-[  0%] Built target nodelet_generate_messages_cpp
 [  0%] Built target dynamic_reconfigure_gencfg
+[  0%] Built target nodelet_generate_messages_cpp
 [  0%] Built target nodelet_generate_messages_eus
-[  0%] Built target nodelet_generate_messages_nodejs
 [  0%] Built target nodelet_generate_messages_lisp
+[  0%] Built target nodelet_generate_messages_nodejs
 [  0%] Built target nodelet_generate_messages_py
 [  0%] Built target bond_generate_messages_cpp
-[  0%] Built target bond_generate_messages_lisp
 [  0%] Built target bond_generate_messages_eus
+[  0%] Built target bond_generate_messages_lisp
 [  0%] Built target bond_generate_messages_nodejs
+[  0%] Built target bond_generate_messages_py
 [  0%] Built target nodelet_topic_tools_gencfg
 [  0%] Built target pcl_msgs_generate_messages_cpp
-[  0%] Built target bond_generate_messages_py
 [  0%] Built target pcl_msgs_generate_messages_eus
 [  0%] Built target pcl_msgs_generate_messages_lisp
 [  0%] Built target pcl_msgs_generate_messages_nodejs
+[ 10%] [32mBuilding CXX object CMakeFiles/grid_map_pcl.dir/src/GridMapPclConverter.cpp.o[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/grid_map_pcl.dir/src/GridMapPclLoader.cpp.o[0m
+[ 30%] [32mBuilding CXX object CMakeFiles/grid_map_pcl.dir/src/helpers.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/grid_map_pcl.dir/src/PclLoaderParameters.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/grid_map_pcl.dir/src/PointcloudProcessor.cpp.o[0m
+[ 60%] [32m[1mLinking CXX shared library /home/david/Desktop/SLAM_project/devel/.private/grid_map_pcl/lib/libgrid_map_pcl.so[0m
 [ 60%] Built target grid_map_pcl
-[ 80%] Built target pointcloud_publisher_node
-[100%] Built target grid_map_pcl_loader_node
+[ 70%] [32mBuilding CXX object CMakeFiles/grid_map_pcl_loader_node.dir/src/grid_map_pcl_loader_node.cpp.o[0m
+[ 80%] [32m[1mLinking CXX executable /home/david/Desktop/SLAM_project/devel/.private/grid_map_pcl/lib/grid_map_pcl/grid_map_pcl_loader_node[0m
+[ 80%] Built target grid_map_pcl_loader_node
+[ 90%] [32mBuilding CXX object CMakeFiles/pointcloud_publisher_node.dir/src/pointcloud_publisher_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/david/Desktop/SLAM_project/devel/.private/grid_map_pcl/lib/grid_map_pcl/pointcloud_publisher_node[0m
+[100%] Built target pointcloud_publisher_node

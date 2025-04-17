@@ -1,4 +1,3 @@
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/kindr_ros/share/kindr_ros/cmake/kindr_rosConfig.cmake, /home/david/Desktop/SLAM_project/devel/share/kindr_ros/cmake/kindr_rosConfig.cmake)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/kindr_ros/share/kindr_ros/cmake/kindr_rosConfig-version.cmake, /home/david/Desktop/SLAM_project/devel/share/kindr_ros/cmake/kindr_rosConfig-version.cmake)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/kindr_ros/lib/kindr_ros/test_kindr_ros, /home/david/Desktop/SLAM_project/devel/lib/kindr_ros/test_kindr_ros)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/kindr_ros/lib/pkgconfig/kindr_ros.pc, /home/david/Desktop/SLAM_project/devel/lib/pkgconfig/kindr_ros.pc)
+Symlinking /home/david/Desktop/SLAM_project/devel/share/kindr_ros/cmake/kindr_rosConfig.cmake
+Symlinking /home/david/Desktop/SLAM_project/devel/share/kindr_ros/cmake/kindr_rosConfig-version.cmake
+Symlinking /home/david/Desktop/SLAM_project/devel/lib/pkgconfig/kindr_ros.pc

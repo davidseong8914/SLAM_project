@@ -1,4 +1,4 @@
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/kindr_rviz_plugins/share/kindr_rviz_plugins/cmake/kindr_rviz_pluginsConfig.cmake, /home/david/Desktop/SLAM_project/devel/share/kindr_rviz_plugins/cmake/kindr_rviz_pluginsConfig.cmake)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/kindr_rviz_plugins/share/kindr_rviz_plugins/cmake/kindr_rviz_pluginsConfig-version.cmake, /home/david/Desktop/SLAM_project/devel/share/kindr_rviz_plugins/cmake/kindr_rviz_pluginsConfig-version.cmake)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/kindr_rviz_plugins/lib/libkindr_rviz_plugins.so, /home/david/Desktop/SLAM_project/devel/lib/libkindr_rviz_plugins.so)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/kindr_rviz_plugins/lib/pkgconfig/kindr_rviz_plugins.pc, /home/david/Desktop/SLAM_project/devel/lib/pkgconfig/kindr_rviz_plugins.pc)
+Symlinking /home/david/Desktop/SLAM_project/devel/share/kindr_rviz_plugins/cmake/kindr_rviz_pluginsConfig.cmake
+Symlinking /home/david/Desktop/SLAM_project/devel/share/kindr_rviz_plugins/cmake/kindr_rviz_pluginsConfig-version.cmake
+Symlinking /home/david/Desktop/SLAM_project/devel/lib/libkindr_rviz_plugins.so
+Symlinking /home/david/Desktop/SLAM_project/devel/lib/pkgconfig/kindr_rviz_plugins.pc

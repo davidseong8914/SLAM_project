@@ -1,13 +1,3 @@
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/kindr/share/kindr/cmake/kindrConfig-version.cmake, /home/david/Desktop/SLAM_project/devel/share/kindr/cmake/kindrConfig-version.cmake)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/kindr/share/kindr/cmake/kindrConfig.cmake, /home/david/Desktop/SLAM_project/devel/share/kindr/cmake/kindrConfig.cmake)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/kindr/lib/kindr/runUnitTestsPositions, /home/david/Desktop/SLAM_project/devel/lib/kindr/runUnitTestsPositions)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/kindr/lib/kindr/runUnitTestsPoseDiff, /home/david/Desktop/SLAM_project/devel/lib/kindr/runUnitTestsPoseDiff)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/kindr/lib/kindr/runUnitTestsPose, /home/david/Desktop/SLAM_project/devel/lib/kindr/runUnitTestsPose)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/kindr/lib/kindr/runUnitTestsRotation, /home/david/Desktop/SLAM_project/devel/lib/kindr/runUnitTestsRotation)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/kindr/lib/kindr/runUnitTestsPhysQuant, /home/david/Desktop/SLAM_project/devel/lib/kindr/runUnitTestsPhysQuant)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/kindr/lib/kindr/runUnitTestsQuaternions, /home/david/Desktop/SLAM_project/devel/lib/kindr/runUnitTestsQuaternions)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/kindr/lib/kindr/runUnitTestsLinearAlgebra, /home/david/Desktop/SLAM_project/devel/lib/kindr/runUnitTestsLinearAlgebra)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/kindr/lib/kindr/runUnitTestsVector, /home/david/Desktop/SLAM_project/devel/lib/kindr/runUnitTestsVector)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/kindr/lib/kindr/runUnitTestsRotationDiff, /home/david/Desktop/SLAM_project/devel/lib/kindr/runUnitTestsRotationDiff)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/kindr/lib/kindr/runUnitTestsCommon, /home/david/Desktop/SLAM_project/devel/lib/kindr/runUnitTestsCommon)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/kindr/lib/pkgconfig/kindr.pc, /home/david/Desktop/SLAM_project/devel/lib/pkgconfig/kindr.pc)
+Symlinking /home/david/Desktop/SLAM_project/devel/share/kindr/cmake/kindrConfig-version.cmake
+Symlinking /home/david/Desktop/SLAM_project/devel/share/kindr/cmake/kindrConfig.cmake
+Symlinking /home/david/Desktop/SLAM_project/devel/lib/pkgconfig/kindr.pc

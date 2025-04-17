@@ -41,8 +41,8 @@
 [  0%] Built target actionlib_msgs_generate_messages_py
 [  0%] Built target _catkin_empty_exported_target
 [  0%] Built target std_srvs_generate_messages_cpp
-[  0%] Built target std_srvs_generate_messages_lisp
 [  0%] Built target std_srvs_generate_messages_eus
+[  0%] Built target std_srvs_generate_messages_lisp
 [  0%] Built target std_srvs_generate_messages_nodejs
 [  0%] Built target std_srvs_generate_messages_py
 [  0%] Built target topic_tools_generate_messages_cpp
@@ -69,5 +69,34 @@
 [  0%] Built target visualization_msgs_generate_messages_eus
 [  0%] Built target visualization_msgs_generate_messages_lisp
 [  0%] Built target visualization_msgs_generate_messages_nodejs
+[  4%] [32mBuilding CXX object CMakeFiles/grid_map_filters.dir/src/ThresholdFilter.cpp.o[0m
+[  9%] [32mBuilding CXX object CMakeFiles/grid_map_filters.dir/src/MinInRadiusFilter.cpp.o[0m
+[ 14%] [32mBuilding CXX object CMakeFiles/grid_map_filters.dir/src/MeanInRadiusFilter.cpp.o[0m
+[ 19%] [32mBuilding CXX object CMakeFiles/grid_map_filters.dir/src/MedianFillFilter.cpp.o[0m
+[ 23%] [32mBuilding CXX object CMakeFiles/grid_map_filters.dir/src/MockFilter.cpp.o[0m
+[ 28%] [32mBuilding CXX object CMakeFiles/grid_map_filters.dir/src/NormalVectorsFilter.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/grid_map_filters.dir/src/CurvatureFilter.cpp.o[0m
+In file included from [01m[K/home/david/Desktop/SLAM_project/src/grid_map/grid_map_filters/src/NormalVectorsFilter.cpp:15[m[K:
+[01m[K/usr/include/tbb/task_scheduler_init.h:21:154:[m[K [01;36m[Knote: [m[K#pragma message: TBB Warning: tbb/task_scheduler_init.h is deprecated. For details, please see Deprecated Features appendix in the TBB reference manual.
+ #pragma message("TBB Warning: tbb/task_scheduler_init.h is deprecated. For details, please see Deprecated Features appendix in the TBB reference manual."[01;36m[K)[m[K
+                                                                                                                                                          [01;36m[K^[m[K
+In file included from [01m[K/home/david/Desktop/SLAM_project/src/grid_map/grid_map_filters/src/NormalVectorsFilter.cpp:16[m[K:
+[01m[K/usr/include/tbb/tbb.h:21:154:[m[K [01;36m[Knote: [m[K#pragma message: TBB Warning: tbb.h contains deprecated functionality. For details, please see Deprecated Features appendix in the TBB reference manual.
+ #pragma message("TBB Warning: tbb.h contains deprecated functionality. For details, please see Deprecated Features appendix in the TBB reference manual."[01;36m[K)[m[K
+                                                                                                                                                          [01;36m[K^[m[K
+[ 38%] [32mBuilding CXX object CMakeFiles/grid_map_filters.dir/src/NormalColorMapFilter.cpp.o[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/grid_map_filters.dir/src/LightIntensityFilter.cpp.o[0m
+[ 47%] [32mBuilding CXX object CMakeFiles/grid_map_filters.dir/src/MathExpressionFilter.cpp.o[0m
+[ 52%] [32mBuilding CXX object CMakeFiles/grid_map_filters.dir/src/SlidingWindowMathExpressionFilter.cpp.o[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/grid_map_filters.dir/src/DuplicationFilter.cpp.o[0m
+[ 61%] [32mBuilding CXX object CMakeFiles/grid_map_filters.dir/src/DeletionFilter.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/grid_map_filters.dir/src/ColorFillFilter.cpp.o[0m
+[ 71%] [32mBuilding CXX object CMakeFiles/grid_map_filters.dir/src/ColorMapFilter.cpp.o[0m
+[ 76%] [32mBuilding CXX object CMakeFiles/grid_map_filters.dir/src/ColorBlendingFilter.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/grid_map_filters.dir/src/SetBasicLayersFilter.cpp.o[0m
+[ 85%] [32mBuilding CXX object CMakeFiles/grid_map_filters.dir/src/BufferNormalizerFilter.cpp.o[0m
+[ 90%] [32m[1mLinking CXX shared library /home/david/Desktop/SLAM_project/devel/.private/grid_map_filters/lib/libgrid_map_filters.so[0m
 [ 90%] Built target grid_map_filters
+[ 95%] [32mBuilding CXX object CMakeFiles/grid_map_filters_plugins.dir/src/plugins.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library /home/david/Desktop/SLAM_project/devel/.private/grid_map_filters/lib/libgrid_map_filters_plugins.so[0m
 [100%] Built target grid_map_filters_plugins

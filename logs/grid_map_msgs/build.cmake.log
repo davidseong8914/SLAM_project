@@ -7,16 +7,16 @@ Not searching for unused variables given on the command line.
   CMake that the project does not need compatibility with older versions.
 
 [0m
-[36m--[0m The C compiler identification is GNU 9.4.0
-[36m--[0m The CXX compiler identification is GNU 9.4.0
+[36m--[0m The C compiler identification is GNU 8.4.0
+[36m--[0m The CXX compiler identification is GNU 8.4.0
 [36m--[0m Detecting C compiler ABI info
 [36m--[0m Detecting C compiler ABI info - done
-[36m--[0m Check for working C compiler: /usr/bin/cc - skipped
+[36m--[0m Check for working C compiler: /usr/bin/gcc-8 - skipped
 [36m--[0m Detecting C compile features
 [36m--[0m Detecting C compile features - done
 [36m--[0m Detecting CXX compiler ABI info
 [36m--[0m Detecting CXX compiler ABI info - done
-[36m--[0m Check for working CXX compiler: /usr/bin/c++ - skipped
+[36m--[0m Check for working CXX compiler: /usr/bin/g++-8 - skipped
 [36m--[0m Detecting CXX compile features
 [36m--[0m Detecting CXX compile features - done
 [36m--[0m Using CATKIN_DEVEL_PREFIX: /home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs
@@ -84,6 +84,6 @@ This warning is for project developers.  Use -Wno-dev to suppress it.
 [36m--[0m BUILD_SHARED_LIBS is on
 [36m--[0m Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
 [36m--[0m grid_map_msgs: 2 messages, 4 services
-[36m--[0m Configuring done (2.0s)
+[36m--[0m Configuring done (2.5s)
 [36m--[0m Generating done (0.0s)
 [36m--[0m Build files have been written to: /home/david/Desktop/SLAM_project/build/grid_map_msgs

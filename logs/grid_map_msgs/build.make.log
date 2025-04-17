@@ -14,9 +14,42 @@
 [  0%] Built target geometry_msgs_generate_messages_lisp
 [  0%] Built target std_msgs_generate_messages_nodejs
 [  0%] Built target geometry_msgs_generate_messages_nodejs
+[  3%] [34m[1mGenerating Python from MSG grid_map_msgs/GridMapInfo[0m
+[  6%] [34m[1mGenerating Python from MSG grid_map_msgs/GridMap[0m
+[  9%] [34m[1mGenerating Python code from SRV grid_map_msgs/SetGridMap[0m
+[ 12%] [34m[1mGenerating Python code from SRV grid_map_msgs/GetGridMap[0m
+[ 15%] [34m[1mGenerating Python code from SRV grid_map_msgs/GetGridMapInfo[0m
+[ 18%] [34m[1mGenerating Python code from SRV grid_map_msgs/ProcessFile[0m
+[ 21%] [34m[1mGenerating Python msg __init__.py for grid_map_msgs[0m
+[ 24%] [34m[1mGenerating Python srv __init__.py for grid_map_msgs[0m
 [ 24%] Built target grid_map_msgs_generate_messages_py
+[ 27%] [34m[1mGenerating C++ code from grid_map_msgs/GridMapInfo.msg[0m
+[ 30%] [34m[1mGenerating C++ code from grid_map_msgs/GridMap.msg[0m
+[ 33%] [34m[1mGenerating C++ code from grid_map_msgs/SetGridMap.srv[0m
+[ 36%] [34m[1mGenerating C++ code from grid_map_msgs/GetGridMap.srv[0m
+[ 39%] [34m[1mGenerating C++ code from grid_map_msgs/GetGridMapInfo.srv[0m
+[ 42%] [34m[1mGenerating C++ code from grid_map_msgs/ProcessFile.srv[0m
 [ 42%] Built target grid_map_msgs_generate_messages_cpp
+[ 45%] [34m[1mGenerating EusLisp code from grid_map_msgs/GridMapInfo.msg[0m
+[ 48%] [34m[1mGenerating EusLisp code from grid_map_msgs/GridMap.msg[0m
+[ 51%] [34m[1mGenerating EusLisp code from grid_map_msgs/SetGridMap.srv[0m
+[ 54%] [34m[1mGenerating EusLisp code from grid_map_msgs/GetGridMap.srv[0m
+[ 57%] [34m[1mGenerating EusLisp code from grid_map_msgs/GetGridMapInfo.srv[0m
+[ 60%] [34m[1mGenerating EusLisp code from grid_map_msgs/ProcessFile.srv[0m
+[ 63%] [34m[1mGenerating EusLisp manifest code for grid_map_msgs[0m
 [ 63%] Built target grid_map_msgs_generate_messages_eus
+[ 66%] [34m[1mGenerating Lisp code from grid_map_msgs/GridMapInfo.msg[0m
+[ 69%] [34m[1mGenerating Lisp code from grid_map_msgs/GridMap.msg[0m
+[ 72%] [34m[1mGenerating Lisp code from grid_map_msgs/SetGridMap.srv[0m
+[ 75%] [34m[1mGenerating Lisp code from grid_map_msgs/GetGridMap.srv[0m
+[ 78%] [34m[1mGenerating Lisp code from grid_map_msgs/GetGridMapInfo.srv[0m
+[ 81%] [34m[1mGenerating Lisp code from grid_map_msgs/ProcessFile.srv[0m
 [ 81%] Built target grid_map_msgs_generate_messages_lisp
+[ 84%] [34m[1mGenerating Javascript code from grid_map_msgs/GridMapInfo.msg[0m
+[ 87%] [34m[1mGenerating Javascript code from grid_map_msgs/GridMap.msg[0m
+[ 90%] [34m[1mGenerating Javascript code from grid_map_msgs/SetGridMap.srv[0m
+[ 93%] [34m[1mGenerating Javascript code from grid_map_msgs/GetGridMap.srv[0m
+[ 96%] [34m[1mGenerating Javascript code from grid_map_msgs/GetGridMapInfo.srv[0m
+[100%] [34m[1mGenerating Javascript code from grid_map_msgs/ProcessFile.srv[0m
 [100%] Built target grid_map_msgs_generate_messages_nodejs
 [100%] Built target grid_map_msgs_generate_messages

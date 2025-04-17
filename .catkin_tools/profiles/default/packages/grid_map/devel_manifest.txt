@@ -1,2 +1,0 @@
-grid_map/grid_map
-/home/david/Desktop/SLAM_project/devel/.private/grid_map/cmake.lock /home/david/Desktop/SLAM_project/devel/./cmake.lock

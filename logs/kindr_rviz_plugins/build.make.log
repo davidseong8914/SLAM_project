@@ -74,4 +74,9 @@
 [  0%] Built target kindr_msgs_generate_messages_eus
 [  0%] Built target kindr_msgs_generate_messages_lisp
 [  0%] Built target kindr_msgs_generate_messages_nodejs
+[ 20%] [34m[1mGenerating include/kindr_rviz_plugins/moc_VectorAtPositionDisplay.cpp[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/kindr_rviz_plugins.dir/src/VectorAtPositionDisplay.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/kindr_rviz_plugins.dir/src/VectorAtPositionVisual.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/kindr_rviz_plugins.dir/include/kindr_rviz_plugins/moc_VectorAtPositionDisplay.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library /home/david/Desktop/SLAM_project/devel/.private/kindr_rviz_plugins/lib/libkindr_rviz_plugins.so[0m
 [100%] Built target kindr_rviz_plugins

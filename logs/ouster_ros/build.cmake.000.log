@@ -1,14 +1,14 @@
 Not searching for unused variables given on the command line.
-[36m--[0m The C compiler identification is GNU 9.4.0
-[36m--[0m The CXX compiler identification is GNU 9.4.0
+[36m--[0m The C compiler identification is GNU 8.4.0
+[36m--[0m The CXX compiler identification is GNU 8.4.0
 [36m--[0m Detecting C compiler ABI info
 [36m--[0m Detecting C compiler ABI info - done
-[36m--[0m Check for working C compiler: /usr/bin/cc - skipped
+[36m--[0m Check for working C compiler: /usr/bin/gcc-8 - skipped
 [36m--[0m Detecting C compile features
 [36m--[0m Detecting C compile features - done
 [36m--[0m Detecting CXX compiler ABI info
 [36m--[0m Detecting CXX compiler ABI info - done
-[36m--[0m Check for working CXX compiler: /usr/bin/c++ - skipped
+[36m--[0m Check for working CXX compiler: /usr/bin/g++-8 - skipped
 [36m--[0m Detecting CXX compile features
 [36m--[0m Detecting CXX compile features - done
 [36m--[0m Found Eigen3: /usr/lib/cmake/eigen3/Eigen3Config.cmake (found version "3.3.7")
@@ -165,6 +165,6 @@ This warning is for project developers.  Use -Wno-dev to suppress it.
   CMakeLists.txt:143 (install)
 This warning is for project developers.  Use -Wno-dev to suppress it.
 [0m
-[36m--[0m Configuring done (2.7s)
-[36m--[0m Generating done (0.2s)
+[36m--[0m Configuring done (3.1s)
+[36m--[0m Generating done (0.4s)
 [36m--[0m Build files have been written to: /home/david/Desktop/SLAM_project/build/ouster_ros

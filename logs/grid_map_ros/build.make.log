@@ -58,8 +58,8 @@
 [  0%] Built target actionlib_generate_messages_eus
 [  0%] Built target actionlib_generate_messages_lisp
 [  0%] Built target actionlib_generate_messages_nodejs
-[  0%] Built target tf2_msgs_generate_messages_cpp
 [  0%] Built target actionlib_generate_messages_py
+[  0%] Built target tf2_msgs_generate_messages_cpp
 [  0%] Built target tf2_msgs_generate_messages_eus
 [  0%] Built target tf2_msgs_generate_messages_lisp
 [  0%] Built target tf2_msgs_generate_messages_nodejs
@@ -68,4 +68,8 @@
 [  0%] Built target visualization_msgs_generate_messages_eus
 [  0%] Built target visualization_msgs_generate_messages_lisp
 [  0%] Built target visualization_msgs_generate_messages_nodejs
+[ 25%] [32mBuilding CXX object CMakeFiles/grid_map_ros.dir/src/GridMapRosConverter.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/grid_map_ros.dir/src/GridMapMsgHelpers.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/grid_map_ros.dir/src/PolygonRosConverter.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library /home/david/Desktop/SLAM_project/devel/.private/grid_map_ros/lib/libgrid_map_ros.so[0m
 [100%] Built target grid_map_ros

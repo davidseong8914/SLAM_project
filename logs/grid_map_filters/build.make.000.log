@@ -76,15 +76,15 @@
 [ 23%] [32mBuilding CXX object CMakeFiles/grid_map_filters.dir/src/MockFilter.cpp.o[0m
 [ 28%] [32mBuilding CXX object CMakeFiles/grid_map_filters.dir/src/NormalVectorsFilter.cpp.o[0m
 [ 33%] [32mBuilding CXX object CMakeFiles/grid_map_filters.dir/src/CurvatureFilter.cpp.o[0m
-[ 38%] [32mBuilding CXX object CMakeFiles/grid_map_filters.dir/src/NormalColorMapFilter.cpp.o[0m
 In file included from [01m[K/home/david/Desktop/SLAM_project/src/grid_map/grid_map_filters/src/NormalVectorsFilter.cpp:15[m[K:
 [01m[K/usr/include/tbb/task_scheduler_init.h:21:154:[m[K [01;36m[Knote: [m[K#pragma message: TBB Warning: tbb/task_scheduler_init.h is deprecated. For details, please see Deprecated Features appendix in the TBB reference manual.
-   21 | #pragma message("TBB Warning: tbb/task_scheduler_init.h is deprecated. For details, please see Deprecated Features appendix in the TBB reference manual."[01;36m[K)[m[K
-      |                                                                                                                                                          [01;36m[K^[m[K
+ #pragma message("TBB Warning: tbb/task_scheduler_init.h is deprecated. For details, please see Deprecated Features appendix in the TBB reference manual."[01;36m[K)[m[K
+                                                                                                                                                          [01;36m[K^[m[K
 In file included from [01m[K/home/david/Desktop/SLAM_project/src/grid_map/grid_map_filters/src/NormalVectorsFilter.cpp:16[m[K:
 [01m[K/usr/include/tbb/tbb.h:21:154:[m[K [01;36m[Knote: [m[K#pragma message: TBB Warning: tbb.h contains deprecated functionality. For details, please see Deprecated Features appendix in the TBB reference manual.
-   21 | #pragma message("TBB Warning: tbb.h contains deprecated functionality. For details, please see Deprecated Features appendix in the TBB reference manual."[01;36m[K)[m[K
-      |                                                                                                                                                          [01;36m[K^[m[K
+ #pragma message("TBB Warning: tbb.h contains deprecated functionality. For details, please see Deprecated Features appendix in the TBB reference manual."[01;36m[K)[m[K
+                                                                                                                                                          [01;36m[K^[m[K
+[ 38%] [32mBuilding CXX object CMakeFiles/grid_map_filters.dir/src/NormalColorMapFilter.cpp.o[0m
 [ 42%] [32mBuilding CXX object CMakeFiles/grid_map_filters.dir/src/LightIntensityFilter.cpp.o[0m
 [ 47%] [32mBuilding CXX object CMakeFiles/grid_map_filters.dir/src/MathExpressionFilter.cpp.o[0m
 [ 52%] [32mBuilding CXX object CMakeFiles/grid_map_filters.dir/src/SlidingWindowMathExpressionFilter.cpp.o[0m

@@ -16,4 +16,5 @@ src/kindr/
 src/kindr_ros/
 src/grid_map/
 
-logs/
+logs/*
+*/.catkin_tools/*

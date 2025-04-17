@@ -1,10 +1,10 @@
 [  5%] [32mBuilding CXX object CMakeFiles/elevation_mapping_pcl_types.dir/src/PointXYZRGBConfidenceRatio.cpp.o[0m
 [ 11%] [32m[1mLinking CXX shared library /home/david/Desktop/SLAM_project/devel/.private/elevation_mapping/lib/libelevation_mapping_pcl_types.so[0m
 [ 11%] Built target elevation_mapping_pcl_types
+[ 16%] [32mBuilding CXX object CMakeFiles/elevation_mapping_library.dir/src/ElevationMapping.cpp.o[0m
 [ 22%] [32mBuilding CXX object CMakeFiles/elevation_mapping_library.dir/src/ElevationMap.cpp.o[0m
-[ 33%] [32mBuilding CXX object CMakeFiles/elevation_mapping_library.dir/src/input_sources/InputSourceManager.cpp.o[0m
 [ 27%] [32mBuilding CXX object CMakeFiles/elevation_mapping_library.dir/src/input_sources/Input.cpp.o[0m
-[ 33%] [32mBuilding CXX object CMakeFiles/elevation_mapping_library.dir/src/ElevationMapping.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/elevation_mapping_library.dir/src/input_sources/InputSourceManager.cpp.o[0m
 [ 38%] [32mBuilding CXX object CMakeFiles/elevation_mapping_library.dir/src/postprocessing/PostprocessorPool.cpp.o[0m
 [ 44%] [32mBuilding CXX object CMakeFiles/elevation_mapping_library.dir/src/postprocessing/PostprocessingWorker.cpp.o[0m
 [ 50%] [32mBuilding CXX object CMakeFiles/elevation_mapping_library.dir/src/postprocessing/PostprocessingPipelineFunctor.cpp.o[0m

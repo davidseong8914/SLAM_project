@@ -1,10 +1,6 @@
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/elevation_mapping/share/elevation_mapping/cmake/elevation_mappingConfig-version.cmake, /home/david/Desktop/SLAM_project/devel/share/elevation_mapping/cmake/elevation_mappingConfig-version.cmake)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/elevation_mapping/share/elevation_mapping/cmake/elevation_mappingConfig.cmake, /home/david/Desktop/SLAM_project/devel/share/elevation_mapping/cmake/elevation_mappingConfig.cmake)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/elevation_mapping/lib/libelevation_mapping_pcl_types.so, /home/david/Desktop/SLAM_project/devel/lib/libelevation_mapping_pcl_types.so)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/elevation_mapping/lib/libelevation_mapping_library.so, /home/david/Desktop/SLAM_project/devel/lib/libelevation_mapping_library.so)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/elevation_mapping/lib/elevation_mapping/test_elevation_mapping_cumulative_distribution, /home/david/Desktop/SLAM_project/devel/lib/elevation_mapping/test_elevation_mapping_cumulative_distribution)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/elevation_mapping/lib/elevation_mapping/test_elevation_mapping_thread_safe_parameter_wrapper, /home/david/Desktop/SLAM_project/devel/lib/elevation_mapping/test_elevation_mapping_thread_safe_parameter_wrapper)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/elevation_mapping/lib/elevation_mapping/elevation_mapping, /home/david/Desktop/SLAM_project/devel/lib/elevation_mapping/elevation_mapping)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/elevation_mapping/lib/elevation_mapping/test_elevation_mapping_postprocessor, /home/david/Desktop/SLAM_project/devel/lib/elevation_mapping/test_elevation_mapping_postprocessor)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/elevation_mapping/lib/elevation_mapping/test_elevation_mapping_input_sources, /home/david/Desktop/SLAM_project/devel/lib/elevation_mapping/test_elevation_mapping_input_sources)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/elevation_mapping/lib/pkgconfig/elevation_mapping.pc, /home/david/Desktop/SLAM_project/devel/lib/pkgconfig/elevation_mapping.pc)
+Symlinking /home/david/Desktop/SLAM_project/devel/share/elevation_mapping/cmake/elevation_mappingConfig-version.cmake
+Symlinking /home/david/Desktop/SLAM_project/devel/share/elevation_mapping/cmake/elevation_mappingConfig.cmake
+Symlinking /home/david/Desktop/SLAM_project/devel/lib/libelevation_mapping_pcl_types.so
+Symlinking /home/david/Desktop/SLAM_project/devel/lib/libelevation_mapping_library.so
+Symlinking /home/david/Desktop/SLAM_project/devel/lib/elevation_mapping/elevation_mapping
+Symlinking /home/david/Desktop/SLAM_project/devel/lib/pkgconfig/elevation_mapping.pc

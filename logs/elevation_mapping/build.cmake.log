@@ -7,6 +7,18 @@ Not searching for unused variables given on the command line.
   CMake that the project does not need compatibility with older versions.
 
 [0m
+[36m--[0m The C compiler identification is GNU 8.4.0
+[36m--[0m The CXX compiler identification is GNU 8.4.0
+[36m--[0m Detecting C compiler ABI info
+[36m--[0m Detecting C compiler ABI info - done
+[36m--[0m Check for working C compiler: /usr/bin/gcc-8 - skipped
+[36m--[0m Detecting C compile features
+[36m--[0m Detecting C compile features - done
+[36m--[0m Detecting CXX compiler ABI info
+[36m--[0m Detecting CXX compiler ABI info - done
+[36m--[0m Check for working CXX compiler: /usr/bin/g++-8 - skipped
+[36m--[0m Detecting CXX compile features
+[36m--[0m Detecting CXX compile features - done
 [36m--[0m Using CATKIN_DEVEL_PREFIX: /home/david/Desktop/SLAM_project/devel/.private/elevation_mapping
 [36m--[0m Using CMAKE_PREFIX_PATH: /home/david/Desktop/SLAM_project/devel;/opt/ros/noetic
 [36m--[0m This workspace overlays: /home/david/Desktop/SLAM_project/devel;/opt/ros/noetic
@@ -24,6 +36,7 @@ This warning is for project developers.  Use -Wno-dev to suppress it.
 [36m--[0m Found PythonInterp: /home/david/Desktop/SLAM_project/slam_project/bin/python3 (found suitable version "3.8.10", minimum required is "3")
 [36m--[0m Using PYTHON_EXECUTABLE: /home/david/Desktop/SLAM_project/slam_project/bin/python3
 [36m--[0m Using Debian Python package layout
+[36m--[0m Found PY_em: /home/david/Desktop/SLAM_project/slam_project/lib/python3.8/site-packages/em.py
 [36m--[0m Using empy: /home/david/Desktop/SLAM_project/slam_project/lib/python3.8/site-packages/em.py
 [36m--[0m Using CATKIN_ENABLE_TESTING: ON
 [36m--[0m Call enable_testing()
@@ -65,6 +78,7 @@ This warning is for project developers.  Use -Wno-dev to suppress it.
 This warning is for project developers.  Use -Wno-dev to suppress it.
 [0m
 [36m--[0m Found PythonInterp: /home/david/Desktop/SLAM_project/slam_project/bin/python3 (found version "3.8.10")
+[36m--[0m Found Threads: TRUE
 [36m--[0m Using Python nosetests: /usr/bin/nosetests3
 [36m--[0m catkin 0.8.10
 [36m--[0m BUILD_SHARED_LIBS is on
@@ -77,6 +91,6 @@ This warning is for project developers.  Use -Wno-dev to suppress it.
 This warning is for project developers.  Use -Wno-dev to suppress it.
 [0m
 [36m--[0m Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake (found version "1.71.0") found components: system
-[36m--[0m Configuring done (1.4s)
-[36m--[0m Generating done (0.6s)
+[36m--[0m Configuring done (4.6s)
+[36m--[0m Generating done (1.0s)
 [36m--[0m Build files have been written to: /home/david/Desktop/SLAM_project/build/elevation_mapping

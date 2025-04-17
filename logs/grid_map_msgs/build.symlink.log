@@ -1,60 +1,60 @@
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/share/gennodejs/ros/grid_map_msgs/_index.js, /home/david/Desktop/SLAM_project/devel/share/gennodejs/ros/grid_map_msgs/_index.js)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/share/gennodejs/ros/grid_map_msgs/srv/GetGridMap.js, /home/david/Desktop/SLAM_project/devel/share/gennodejs/ros/grid_map_msgs/srv/GetGridMap.js)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/share/gennodejs/ros/grid_map_msgs/srv/ProcessFile.js, /home/david/Desktop/SLAM_project/devel/share/gennodejs/ros/grid_map_msgs/srv/ProcessFile.js)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/share/gennodejs/ros/grid_map_msgs/srv/_index.js, /home/david/Desktop/SLAM_project/devel/share/gennodejs/ros/grid_map_msgs/srv/_index.js)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/share/gennodejs/ros/grid_map_msgs/srv/GetGridMapInfo.js, /home/david/Desktop/SLAM_project/devel/share/gennodejs/ros/grid_map_msgs/srv/GetGridMapInfo.js)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/share/gennodejs/ros/grid_map_msgs/srv/SetGridMap.js, /home/david/Desktop/SLAM_project/devel/share/gennodejs/ros/grid_map_msgs/srv/SetGridMap.js)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/share/gennodejs/ros/grid_map_msgs/msg/_index.js, /home/david/Desktop/SLAM_project/devel/share/gennodejs/ros/grid_map_msgs/msg/_index.js)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/share/gennodejs/ros/grid_map_msgs/msg/GridMapInfo.js, /home/david/Desktop/SLAM_project/devel/share/gennodejs/ros/grid_map_msgs/msg/GridMapInfo.js)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/share/gennodejs/ros/grid_map_msgs/msg/GridMap.js, /home/david/Desktop/SLAM_project/devel/share/gennodejs/ros/grid_map_msgs/msg/GridMap.js)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/share/grid_map_msgs/cmake/grid_map_msgsConfig.cmake, /home/david/Desktop/SLAM_project/devel/share/grid_map_msgs/cmake/grid_map_msgsConfig.cmake)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/share/grid_map_msgs/cmake/grid_map_msgsConfig-version.cmake, /home/david/Desktop/SLAM_project/devel/share/grid_map_msgs/cmake/grid_map_msgsConfig-version.cmake)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/share/grid_map_msgs/cmake/grid_map_msgs-msg-paths.cmake, /home/david/Desktop/SLAM_project/devel/share/grid_map_msgs/cmake/grid_map_msgs-msg-paths.cmake)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/share/grid_map_msgs/cmake/grid_map_msgs-msg-extras.cmake, /home/david/Desktop/SLAM_project/devel/share/grid_map_msgs/cmake/grid_map_msgs-msg-extras.cmake)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/share/common-lisp/ros/grid_map_msgs/srv/_package_GetGridMap.lisp, /home/david/Desktop/SLAM_project/devel/share/common-lisp/ros/grid_map_msgs/srv/_package_GetGridMap.lisp)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/share/common-lisp/ros/grid_map_msgs/srv/SetGridMap.lisp, /home/david/Desktop/SLAM_project/devel/share/common-lisp/ros/grid_map_msgs/srv/SetGridMap.lisp)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/share/common-lisp/ros/grid_map_msgs/srv/GetGridMapInfo.lisp, /home/david/Desktop/SLAM_project/devel/share/common-lisp/ros/grid_map_msgs/srv/GetGridMapInfo.lisp)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/share/common-lisp/ros/grid_map_msgs/srv/grid_map_msgs-srv.asd, /home/david/Desktop/SLAM_project/devel/share/common-lisp/ros/grid_map_msgs/srv/grid_map_msgs-srv.asd)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/share/common-lisp/ros/grid_map_msgs/srv/ProcessFile.lisp, /home/david/Desktop/SLAM_project/devel/share/common-lisp/ros/grid_map_msgs/srv/ProcessFile.lisp)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/share/common-lisp/ros/grid_map_msgs/srv/_package_SetGridMap.lisp, /home/david/Desktop/SLAM_project/devel/share/common-lisp/ros/grid_map_msgs/srv/_package_SetGridMap.lisp)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/share/common-lisp/ros/grid_map_msgs/srv/_package.lisp, /home/david/Desktop/SLAM_project/devel/share/common-lisp/ros/grid_map_msgs/srv/_package.lisp)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/share/common-lisp/ros/grid_map_msgs/srv/_package_ProcessFile.lisp, /home/david/Desktop/SLAM_project/devel/share/common-lisp/ros/grid_map_msgs/srv/_package_ProcessFile.lisp)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/share/common-lisp/ros/grid_map_msgs/srv/_package_GetGridMapInfo.lisp, /home/david/Desktop/SLAM_project/devel/share/common-lisp/ros/grid_map_msgs/srv/_package_GetGridMapInfo.lisp)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/share/common-lisp/ros/grid_map_msgs/srv/GetGridMap.lisp, /home/david/Desktop/SLAM_project/devel/share/common-lisp/ros/grid_map_msgs/srv/GetGridMap.lisp)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/share/common-lisp/ros/grid_map_msgs/msg/GridMapInfo.lisp, /home/david/Desktop/SLAM_project/devel/share/common-lisp/ros/grid_map_msgs/msg/GridMapInfo.lisp)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/share/common-lisp/ros/grid_map_msgs/msg/GridMap.lisp, /home/david/Desktop/SLAM_project/devel/share/common-lisp/ros/grid_map_msgs/msg/GridMap.lisp)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/share/common-lisp/ros/grid_map_msgs/msg/_package.lisp, /home/david/Desktop/SLAM_project/devel/share/common-lisp/ros/grid_map_msgs/msg/_package.lisp)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/share/common-lisp/ros/grid_map_msgs/msg/_package_GridMap.lisp, /home/david/Desktop/SLAM_project/devel/share/common-lisp/ros/grid_map_msgs/msg/_package_GridMap.lisp)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/share/common-lisp/ros/grid_map_msgs/msg/grid_map_msgs-msg.asd, /home/david/Desktop/SLAM_project/devel/share/common-lisp/ros/grid_map_msgs/msg/grid_map_msgs-msg.asd)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/share/common-lisp/ros/grid_map_msgs/msg/_package_GridMapInfo.lisp, /home/david/Desktop/SLAM_project/devel/share/common-lisp/ros/grid_map_msgs/msg/_package_GridMapInfo.lisp)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/share/roseus/ros/grid_map_msgs/manifest.l, /home/david/Desktop/SLAM_project/devel/share/roseus/ros/grid_map_msgs/manifest.l)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/share/roseus/ros/grid_map_msgs/srv/ProcessFile.l, /home/david/Desktop/SLAM_project/devel/share/roseus/ros/grid_map_msgs/srv/ProcessFile.l)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/share/roseus/ros/grid_map_msgs/srv/GetGridMapInfo.l, /home/david/Desktop/SLAM_project/devel/share/roseus/ros/grid_map_msgs/srv/GetGridMapInfo.l)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/share/roseus/ros/grid_map_msgs/srv/GetGridMap.l, /home/david/Desktop/SLAM_project/devel/share/roseus/ros/grid_map_msgs/srv/GetGridMap.l)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/share/roseus/ros/grid_map_msgs/srv/SetGridMap.l, /home/david/Desktop/SLAM_project/devel/share/roseus/ros/grid_map_msgs/srv/SetGridMap.l)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/share/roseus/ros/grid_map_msgs/msg/GridMapInfo.l, /home/david/Desktop/SLAM_project/devel/share/roseus/ros/grid_map_msgs/msg/GridMapInfo.l)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/share/roseus/ros/grid_map_msgs/msg/GridMap.l, /home/david/Desktop/SLAM_project/devel/share/roseus/ros/grid_map_msgs/msg/GridMap.l)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/include/grid_map_msgs/GridMap.h, /home/david/Desktop/SLAM_project/devel/include/grid_map_msgs/GridMap.h)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/include/grid_map_msgs/GetGridMap.h, /home/david/Desktop/SLAM_project/devel/include/grid_map_msgs/GetGridMap.h)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/include/grid_map_msgs/GetGridMapResponse.h, /home/david/Desktop/SLAM_project/devel/include/grid_map_msgs/GetGridMapResponse.h)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/include/grid_map_msgs/SetGridMap.h, /home/david/Desktop/SLAM_project/devel/include/grid_map_msgs/SetGridMap.h)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/include/grid_map_msgs/GridMapInfo.h, /home/david/Desktop/SLAM_project/devel/include/grid_map_msgs/GridMapInfo.h)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/include/grid_map_msgs/GetGridMapRequest.h, /home/david/Desktop/SLAM_project/devel/include/grid_map_msgs/GetGridMapRequest.h)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/include/grid_map_msgs/GetGridMapInfo.h, /home/david/Desktop/SLAM_project/devel/include/grid_map_msgs/GetGridMapInfo.h)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/include/grid_map_msgs/ProcessFileRequest.h, /home/david/Desktop/SLAM_project/devel/include/grid_map_msgs/ProcessFileRequest.h)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/include/grid_map_msgs/SetGridMapRequest.h, /home/david/Desktop/SLAM_project/devel/include/grid_map_msgs/SetGridMapRequest.h)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/include/grid_map_msgs/ProcessFileResponse.h, /home/david/Desktop/SLAM_project/devel/include/grid_map_msgs/ProcessFileResponse.h)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/include/grid_map_msgs/GetGridMapInfoResponse.h, /home/david/Desktop/SLAM_project/devel/include/grid_map_msgs/GetGridMapInfoResponse.h)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/include/grid_map_msgs/ProcessFile.h, /home/david/Desktop/SLAM_project/devel/include/grid_map_msgs/ProcessFile.h)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/include/grid_map_msgs/SetGridMapResponse.h, /home/david/Desktop/SLAM_project/devel/include/grid_map_msgs/SetGridMapResponse.h)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/include/grid_map_msgs/GetGridMapInfoRequest.h, /home/david/Desktop/SLAM_project/devel/include/grid_map_msgs/GetGridMapInfoRequest.h)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/lib/python3/dist-packages/grid_map_msgs/__init__.py, /home/david/Desktop/SLAM_project/devel/lib/python3/dist-packages/grid_map_msgs/__init__.py)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/lib/python3/dist-packages/grid_map_msgs/srv/_ProcessFile.py, /home/david/Desktop/SLAM_project/devel/lib/python3/dist-packages/grid_map_msgs/srv/_ProcessFile.py)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/lib/python3/dist-packages/grid_map_msgs/srv/_GetGridMapInfo.py, /home/david/Desktop/SLAM_project/devel/lib/python3/dist-packages/grid_map_msgs/srv/_GetGridMapInfo.py)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/lib/python3/dist-packages/grid_map_msgs/srv/_SetGridMap.py, /home/david/Desktop/SLAM_project/devel/lib/python3/dist-packages/grid_map_msgs/srv/_SetGridMap.py)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/lib/python3/dist-packages/grid_map_msgs/srv/__init__.py, /home/david/Desktop/SLAM_project/devel/lib/python3/dist-packages/grid_map_msgs/srv/__init__.py)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/lib/python3/dist-packages/grid_map_msgs/srv/_GetGridMap.py, /home/david/Desktop/SLAM_project/devel/lib/python3/dist-packages/grid_map_msgs/srv/_GetGridMap.py)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/lib/python3/dist-packages/grid_map_msgs/msg/_GridMap.py, /home/david/Desktop/SLAM_project/devel/lib/python3/dist-packages/grid_map_msgs/msg/_GridMap.py)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/lib/python3/dist-packages/grid_map_msgs/msg/_GridMapInfo.py, /home/david/Desktop/SLAM_project/devel/lib/python3/dist-packages/grid_map_msgs/msg/_GridMapInfo.py)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/lib/python3/dist-packages/grid_map_msgs/msg/__init__.py, /home/david/Desktop/SLAM_project/devel/lib/python3/dist-packages/grid_map_msgs/msg/__init__.py)
-Linked: (/home/david/Desktop/SLAM_project/devel/.private/grid_map_msgs/lib/pkgconfig/grid_map_msgs.pc, /home/david/Desktop/SLAM_project/devel/lib/pkgconfig/grid_map_msgs.pc)
+Symlinking /home/david/Desktop/SLAM_project/devel/share/gennodejs/ros/grid_map_msgs/_index.js
+Symlinking /home/david/Desktop/SLAM_project/devel/share/gennodejs/ros/grid_map_msgs/srv/GetGridMap.js
+Symlinking /home/david/Desktop/SLAM_project/devel/share/gennodejs/ros/grid_map_msgs/srv/ProcessFile.js
+Symlinking /home/david/Desktop/SLAM_project/devel/share/gennodejs/ros/grid_map_msgs/srv/_index.js
+Symlinking /home/david/Desktop/SLAM_project/devel/share/gennodejs/ros/grid_map_msgs/srv/GetGridMapInfo.js
+Symlinking /home/david/Desktop/SLAM_project/devel/share/gennodejs/ros/grid_map_msgs/srv/SetGridMap.js
+Symlinking /home/david/Desktop/SLAM_project/devel/share/gennodejs/ros/grid_map_msgs/msg/_index.js
+Symlinking /home/david/Desktop/SLAM_project/devel/share/gennodejs/ros/grid_map_msgs/msg/GridMapInfo.js
+Symlinking /home/david/Desktop/SLAM_project/devel/share/gennodejs/ros/grid_map_msgs/msg/GridMap.js
+Symlinking /home/david/Desktop/SLAM_project/devel/share/grid_map_msgs/cmake/grid_map_msgsConfig.cmake
+Symlinking /home/david/Desktop/SLAM_project/devel/share/grid_map_msgs/cmake/grid_map_msgsConfig-version.cmake
+Symlinking /home/david/Desktop/SLAM_project/devel/share/grid_map_msgs/cmake/grid_map_msgs-msg-paths.cmake
+Symlinking /home/david/Desktop/SLAM_project/devel/share/grid_map_msgs/cmake/grid_map_msgs-msg-extras.cmake
+Symlinking /home/david/Desktop/SLAM_project/devel/share/common-lisp/ros/grid_map_msgs/srv/_package_GetGridMap.lisp
+Symlinking /home/david/Desktop/SLAM_project/devel/share/common-lisp/ros/grid_map_msgs/srv/SetGridMap.lisp
+Symlinking /home/david/Desktop/SLAM_project/devel/share/common-lisp/ros/grid_map_msgs/srv/GetGridMapInfo.lisp
+Symlinking /home/david/Desktop/SLAM_project/devel/share/common-lisp/ros/grid_map_msgs/srv/grid_map_msgs-srv.asd
+Symlinking /home/david/Desktop/SLAM_project/devel/share/common-lisp/ros/grid_map_msgs/srv/ProcessFile.lisp
+Symlinking /home/david/Desktop/SLAM_project/devel/share/common-lisp/ros/grid_map_msgs/srv/_package_SetGridMap.lisp
+Symlinking /home/david/Desktop/SLAM_project/devel/share/common-lisp/ros/grid_map_msgs/srv/_package.lisp
+Symlinking /home/david/Desktop/SLAM_project/devel/share/common-lisp/ros/grid_map_msgs/srv/_package_ProcessFile.lisp
+Symlinking /home/david/Desktop/SLAM_project/devel/share/common-lisp/ros/grid_map_msgs/srv/_package_GetGridMapInfo.lisp
+Symlinking /home/david/Desktop/SLAM_project/devel/share/common-lisp/ros/grid_map_msgs/srv/GetGridMap.lisp
+Symlinking /home/david/Desktop/SLAM_project/devel/share/common-lisp/ros/grid_map_msgs/msg/GridMapInfo.lisp
+Symlinking /home/david/Desktop/SLAM_project/devel/share/common-lisp/ros/grid_map_msgs/msg/GridMap.lisp
+Symlinking /home/david/Desktop/SLAM_project/devel/share/common-lisp/ros/grid_map_msgs/msg/_package.lisp
+Symlinking /home/david/Desktop/SLAM_project/devel/share/common-lisp/ros/grid_map_msgs/msg/_package_GridMap.lisp
+Symlinking /home/david/Desktop/SLAM_project/devel/share/common-lisp/ros/grid_map_msgs/msg/grid_map_msgs-msg.asd
+Symlinking /home/david/Desktop/SLAM_project/devel/share/common-lisp/ros/grid_map_msgs/msg/_package_GridMapInfo.lisp
+Symlinking /home/david/Desktop/SLAM_project/devel/share/roseus/ros/grid_map_msgs/manifest.l
+Symlinking /home/david/Desktop/SLAM_project/devel/share/roseus/ros/grid_map_msgs/srv/ProcessFile.l
+Symlinking /home/david/Desktop/SLAM_project/devel/share/roseus/ros/grid_map_msgs/srv/GetGridMapInfo.l
+Symlinking /home/david/Desktop/SLAM_project/devel/share/roseus/ros/grid_map_msgs/srv/GetGridMap.l
+Symlinking /home/david/Desktop/SLAM_project/devel/share/roseus/ros/grid_map_msgs/srv/SetGridMap.l
+Symlinking /home/david/Desktop/SLAM_project/devel/share/roseus/ros/grid_map_msgs/msg/GridMapInfo.l
+Symlinking /home/david/Desktop/SLAM_project/devel/share/roseus/ros/grid_map_msgs/msg/GridMap.l
+Symlinking /home/david/Desktop/SLAM_project/devel/include/grid_map_msgs/GridMap.h
+Symlinking /home/david/Desktop/SLAM_project/devel/include/grid_map_msgs/GetGridMap.h
+Symlinking /home/david/Desktop/SLAM_project/devel/include/grid_map_msgs/GetGridMapResponse.h
+Symlinking /home/david/Desktop/SLAM_project/devel/include/grid_map_msgs/SetGridMap.h
+Symlinking /home/david/Desktop/SLAM_project/devel/include/grid_map_msgs/GridMapInfo.h
+Symlinking /home/david/Desktop/SLAM_project/devel/include/grid_map_msgs/GetGridMapRequest.h
+Symlinking /home/david/Desktop/SLAM_project/devel/include/grid_map_msgs/GetGridMapInfo.h
+Symlinking /home/david/Desktop/SLAM_project/devel/include/grid_map_msgs/ProcessFileRequest.h
+Symlinking /home/david/Desktop/SLAM_project/devel/include/grid_map_msgs/SetGridMapRequest.h
+Symlinking /home/david/Desktop/SLAM_project/devel/include/grid_map_msgs/ProcessFileResponse.h
+Symlinking /home/david/Desktop/SLAM_project/devel/include/grid_map_msgs/GetGridMapInfoResponse.h
+Symlinking /home/david/Desktop/SLAM_project/devel/include/grid_map_msgs/ProcessFile.h
+Symlinking /home/david/Desktop/SLAM_project/devel/include/grid_map_msgs/SetGridMapResponse.h
+Symlinking /home/david/Desktop/SLAM_project/devel/include/grid_map_msgs/GetGridMapInfoRequest.h
+Symlinking /home/david/Desktop/SLAM_project/devel/lib/python3/dist-packages/grid_map_msgs/__init__.py
+Symlinking /home/david/Desktop/SLAM_project/devel/lib/python3/dist-packages/grid_map_msgs/srv/_ProcessFile.py
+Symlinking /home/david/Desktop/SLAM_project/devel/lib/python3/dist-packages/grid_map_msgs/srv/_GetGridMapInfo.py
+Symlinking /home/david/Desktop/SLAM_project/devel/lib/python3/dist-packages/grid_map_msgs/srv/_SetGridMap.py
+Symlinking /home/david/Desktop/SLAM_project/devel/lib/python3/dist-packages/grid_map_msgs/srv/__init__.py
+Symlinking /home/david/Desktop/SLAM_project/devel/lib/python3/dist-packages/grid_map_msgs/srv/_GetGridMap.py
+Symlinking /home/david/Desktop/SLAM_project/devel/lib/python3/dist-packages/grid_map_msgs/msg/_GridMap.py
+Symlinking /home/david/Desktop/SLAM_project/devel/lib/python3/dist-packages/grid_map_msgs/msg/_GridMapInfo.py
+Symlinking /home/david/Desktop/SLAM_project/devel/lib/python3/dist-packages/grid_map_msgs/msg/__init__.py
+Symlinking /home/david/Desktop/SLAM_project/devel/lib/pkgconfig/grid_map_msgs.pc

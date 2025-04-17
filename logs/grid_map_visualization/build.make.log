@@ -1,1 +1,13 @@
+[  8%] [32mBuilding CXX object CMakeFiles/grid_map_visualization.dir/src/grid_map_visualization_node.cpp.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/grid_map_visualization.dir/src/GridMapVisualization.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/grid_map_visualization.dir/src/GridMapVisualizationHelpers.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/grid_map_visualization.dir/src/visualizations/VisualizationBase.cpp.o[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/grid_map_visualization.dir/src/visualizations/VisualizationFactory.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/grid_map_visualization.dir/src/visualizations/PointCloudVisualization.cpp.o[0m
+[ 58%] [32mBuilding CXX object CMakeFiles/grid_map_visualization.dir/src/visualizations/FlatPointCloudVisualization.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/grid_map_visualization.dir/src/visualizations/VectorVisualization.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/grid_map_visualization.dir/src/visualizations/OccupancyGridVisualization.cpp.o[0m
+[ 83%] [32mBuilding CXX object CMakeFiles/grid_map_visualization.dir/src/visualizations/GridCellsVisualization.cpp.o[0m
+[ 91%] [32mBuilding CXX object CMakeFiles/grid_map_visualization.dir/src/visualizations/MapRegionVisualization.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/david/Desktop/SLAM_project/devel/.private/grid_map_visualization/lib/grid_map_visualization/grid_map_visualization[0m
 [100%] Built target grid_map_visualization

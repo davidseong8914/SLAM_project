@@ -1,1 +1,4 @@
+[ 33%] [32mBuilding CXX object CMakeFiles/message_logger.dir/src/time/Time.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/message_logger.dir/src/time/TimeStd.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library /home/david/Desktop/SLAM_project/devel/.private/message_logger/lib/libmessage_logger.so[0m
 [100%] Built target message_logger
